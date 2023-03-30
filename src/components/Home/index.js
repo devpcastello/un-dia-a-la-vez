@@ -5,4 +5,3 @@ export * from "./Footer/FooterComponent";
 export * from "./Home/HomeComponent";
 export * from "./Navbar/NavbarComponent";
 export * from "./Subscription/SubscriptionComponent";
-hola;
