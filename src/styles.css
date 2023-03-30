@@ -1,0 +1,40 @@
+:root{
+  --dark-green: #438997;
+  --bright-green: #8CCEDC;
+  --light-green: #DEEDF0;
+}
+
+.dark-button{
+  background-color: var(--dark-green);
+  color: white;
+}
+
+.bright-button{
+  background-color: var(--bright-green);
+  color: white;
+  padding: ;
+}
+
+.bg-dark-green{
+  background-color: var(--dark-green);
+}
+
+.bg-bright-green{
+  background-color: var(--bright-green);
+}
+
+.bg-light-green{
+  background-color: var(--light-green);
+}
+
+.bg-whatsapp{
+  background-color: #2DB742;
+}
+
+.card-image{
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+
