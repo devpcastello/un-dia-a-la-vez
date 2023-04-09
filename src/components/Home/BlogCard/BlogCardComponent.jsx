@@ -5,7 +5,7 @@ import "../../../styles.css";
 
 export const BlogCardComponent = () => {
   return (
-    <div className="card w-11/12 h-96 rounded rounded-lg mx-auto  text-center bg-white">
+    <div className="bg-gray-2 w-11/12 h-96 rounded-lg mx-auto  text-center">
       <div className="h-48 w-full ">
         <img
           className="card-image w-full h-full rounded-t-lg"

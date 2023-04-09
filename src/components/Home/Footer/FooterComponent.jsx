@@ -21,7 +21,7 @@ export const FooterComponent = () => {
           <img src={instagram} alt="" />
         </div>
       </div>
-      <div className="bg-whatsapp rounded rounded-xl text-white flex flex-col items-center p-3">
+      <div className="bg-wtpp-green rounded-xl text-white flex flex-col items-center p-3">
         <p>Contáctanos por Whatsapp</p>
         <div>
           <img className="h-12" src={whatsapp} alt="" />

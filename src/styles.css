@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --dark-green: #438997;
   --bright-green: #8CCEDC;
@@ -5,30 +10,11 @@
 }
 
 .dark-button{
-  background-color: var(--dark-green);
-  color: white;
+  @apply bg-light-green text-white
 }
 
 .bright-button{
-  background-color: var(--bright-green);
-  color: white;
-  padding: ;
-}
-
-.bg-dark-green{
-  background-color: var(--dark-green);
-}
-
-.bg-bright-green{
-  background-color: var(--bright-green);
-}
-
-.bg-light-green{
-  background-color: var(--light-green);
-}
-
-.bg-whatsapp{
-  background-color: #2DB742;
+  @apply bg-bright-green text-white
 }
 
 .card-image{
@@ -37,8 +23,22 @@
   overflow: hidden;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+#home{
+  min-height: 100vh;
+  background-image: url('./assets/home-background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+#home:before{
+  content: "";
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: gray;
+  opacity: 0.45;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles.css";
-import "../../../styles.css";
+// import "../../../styles.css";
 import dulcinea from "../../../assets/dulcinea-1.png";
 
 export const HomeComponent = () => {
@@ -14,7 +14,7 @@ export const HomeComponent = () => {
         </h2>
         <p className="mt-3">Nuestros servicios se diferencian por</p>
         <button
-          className="dark-button bottom-10 absolute py-2 px-4 rounded-full"
+          className="bg-dark-green bottom-10 absolute py-2 px-4 rounded-full"
           id="button"
         >
           Quiero saber más!

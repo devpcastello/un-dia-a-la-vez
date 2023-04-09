@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../dist/main.css";
 
 import {
   BenefitsComponent,

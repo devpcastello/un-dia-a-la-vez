@@ -9,7 +9,7 @@ import "../../../styles.css";
 
 export const BenefitsComponent = () => {
   return (
-    <div className="h-screen" id="benefits">
+    <div className="h-screen bg-gray-1" id="benefits">
       <div className="w-full pt-14 flex flex-col justify-around items-center text-center">
         <p>
           La psicología online es una nueva forma de terapia cómoda y flexible,

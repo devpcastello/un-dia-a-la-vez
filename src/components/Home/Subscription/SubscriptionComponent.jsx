@@ -18,7 +18,7 @@ export const SubscriptionComponent = () => {
             Nombres:
           </label>
           <input
-            className="rounded rounded-full mt-1 mb-2 px-1 py-2 bg-bright-green"
+            className="rounded-full mt-1 mb-2 px-1 py-2 bg-bright-green"
             type="text"
             name="name"
             id="name"
@@ -27,12 +27,12 @@ export const SubscriptionComponent = () => {
             Email:
           </label>
           <input
-            className="rounded rounded-full mt-1 mb-2 px-1 py-2 bg-bright-green"
+            className="rounded-full mt-1 mb-2 px-1 py-2 bg-bright-green"
             type="email"
             name="email"
             id="email"
           />
-          <button className="dark-button rounded rounded-full py-2 px-4 mt-2">
+          <button className="dark-button rounded-full py-2 px-4 mt-2">
             Subscribirme!
           </button>
         </div>
