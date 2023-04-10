@@ -1,7 +1,6 @@
 import React from "react";
 
 import imgStock from "../../../assets/img-stock-1.png";
-import "../../../styles.css";
 
 export const BlogCardComponent = () => {
   return (

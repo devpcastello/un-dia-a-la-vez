@@ -1,7 +1,3 @@
-import React from "react";
-
-import "./styles.css";
-// import "../../../styles.css";
 import dulcinea from "../../../assets/dulcinea-1.png";
 
 export const HomeComponent = () => {

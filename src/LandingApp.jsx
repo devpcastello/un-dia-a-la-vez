@@ -10,7 +10,7 @@ import {
   SubscriptionComponent,
 } from "./components/Home";
 
-function App() {
+function LandingApp() {
   const [count, setCount] = useState(0);
 
   return (
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingApp;

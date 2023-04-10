@@ -4,9 +4,6 @@ import rightButton from "../../../assets/right-button.png";
 import leftButton from "../../../assets/left-button.png";
 import dulcinea from "../../../assets/dulcinea-2.png";
 
-import "./styles.css";
-import "../../../styles.css";
-
 export const BenefitsComponent = () => {
   return (
     <div className="h-screen bg-gray-1" id="benefits">
