@@ -1,26 +1,15 @@
 import { useState } from "react";
 import "../dist/main.css";
 
-import {
-  BenefitsComponent,
-  BlogComponent,
-  FooterComponent,
-  HomeComponent,
-  NavbarComponent,
-  SubscriptionComponent,
-} from "./components/Home";
+// import { HomePage } from "./Pages/HomePage";
+import { AppRouter } from "./router/AppRouter";
 
 function LandingApp() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <NavbarComponent />
-      <HomeComponent />
-      <BenefitsComponent />
-      <BlogComponent />
-      <SubscriptionComponent />
-      <FooterComponent />
+      <AppRouter />
     </>
   );
 }
