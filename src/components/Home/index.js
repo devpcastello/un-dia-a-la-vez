@@ -1,5 +1,5 @@
 export * from "./Benefits/Benefits";
-export * from "./Blog/Blog";
+export * from "./BlogSection/BlogSection";
 export * from "./BlogCard/BlogCard";
 export * from "./Footer/Footer";
 export * from "./Home/Home";

@@ -1,7 +1,7 @@
 import React from "react";
 import { BlogCard } from "../BlogCard/BlogCard";
 
-export const Blog = () => {
+export const BlogSection = () => {
   return (
     <div className="h-screen bg-dark-green">
       <div>
