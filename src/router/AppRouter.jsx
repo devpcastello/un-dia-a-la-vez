@@ -3,8 +3,8 @@ import { HomePage, AboutPage, SelfCarePage } from "../Pages";
 import { Staff } from "../components/AboutUs/Staff/Staff";
 import { StaffDetail } from "../components/AboutUs/components/StaffDetail";
 import { Navbar } from "../components/Home";
+import { TestimonialCard } from "../components/AboutUs/components/TestimonialCard";
 import { Testimonials } from "../components/AboutUs/Testimonials/Testimonials";
-import { Blog } from "../components/SelfCare/Blog/Blog";
 
 export const AppRouter = () => {
   return (
@@ -17,7 +17,7 @@ export const AppRouter = () => {
         <Route path="about" element={<AboutPage />} />
         <Route path="staff" element={<Staff />} />
         <Route path="staff-1" element={<StaffDetail />} />
-        <Route path="blog" element={<Blog />} />
+        <Route path="testimonials" element={<Testimonials />} />
 
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
