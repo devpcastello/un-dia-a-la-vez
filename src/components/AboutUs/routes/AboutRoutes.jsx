@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import { Staff } from "../Staff";
-import { Testimonials } from "../Testimonials/Testimonials";
-import { Fqa } from "../FQA/Fqa";
+import { Staff, Testimonials, Fqa } from "../index";
+import { Navbar } from "../../Home/Navbar/Navbar";
 
-export const AboutRouter = () => {
+export const AboutRoutes = () => {
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="staff" element={<Staff />} />
         <Route path="testimonials" element={<Testimonials />} />

@@ -3,7 +3,7 @@ import navbarLogo from "../../../assets/navbar-logo.png";
 
 import "./styles.css";
 
-export const NavbarComponent = () => {
+export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {

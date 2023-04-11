@@ -4,7 +4,7 @@ import rightButton from "../../../assets/right-button.png";
 import leftButton from "../../../assets/left-button.png";
 import dulcinea from "../../../assets/dulcinea-2.png";
 
-export const BenefitsComponent = () => {
+export const Benefits = () => {
   return (
     <div className="h-screen bg-gray-1" id="benefits">
       <div className="w-full pt-14 flex flex-col justify-around items-center text-center">

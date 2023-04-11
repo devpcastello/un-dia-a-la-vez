@@ -2,7 +2,7 @@ import React from "react";
 
 import imgStock from "../../../assets/img-stock-1.png";
 
-export const BlogCardComponent = () => {
+export const BlogCard = () => {
   return (
     <div className="bg-gray-2 w-11/12 h-96 rounded-lg mx-auto  text-center">
       <div className="h-48 w-full ">

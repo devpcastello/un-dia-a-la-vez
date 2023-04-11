@@ -1,21 +1,13 @@
-import {
-  BenefitsComponent,
-  BlogComponent,
-  FooterComponent,
-  HomeComponent,
-  NavbarComponent,
-  SubscriptionComponent,
-} from "../components/Home";
+import { Benefits, Blog, Footer, Home, Subscription } from "../components/Home";
 
 export const HomePage = () => {
   return (
     <>
-      <NavbarComponent />
-      <HomeComponent />
-      <BenefitsComponent />
-      <BlogComponent />
-      <SubscriptionComponent />
-      <FooterComponent />
+      <Home />
+      <Benefits />
+      <Blog />
+      <Subscription />
+      <Footer />
     </>
   );
 };

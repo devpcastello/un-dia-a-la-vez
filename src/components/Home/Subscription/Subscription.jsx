@@ -2,7 +2,7 @@ import React from "react";
 
 import dulcinea from "../../../assets/dulcinea-3.png";
 
-export const SubscriptionComponent = () => {
+export const Subscription = () => {
   return (
     <div className="bg-light-green h-screen w-full flex flex-col justify-center items-center">
       <div className="w-9/12 h-auto">
@@ -14,18 +14,14 @@ export const SubscriptionComponent = () => {
           </p>
         </div>
         <div>
-          <label className="" for="name">
-            Nombres:
-          </label>
+          <label className="">Nombres:</label>
           <input
             className="rounded-full mt-1 mb-2 px-1 py-2 bg-bright-green"
             type="text"
             name="name"
             id="name"
           />
-          <label className="" for="email">
-            Email:
-          </label>
+          <label className="">Email:</label>
           <input
             className="rounded-full mt-1 mb-2 px-1 py-2 bg-bright-green"
             type="email"

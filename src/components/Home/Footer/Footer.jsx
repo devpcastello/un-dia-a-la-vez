@@ -7,7 +7,7 @@ import instagram from "../../../assets/icon _instagram_.png";
 import whatsapp from "../../../assets/icon _whatsapp_.png";
 import youtube from "../../../assets/icon _youtube_.png";
 
-export const FooterComponent = () => {
+export const Footer = () => {
   return (
     <div className=" bg-light-green h-screen flex flex-col justify-center items-center relative">
       <div className="pb-5  mb-5 border-b-2 border-slate-700">

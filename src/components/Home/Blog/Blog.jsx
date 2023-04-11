@@ -1,7 +1,7 @@
 import React from "react";
-import { BlogCardComponent } from "../BlogCard/BlogCard";
+import { BlogCard } from "../BlogCard/BlogCard";
 
-export const BlogComponent = () => {
+export const Blog = () => {
   return (
     <div className="h-screen bg-dark-green">
       <div>
@@ -10,7 +10,7 @@ export const BlogComponent = () => {
           Descubrir más
         </button>
       </div>
-      <BlogCardComponent />
+      <BlogCard />
     </div>
   );
 };

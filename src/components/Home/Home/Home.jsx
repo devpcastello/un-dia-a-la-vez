@@ -1,6 +1,6 @@
 import dulcinea from "../../../assets/dulcinea-1.png";
 
-export const HomeComponent = () => {
+export const Home = () => {
   return (
     <div className="flex flex-col justify-center items-center" id="home">
       <img className="w-40 h-40 z-10" src={dulcinea} alt="" />
