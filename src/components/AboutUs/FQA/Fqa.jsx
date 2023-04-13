@@ -2,14 +2,14 @@ import React from "react";
 
 export const Fqa = () => {
   return (
-    <section class="py-10 m-8">
-      <div class="container mx-auto">
-        <h2 class="text-4xl font-medium my-8 text-center text-gray-10">
+    <section className="py-10 m-8">
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-medium my-8 text-center text-gray-10">
           Preguntas frecuentes (FAQ)
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div class="mb-6">
-            <h3 class="text-xl text-gray-8 font-medium mb-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="mb-6">
+            <h3 className="text-xl text-gray-8 font-medium mb-3">
               ¿Qué tipo de terapia ofrecen?
             </h3>
             <p className="text-gray-8">
@@ -17,8 +17,8 @@ export const Fqa = () => {
               terapia centrada en la persona y terapia de pareja.
             </p>
           </div>
-          <div class="mb-6">
-            <h3 class="text-xl text-gray-8 font-semibold mb-3">
+          <div className="mb-6">
+            <h3 className="text-xl text-gray-8 font-semibold mb-3">
               ¿Cómo puedo saber si la terapia es adecuada para mí?
             </h3>
             <p className="text-gray-8">
@@ -27,8 +27,8 @@ export const Fqa = () => {
               ti. Si no es así, te recomendaremos otros recursos útiles.
             </p>
           </div>
-          <div class="mb-6">
-            <h3 class="text-xl  mb-3 text-gray-8 font-semibold">
+          <div className="mb-6">
+            <h3 className="text-xl  mb-3 text-gray-8 font-semibold">
               ¿Cuánto tiempo dura una sesión de terapia?
             </h3>
             <p className="text-gray-8">
@@ -37,8 +37,8 @@ export const Fqa = () => {
               60-90 minutos.
             </p>
           </div>
-          <div class="mb-6">
-            <h3 class="text-xl  mb-3 text-gray-8 font-semibold">
+          <div className="mb-6">
+            <h3 className="text-xl  mb-3 text-gray-8 font-semibold">
               ¿Cuánto tiempo dura el proceso de terapia?
             </h3>
             <p className="text-gray-8">
@@ -48,8 +48,8 @@ export const Fqa = () => {
               requerir un tratamiento a largo plazo.
             </p>
           </div>
-          <div class="mb-6">
-            <h3 class="text-xl mb-3 text-gray-8 font-semibold">
+          <div className="mb-6">
+            <h3 className="text-xl mb-3 text-gray-8 font-semibold">
               ¿Cómo puedo hacer una cita?
             </h3>
             <p className="text-gray-8">
