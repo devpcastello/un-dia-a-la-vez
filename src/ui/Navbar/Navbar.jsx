@@ -13,13 +13,15 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="h-14 w-full flex justify-around items-center fixed bg-white z-50">
+    <div className="h-14 w-full flex justify-around items-center fixed top-0 bg-white z-50">
       <div>
-        <img className="h-10 w-auto" src={navbarLogo} alt="" />
+        <Link to="/">
+          <img className="h-10 w-auto" src={navbarLogo} alt="" />
+        </Link>
       </div>
       <div className="sm:hidden">
         <div className={`links ${isNavOpen ? "active" : ""}`}>
-          <div className="w-full h-screen m-5 text-3xl">
+          <div className="w-full flex flex-col gap-2 h-screen m-5 text-3xl">
             <ul>
               <li>
                 <Link to="/">Inicio</Link>
