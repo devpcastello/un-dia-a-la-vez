@@ -1,31 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import rightButton from "../../../assets/right-button.png";
-import leftButton from "../../../assets/left-button.png";
-import dulcinea from "../../../assets/dulcinea-2.png";
+import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
+
+import { benefits } from "../../../data/benefits";
 
 export const Benefits = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) => prevIndex + 1);
+  };
+
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prevIndex) => prevIndex - 1);
+  };
+
+  const currentBenefit = benefits[currentImageIndex];
+
   return (
-    <div className="h-screen bg-gray-1" id="benefits">
-      <div className="w-full pt-14 flex flex-col justify-around items-center text-center">
-        <p>
-          La psicología online es una nueva forma de terapia cómoda y flexible,
-          que permite acercar a paciente y terapeuta sin límites geográficos,y
-          que puede ser realizada en cualquier momento del día en base al
-          horario que te resulte más cómodo
+    <div className="h-screen bg-gray-1">
+      <div className="w-full h-full pt-14 p-8 flex flex-col justify-around items-center text-center ">
+        <p className="text-xl text-gray-8 font-light">
+          {currentBenefit.description}
         </p>
 
-        <div className="h-64 w-64 mt-5 border border-slate-800 rounded-2xl flex flex-col">
-          <div className="h-5/6 flex justify-around items-center">
-            <img className="w-8 h-8" src={leftButton} alt="left button" />
-            <img className="w-30 h-32" src={dulcinea} alt="dulcinea dog" />
-            <img className="w-8 h-8" src={rightButton} alt="right button" />
+        <div>
+          <div className="h-64 w-64 mt-5 border border-slate-800 rounded-2xl flex flex-col">
+            <div className="h-5/6 grid grid-cols-3 justify-around items-center">
+              {currentImageIndex > 0 && (
+                <ChevronLeftIcon
+                  className="w-8 h-8"
+                  onClick={handlePrevImage}
+                />
+              )}
+
+              <img
+                className="w-32 h-34"
+                src={currentBenefit.image}
+                alt="dulcinea dog"
+              />
+
+              {currentImageIndex < benefits.length - 1 && (
+                <ChevronRightIcon
+                  className="w-8 h-8"
+                  onClick={handleNextImage}
+                />
+              )}
+            </div>
+            <p>{currentBenefit.title}</p>
           </div>
-          <p>No hay límites geográficos</p>
+          <button className="w-fit py-2 px-4 mt-5 rounded-full bg-bright-green">
+            <Link to="/about">Descubrir más</Link>
+          </button>
         </div>
-        <button className="w-fit py-2 px-4 mt-5 rounded-full" id="button">
-          Descubrir más
-        </button>
       </div>
     </div>
   );
