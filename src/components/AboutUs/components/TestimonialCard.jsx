@@ -2,7 +2,7 @@ import adolescente1 from "../../../assets/adolescents/adolescente1.jpg";
 
 export const TestimonialCard = () => {
   return (
-    <div className="bg-dark-green h-[750px] w-11/12 rounded-xl flex flex-col items-center justify-evenly">
+    <div className="bg-dark-green h-[750px] w-10/12 rounded-xl flex flex-col items-center justify-evenly">
       <div className="rounded-full overflow-hidden w-64 h-64">
         <img className="object-cover" src={adolescente1} alt="" />
       </div>
