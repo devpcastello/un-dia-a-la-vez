@@ -1,10 +1,7 @@
-import { Navigate, Outlet, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Router, Routes } from "react-router-dom";
 import { HomePage, AboutPage, SelfCarePage } from "../Pages";
 import { Staff } from "../components/AboutUs/Staff/Staff";
-import { StaffDetail } from "../components/AboutUs/components/StaffDetail";
-import { Navbar } from "../components/Home";
-import { TestimonialCard } from "../components/AboutUs/components/TestimonialCard";
-import { Testimonials } from "../components/AboutUs/Testimonials/Testimonials";
+import { Footer, Navbar } from "../ui";
 
 export const AppRouter = () => {
   return (
@@ -14,13 +11,15 @@ export const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="selfcare" element={<SelfCarePage />} />
 
-        <Route path="about" element={<AboutPage />} />
-        <Route path="staff" element={<Staff />} />
-        <Route path="staff-1" element={<StaffDetail />} />
-        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="about" element={<AboutPage />}>
+          <Route path="staff" element={<Staff />} />
+        </Route>
 
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
+
+      <Footer />
+      <Outlet />
     </>
   );
 };

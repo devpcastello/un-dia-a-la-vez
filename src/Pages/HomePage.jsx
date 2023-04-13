@@ -1,10 +1,4 @@
-import {
-  Benefits,
-  BlogSection,
-  Footer,
-  Home,
-  Subscription,
-} from "../components/Home";
+import { Benefits, BlogSection, Home, Subscription } from "../components/Home";
 
 export const HomePage = () => {
   return (
@@ -13,7 +7,6 @@ export const HomePage = () => {
       <Benefits />
       <BlogSection />
       <Subscription />
-      <Footer />
     </>
   );
 };

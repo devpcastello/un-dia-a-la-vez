@@ -1,11 +1,10 @@
 import React from "react";
 
-import "../../../styles.css";
-import logo from "../../../assets/navbar-logo.png";
-import facebook from "../../../assets/icon _facebook_.png";
-import instagram from "../../../assets/icon _instagram_.png";
-import whatsapp from "../../../assets/icon _whatsapp_.png";
-import youtube from "../../../assets/icon _youtube_.png";
+import logo from "../../../src/assets/navbar-logo.png";
+import facebook from "../../../src/assets/icon _facebook_.png";
+import instagram from "../../../src/assets/icon _instagram_.png";
+import whatsapp from "../../../src/assets/icon _whatsapp_.png";
+import youtube from "../../../src/assets/icon _youtube_.png";
 
 export const Footer = () => {
   return (
