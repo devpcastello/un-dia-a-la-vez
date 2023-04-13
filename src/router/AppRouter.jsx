@@ -23,10 +23,9 @@ export const AppRouter = () => {
         <Route path="/about/testimonials" element={<Testimonials />} />
         <Route path="/about/fqa" element={<Fqa />} />
 
-        <Route path="/self-care" element={<SelfCarePage />}>
-          <Route path="/self-care/resources" element={<Resources />} />
-          <Route path="/self-care/blog" element={<Blog />} />
-        </Route>
+        <Route path="/self-care" element={<SelfCarePage />} />
+        <Route path="/self-care/blog" element={<Blog />} />
+        <Route path="/self-care/resources" element={<Resources />} />
 
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>

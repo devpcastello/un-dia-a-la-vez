@@ -27,23 +27,23 @@ export const Benefits = () => {
 
         <div>
           <div className="h-64 w-64 mt-5 border border-slate-800 rounded-2xl flex flex-col">
-            <div className="h-5/6 grid grid-cols-3 justify-around items-center">
+            <div className="h-5/6 grid grid-cols-6 justify-around items-center">
               {currentImageIndex > 0 && (
                 <ChevronLeftIcon
-                  className="w-8 h-8"
+                  className="w-8 h-8 col-span1"
                   onClick={handlePrevImage}
                 />
               )}
 
               <img
-                className="w-32 h-34"
+                className="w-40 h-40 col-span-4"
                 src={currentBenefit.image}
                 alt="dulcinea dog"
               />
 
               {currentImageIndex < benefits.length - 1 && (
                 <ChevronRightIcon
-                  className="w-8 h-8"
+                  className="w-8 h-8 col-span-1"
                   onClick={handleNextImage}
                 />
               )}

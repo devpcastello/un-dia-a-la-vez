@@ -65,10 +65,10 @@ export const Navbar = () => {
             <div className="text-xl ml-4">
               <ul>
                 <li>
-                  <Link to="/self-care/resources">Recursos</Link>
+                  <Link to="/self-care/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/self-care/blog">Blog</Link>
+                  <Link to="/self-care/resources">Recursos</Link>
                 </li>
               </ul>
             </div>
