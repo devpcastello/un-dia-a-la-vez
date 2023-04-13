@@ -1,7 +1,14 @@
+import { Outlet } from "react-router-dom";
+import { Fqa, Staff, Testimonials } from "../components/AboutUs";
+
 export const AboutPage = () => {
   return (
     <div className="pt-14">
-      <h1>AboutPage</h1>
+      <h1>Acerca de nosotros</h1>
+      <Staff />
+      <Testimonials />
+      <Fqa />
+      <Outlet />
     </div>
   );
 };

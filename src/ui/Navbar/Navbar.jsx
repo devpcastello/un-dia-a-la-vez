@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import navbarLogo from "../../../src/assets/navbar-logo.png";
 
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -19,23 +20,55 @@ export const Navbar = () => {
       <div className="sm:hidden">
         <div className={`links ${isNavOpen ? "active" : ""}`}>
           <div className="w-full h-screen m-5 text-3xl">
-            <a href="#">Inicio</a>
-            <a href="#">Terapia</a>
+            <ul>
+              <li>
+                <Link to="/">Inicio</Link>
+              </li>
+              <li>
+                <Link to="/therapy">Terapia</Link>
+              </li>
+            </ul>
             <div className="text-xl ml-4">
-              <a href="#">Terapia Online</a>
-              <a href="#">Terapia Presencial</a>
-              <a href="#">Costo Social</a>
+              <ul>
+                <li>
+                  <Link to="/therapy/online">Terapia Online</Link>
+                </li>
+                <li>
+                  <Link to="/therapy/in-person">Terapia Presencial</Link>
+                </li>
+                <li>
+                  <Link to="/therapy/social">Costo Social</Link>
+                </li>
+              </ul>
             </div>
-            <a href="#">Sobre nosotros</a>
+            <li>
+              <Link to="/about">Sobre nosotros</Link>
+            </li>
             <div className="text-xl ml-4">
-              <a href="#">Equipo</a>
-              <a href="#">Testimonios</a>
-              <a href="#">Preguntas Frecuentes</a>
+              <ul>
+                <li>
+                  <Link to="/about/staff">Equipo</Link>
+                </li>
+                <li>
+                  <Link to="/about/testimonials">Testimonios</Link>
+                </li>
+                <li>
+                  <Link to="/about/faq">Preguntas Frecuentes</Link>
+                </li>
+              </ul>
             </div>
-            <a href="#">Autocuidado</a>
+            <li>
+              <Link to="/self-care">Autocuidado</Link>
+            </li>
             <div className="text-xl ml-4">
-              <a href="#">Recursos</a>
-              <a href="#">Blog</a>
+              <ul>
+                <li>
+                  <Link to="/self-care/resources">Recursos</Link>
+                </li>
+                <li>
+                  <Link to="/self-care/blog">Blog</Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

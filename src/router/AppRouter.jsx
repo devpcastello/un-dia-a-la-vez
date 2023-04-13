@@ -1,7 +1,10 @@
 import { Navigate, Outlet, Route, Router, Routes } from "react-router-dom";
-import { HomePage, AboutPage, SelfCarePage } from "../Pages";
-import { Staff } from "../components/AboutUs/Staff/Staff";
+import { HomePage, AboutPage, SelfCarePage, TherapyPage } from "../Pages";
+
 import { Footer, Navbar } from "../ui";
+import { Blog, Resources } from "../components/SelfCare";
+import { Fqa, Testimonials, Staff } from "../components/AboutUs";
+import { InPerson, Online, Social } from "../components/Therapy";
 
 export const AppRouter = () => {
   return (
@@ -9,10 +12,20 @@ export const AppRouter = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="selfcare" element={<SelfCarePage />} />
 
-        <Route path="about" element={<AboutPage />}>
-          <Route path="staff" element={<Staff />} />
+        <Route path="/therapy" element={<TherapyPage />} />
+        <Route path="/therapy/online" element={<Online />} />
+        <Route path="/therapy/in-person" element={<InPerson />} />
+        <Route path="/therapy/social" element={<Social />} />
+
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about/staff" element={<Staff />} />
+        <Route path="/about/testimonials" element={<Testimonials />} />
+        <Route path="/about/fqa" element={<Fqa />} />
+
+        <Route path="/self-care" element={<SelfCarePage />}>
+          <Route path="/self-care/resources" element={<Resources />} />
+          <Route path="/self-care/blog" element={<Blog />} />
         </Route>
 
         <Route path="/*" element={<Navigate to={"/"} />} />

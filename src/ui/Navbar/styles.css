@@ -30,6 +30,14 @@ button:hover div:nth-child(3){
   transform: rotate(-45deg);
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 .links {
   position: absolute;
   top: -700px;
