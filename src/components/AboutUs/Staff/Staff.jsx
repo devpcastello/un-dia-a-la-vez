@@ -2,7 +2,7 @@ import { StaffCard } from "../components/StaffCard";
 
 export const Staff = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center h-screen">
       <div className="m-8 text-center">
         <h2 className="text-gray-10 text-4xl m-8 font-medium">
           Nuestro Equipo

@@ -55,7 +55,7 @@ export const Navbar = () => {
                   <Link to="/about/testimonials">Testimonios</Link>
                 </li>
                 <li>
-                  <Link to="/about/faq">Preguntas Frecuentes</Link>
+                  <Link to="/about/fqa">Preguntas Frecuentes</Link>
                 </li>
               </ul>
             </div>
