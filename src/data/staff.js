@@ -4,7 +4,7 @@ import person3 from "../assets/people/person3.jpg";
 
 export const staff = [
   {
-    // index: 1,
+    id: 1,
     name: "Almendra",
     image: `${person1}`,
     description: `
@@ -16,7 +16,7 @@ export const staff = [
     `,
   },
   {
-    // index: 2,
+    id: 2,
     name: "Angela Napolitana",
     image: `${person2}`,
     description: `
@@ -28,7 +28,7 @@ export const staff = [
     `,
   },
   {
-    // index: 2,
+    id: 3,
     name: "Oscar Bermudez",
     image: `${person3}`,
     description: `

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { staff } from "../../../data/staff";
 
@@ -17,6 +19,7 @@ export const StaffCard = () => {
   };
 
   const currentStaff = staff[currentImageIndex];
+  console.log(currentStaff);
 
   return (
     <section className="w-full h-auto flex flex-col justify-center items-center gap-8">
@@ -44,7 +47,9 @@ export const StaffCard = () => {
         </div>
         <div>
           <h2 className="text-xl font-medium mt-5">{currentStaff.name}</h2>
-          <p className="text-sm font-light">Ver más</p>
+          <Link to={`/about/staff/${currentStaff.id}`}>
+            <p className="text-sm font-light">Ver más</p>
+          </Link>
         </div>
       </div>
     </section>

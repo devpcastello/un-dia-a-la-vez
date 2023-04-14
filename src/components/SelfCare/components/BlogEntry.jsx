@@ -3,8 +3,6 @@ import { posts } from "../../../data/posts";
 
 export const BlogEntry = () => {
   const { index } = useParams();
-  console.log(index);
-
   const post = posts.find((p) => p.id === parseInt(index));
 
   return (

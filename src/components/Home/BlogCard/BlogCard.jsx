@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { posts } from "../../../data/posts";
 
 export const BlogCard = () => {
@@ -26,7 +26,6 @@ export const BlogCard = () => {
               </div>
             </div>
           </div>
-          <Outlet />
         </Link>
       ))}
     </div>

@@ -6,6 +6,7 @@ import { Blog, Resources } from "../components/SelfCare";
 import { Fqa, Testimonials, Staff } from "../components/AboutUs";
 import { InPerson, Online, Social } from "../components/Therapy";
 import { BlogEntry } from "../components/SelfCare/components/BlogEntry";
+import { StaffDetail } from "../components/AboutUs/components/StaffDetail";
 
 export const AppRouter = () => {
   return (
@@ -20,9 +21,10 @@ export const AppRouter = () => {
         <Route path="/therapy/social" element={<Social />} />
 
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/about/staff/:person" element={<Staff />} />
         <Route path="/about/testimonials" element={<Testimonials />} />
         <Route path="/about/fqa" element={<Fqa />} />
+        <Route path="/about/staff" element={<Staff />} />
+        <Route path="/about/staff/:index" element={<StaffDetail />} />
 
         <Route path="/self-care" element={<SelfCarePage />} />
         <Route path="/self-care/blog" element={<Blog />} />
