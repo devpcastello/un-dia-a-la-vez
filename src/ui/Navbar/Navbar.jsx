@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import navbarLogo from "../../../src/assets/navbar-logo.png";
-
 import "./styles.css";
 import { Link } from "react-router-dom";
 
@@ -8,7 +7,6 @@ export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
-    //cuando es true lo pasa a false y visceversa
     setIsNavOpen(!isNavOpen);
   };
 
@@ -19,9 +17,11 @@ export const Navbar = () => {
           <img className="h-10 w-auto" src={navbarLogo} alt="" />
         </Link>
       </div>
-      <div className="sm:hidden">
+
+      {/* Navegación en pantallas pequeñas */}
+      <div className="lg:hidden xl:hidden">
         <div className={`links ${isNavOpen ? "active" : ""}`}>
-          <div className="w-full flex flex-col gap-2 h-screen m-5 text-3xl">
+          <div className="w-full flex flex-col gap-3 h-screen m-5 text-3xl p-5 pt-10">
             <ul>
               <li>
                 <Link to="/">Inicio</Link>
@@ -76,13 +76,31 @@ export const Navbar = () => {
         </div>
       </div>
       <button
-        className="menu-button flex justify-center items-center md:hidden lg:hidden"
+        className="menu-button  justify-center items-center lg:hidden xl:hidden hidden"
         onClick={toggleNav}
       >
         <div></div>
         <div></div>
         <div></div>
       </button>
+
+      {/* Navegación en pantallas grandes */}
+      <div className="hidden lg:flex xl:flex">
+        <ul className="flex gap-8 text-xl">
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/therapy">Terapia</Link>
+          </li>
+          <li>
+            <Link to="/about">Sobre nosotros</Link>
+          </li>
+          <li>
+            <Link to="/self-care">Autocuidado</Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

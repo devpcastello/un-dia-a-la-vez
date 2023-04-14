@@ -6,7 +6,7 @@ export const BlogCard = () => {
       {posts.map(({ title, image, date, description }) => (
         <div
           key={title}
-          className="bg-gray-2 w-80 h-96 rounded-lg mx-auto text-center md:w-[350px] xl:w-[360px]"
+          className="bg-gray-2 w-80 h-96 rounded-lg mx-auto text-center md:w-[350px] xl:w-[330px]"
         >
           <div className="h-48 w-full ">
             <img
