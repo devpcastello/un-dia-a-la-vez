@@ -48,4 +48,15 @@ export const posts = [
     inventore debitis.
     `,
   },
+  {
+    date: "01/04/2023",
+    image: `${post4}`,
+    title: "Cuarto post que se está publicando en el blog",
+    description: `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+    quia ad tempora vitae. Saepe deserunt dolore iure fuga libero quod
+    nostrum dignissimos illo voluptas pariatur, rem aliquid repudiandae
+    inventore debitis.
+    `,
+  },
 ];

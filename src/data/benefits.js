@@ -24,7 +24,7 @@ export const benefits = [
     `,
   },
   {
-    title: "El mismo resultado que una terpia presencial",
+    title: "El mismo resultado que una terapia presencial",
     image: `${dulcinea2}`,
     description: `
     La terapia online ofrece el mismo resultado que una terapia presencial, con la ventaja de poder realizarla desde la comodidad de tu hogar. Al ser una terapia basada en la comunicación, la efectividad de la misma no se ve comprometida por la distancia física. Además, contar con la tecnología actual permite a los terapeutas utilizar herramientas digitales para mejorar el proceso terapéutico y hacerlo más ameno.

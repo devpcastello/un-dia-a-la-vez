@@ -4,7 +4,7 @@ import dulcinea from "../../../assets/dulcinea-3.png";
 
 export const Subscription = () => {
   return (
-    <div className="bg-light-green h-[700px] w-full flex flex-col justify-center items-center">
+    <div className="bg-light-green h-screen w-full flex flex-col justify-center items-center">
       <div className="w-10/12 h-auto">
         <div className="text-center mb-5">
           <h3 className="text-3xl my-8 font-medium text-gray-10">

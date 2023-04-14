@@ -3,7 +3,7 @@ import { TestimonialCard } from "../components/TestimonialCard";
 
 export const Testimonials = () => {
   return (
-    <section className="pt-14 w-full h-auto flex flex-col justify-center items-center">
+    <section className="w-full h-auto flex flex-col justify-center items-center">
       <div className="m-8">
         <h2 className="text-gray-10 text-4xl my-8 text-center font-medium">
           Testimonios

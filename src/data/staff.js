@@ -5,7 +5,7 @@ import person3 from "../assets/people/person3.jpg";
 export const staff = [
   {
     // index: 1,
-    name: "Marianella Vorza",
+    name: "Almendra",
     image: `${person1}`,
     description: `
     ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
