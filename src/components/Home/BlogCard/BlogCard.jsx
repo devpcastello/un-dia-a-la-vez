@@ -2,11 +2,11 @@ import { posts } from "../../../data/posts";
 
 export const BlogCard = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-6">
       {posts.map(({ title, image, date, description }) => (
         <div
           key={title}
-          className="bg-gray-2 w-11/12 h-96 rounded-lg mx-auto  text-center"
+          className="bg-gray-2 w-80 h-96 rounded-lg mx-auto text-center md:w-[350px] xl:w-[360px]"
         >
           <div className="h-48 w-full ">
             <img
