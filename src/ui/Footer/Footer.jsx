@@ -8,10 +8,10 @@ import youtube from "../../../src/assets/icon _youtube_.png";
 
 export const Footer = () => {
   return (
-    <div className=" bg-light-green h-[500px] ">
-      <div className="h-[500px] flex flex-col justify-center items-center  gap-8 ">
+    <div className=" bg-light-green h-[580px]  relative">
+      <div className="h-[500px] flex flex-col justify-center items-center  gap-6">
         <div className="pb-5 border-b-2 border-slate-700">
-          <img className="mt-5" src={logo} alt="" />
+          <img className="mt-5 min-w-[360px] max-h-[120px]" src={logo} alt="" />
         </div>
         <div>
           <p className="mb-3">Conoce nuestras redes sociales:</p>
@@ -29,10 +29,10 @@ export const Footer = () => {
             <img className="h-12" src={whatsapp} alt="" />
           </div>
         </div>
-        <div className="w-full h-20 text-white p-3 mt-8 left-0 bg-slate-900 ">
-          <p>2023</p>
-          <p>Todos los derechos reservados</p>
-        </div>
+      </div>
+      <div className="w-full h-20 text-white p-3 mt-8 left-0 bg-slate-900 absolute bottom-0 right-0">
+        <p>2023</p>
+        <p>Todos los derechos reservados</p>
       </div>
     </div>
   );

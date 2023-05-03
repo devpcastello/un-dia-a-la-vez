@@ -4,7 +4,7 @@ export const Therapies = () => {
   return (
     <div>
       {therapies.map((therapy) => (
-        <div className="m-4">
+        <div key={therapy.title} className="m-4">
           <h1 className="text-3xl text-center text-gray-10 font-bold m-10">
             {therapy.title}
           </h1>
