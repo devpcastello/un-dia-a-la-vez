@@ -13,7 +13,7 @@ export const benefits = [
     title: "Flexibilidad en las consultas",
     image: `${dulcinea2}`,
     description: `
-    La terapia online ofrece una gran flexibilidad en las consultas, ya que puedes elegir el horario que mejor se adapte a tus necesidades y compromisos. Además, puedes tener acceso a tu terapeuta desde cualquier lugar del mundo, lo que significa que no tienes que preocuparte por las barreras geográficas. Esta flexibilidad también te permite ajustar la frecuencia de las sesiones en función de tu disponibilidad, lo que te ayuda a mantener el equilibrio entre tus responsabilidades y tu bienestar emocional.
+    La terapia online ofrece una gran flexibilidad en las consultas, ya que puedes elegir el horario que mejor se adapte a tus necesidades y compromisos. Además, puedes tener acceso a tu terapeuta desde cualquier lugar del mundo, lo que significa que no tienes que preocuparte por las barreras geográficas. Esta flexibilidad también te permite ajustar la frecuencia de las sesiones en función de tu disponibilidad.
     `,
   },
   {

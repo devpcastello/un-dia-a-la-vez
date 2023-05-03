@@ -3,7 +3,7 @@ import { posts } from "../../../data/posts";
 
 export const BlogCard = () => {
   return (
-    <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-6">
+    <div className="w-full h-fit grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
       {posts.map(({ id, title, image, date, description }) => (
         <Link key={title} to={`/self-care/blog/${id}`}>
           <div className="bg-gray-2 w-80 h-96 rounded-lg mx-auto text-center md:w-[350px] xl:w-[330px]">
