@@ -4,7 +4,6 @@ import { HomePage, AboutPage, SelfCarePage, TherapyPage } from "../Pages";
 import { Footer, Navbar } from "../ui";
 import { Blog, Resources } from "../components/SelfCare";
 import { Fqa, Testimonials, Staff } from "../components/AboutUs";
-import { InPerson, Online, Social } from "../components/Therapy";
 import { BlogEntry } from "../components/SelfCare/components/BlogEntry";
 import { StaffDetail } from "../components/AboutUs/components/StaffDetail";
 
@@ -16,9 +15,6 @@ export const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
 
         <Route path="/therapy" element={<TherapyPage />} />
-        <Route path="/therapy/online" element={<Online />} />
-        <Route path="/therapy/in-person" element={<InPerson />} />
-        <Route path="/therapy/social" element={<Social />} />
 
         <Route path="/about" element={<AboutPage />} />
         <Route path="/about/testimonials" element={<Testimonials />} />

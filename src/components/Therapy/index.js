@@ -1,3 +1,1 @@
-export * from "./InPerson/InPerson";
-export * from "./Online/Online";
-export * from "./Social/Social";
+export * from "./Therapies/Therapies";
