@@ -48,7 +48,7 @@ export const StaffCard = () => {
         <div>
           <h2 className="text-xl font-medium mt-5">{currentStaff.name}</h2>
           <Link to={`/about/staff/${currentStaff.id}`}>
-            <p className="text-sm font-light">Ver más</p>
+            <p className="text-sm text-center font-light">Ver más</p>
           </Link>
         </div>
       </div>

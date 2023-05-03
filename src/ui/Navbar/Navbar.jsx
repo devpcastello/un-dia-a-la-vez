@@ -75,8 +75,9 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+
       <button
-        className="menu-button  justify-center items-center lg:hidden xl:hidden hidden"
+        className="menu-button flex justify-center items-center lg:hidden xl:hidden "
         onClick={toggleNav}
       >
         <div></div>

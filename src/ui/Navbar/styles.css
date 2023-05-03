@@ -1,5 +1,4 @@
 .menu-button{
-  display: flex;
   flex-direction: column;
   width: 1.25rem;
   height: 1rem;
@@ -64,4 +63,3 @@ li {
   right: 0;
 
 }
---dark-green: #438997;
