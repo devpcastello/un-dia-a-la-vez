@@ -11,7 +11,7 @@ export const Home = () => {
     >
       <div className="w-auto h-1/2 mt-[200px] flex justify-center items-center z-10 relative md:mt-[100px]">
         <img
-          className="w-min-96 h-min-96 absolute z-[-10] md:min-w-[500px] md:min-h-[500px] xl:min-w-[900px] xl:min-h-[900px] "
+          className="w-[400px] max-w-md w-min-96 h-min-96 absolute z-[-10] md:min-w-[500px] md:min-h-[500px] xl:min-w-[900px] xl:min-h-[900px] "
           src={blob}
           alt=""
         />
