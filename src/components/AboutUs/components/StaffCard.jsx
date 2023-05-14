@@ -5,7 +5,7 @@ import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { staff } from "../../../data/staff";
 
 export const StaffCard = () => {
-  // Se crea un estado para almacenar dónde estamos al momento de renderizar las tarjetas
+  // Se crea un estado para almacenar dónde estamos al momento de mostrar las tarjetas
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Maneja la transición de las tarjetas al presionar sobre el ícono de siguiente

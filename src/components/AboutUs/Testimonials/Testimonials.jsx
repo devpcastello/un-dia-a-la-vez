@@ -8,7 +8,7 @@ export const Testimonials = () => {
         <h2 className="text-gray-10 text-4xl my-8 text-center font-medium">
           Testimonios
         </h2>
-        <p className="text-gray-8">
+        <p className="text-gray-8 xl:text-xl xl:mx-16">
           ¡Aquí te presentamos algunas opiniones de nuestros clientes
           satisfechos! Nos enorgullece saber que hemos cumplido con sus
           expectativas y hemos brindado soluciones efectivas a sus necesidades.
