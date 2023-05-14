@@ -13,6 +13,9 @@ export const Navbar = () => {
   return (
     <div className="h-14 w-full flex justify-around items-center fixed top-0 bg-white z-50">
       <div>
+        {/*
+        //TODO cambiar el logo
+         */}
         <Link to="/">
           <img className="h-10 w-auto" src={navbarLogo} alt="" />
         </Link>
