@@ -1,9 +1,9 @@
-import { Benefits, BlogSection, Home, Subscription } from "../components/Home";
+import { Benefits, BlogSection, Hero, Subscription } from "../components/Home";
 
 export const HomePage = () => {
   return (
     <>
-      <Home />
+      <Hero />
       <Benefits />
       <BlogSection />
       <Subscription />

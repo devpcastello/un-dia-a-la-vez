@@ -27,10 +27,14 @@ export const Navbar = () => {
           <div className="w-full flex flex-col gap-3 h-screen m-5 text-3xl p-5 pt-10">
             <ul>
               <li>
-                <Link to="/">Inicio</Link>
+                <Link to="/" onClick={toggleNav}>
+                  Inicio
+                </Link>
               </li>
               <li>
-                <Link to="/therapy">Terapia</Link>
+                <Link to="/therapy" onClick={toggleNav}>
+                  Terapia
+                </Link>
               </li>
             </ul>
             <div className="text-xl ml-4">
@@ -47,31 +51,45 @@ export const Navbar = () => {
               </ul>
             </div>
             <li>
-              <Link to="/about">Sobre nosotros</Link>
+              <Link to="/about" onClick={toggleNav}>
+                Sobre nosotros
+              </Link>
             </li>
             <div className="text-xl ml-4">
               <ul>
                 <li>
-                  <Link to="/about/staff">Equipo</Link>
+                  <Link to="/about/staff" onClick={toggleNav}>
+                    Equipo
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/about/testimonials">Testimonios</Link>
+                  <Link to="/about/testimonials" onClick={toggleNav}>
+                    Testimonios
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/about/fqa">Preguntas Frecuentes</Link>
+                  <Link to="/about/fqa" onClick={toggleNav}>
+                    Preguntas Frecuentes
+                  </Link>
                 </li>
               </ul>
             </div>
             <li>
-              <Link to="/self-care">Autocuidado</Link>
+              <Link to="/self-care" onClick={toggleNav}>
+                Autocuidado
+              </Link>
             </li>
             <div className="text-xl ml-4">
               <ul>
                 <li>
-                  <Link to="/self-care/blog">Blog</Link>
+                  <Link to="/self-care/blog" onClick={toggleNav}>
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/self-care/resources">Recursos</Link>
+                  <Link to="/self-care/resources" onClick={toggleNav}>
+                    Recursos
+                  </Link>
                 </li>
               </ul>
             </div>
