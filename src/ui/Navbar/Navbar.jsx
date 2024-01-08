@@ -24,7 +24,7 @@ export const Navbar = () => {
       {/* Navegación en pantallas pequeñas */}
       <div className="lg:hidden xl:hidden">
         <div className={`links ${isNavOpen ? "active" : ""}`}>
-          <div className="w-full flex flex-col gap-3 h-screen m-5 text-3xl p-5 pt-10">
+          <div className="w-full flex flex-col gap-3 h-screen m-5 text-base p-5 pt-10">
             <ul>
               <li>
                 <Link to="/" onClick={toggleNav}>
@@ -32,15 +32,15 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/therapy" onClick={toggleNav}>
+                <Link to="/therapy" onClick={toggleNav }>
                   Terapia
                 </Link>
               </li>
             </ul>
-            <div className="text-xl ml-4">
+            <div className=" ml-4 ">
               <ul>
                 <li>
-                  <Link to="/therapy/online">Terapia Online</Link>
+                  <Link to="/therapy/online" className="bg-slate-950">Terapia Online</Link>
                 </li>
                 <li>
                   <Link to="/therapy/in-person">Terapia Presencial</Link>
@@ -51,11 +51,11 @@ export const Navbar = () => {
               </ul>
             </div>
             <li>
-              <Link to="/about" onClick={toggleNav}>
+              <Link to="/about" onClick={toggleNav} >
                 Sobre nosotros
               </Link>
             </li>
-            <div className="text-xl ml-4">
+            <div className=" ml-4">
               <ul>
                 <li>
                   <Link to="/about/staff" onClick={toggleNav}>
@@ -79,7 +79,7 @@ export const Navbar = () => {
                 Autocuidado
               </Link>
             </li>
-            <div className="text-xl ml-4">
+            <div className=" ml-4">
               <ul>
                 <li>
                   <Link to="/self-care/blog" onClick={toggleNav}>
@@ -108,7 +108,7 @@ export const Navbar = () => {
 
       {/* Navegación en pantallas grandes */}
       <div className="hidden lg:flex xl:flex">
-        <ul className="flex gap-8 text-xl">
+        <ul className="flex gap-8 ">
           <li>
             <Link to="/">Inicio</Link>
           </li>

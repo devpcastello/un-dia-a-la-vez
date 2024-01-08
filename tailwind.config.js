@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      typography: {
+        base: '16px', // Personaliza este valor según tus necesidades
+      },
+
       fontWeight: {
         'extra-bold': 800,
         bold: 700,
@@ -10,15 +14,17 @@ module.exports = {
         light: 200,
       },
       colors: {
-        "dark-green": "#438997",
-        "light-blue": "#8CCEDC",
-        "dull-blue": "#81A7AE",
-        "white-blue": "#DEEDF0",
-        "strong-green": "#2DB742",
-        "swamp-green": "#68C482",
-        "yellow": "#F0DF7D",
-        "yellow-green": "#8CE88F",
-        "lemon-green": "#AEFA94",
+        custom:{
+          "dark-green": "#438997",
+          "light-blue": "#8CCEDC",
+          "dull-blue": "#81A7AE",
+          "white-blue": "#DEEDF0",
+          "strong-green": "#2DB742",
+          "swamp-green": "#68C482",
+          "yellow": "#F0DF7D",
+          "yellow-green": "#8CE88F",
+          "lemon-green": "#AEFA94",
+        },
         "gray-1": "#DDDDDD",
         "gray-2": "#CCCCCC",
         "gray-3": "#BBBBBB",
@@ -74,5 +80,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...otros plugins
+  ],
 };
