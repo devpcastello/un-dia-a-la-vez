@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../dist/main.css";
+import "./index.css"
 
 import { AppRouter } from "./router/AppRouter";
 
