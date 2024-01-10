@@ -1,6 +1,8 @@
 import { Navigate, Outlet, Route, Router, Routes } from "react-router-dom";
 import { HomePage, AboutPage, SelfCarePage, TherapyPage } from "../Pages";
 
+
+
 import { Footer, Navbar } from "../ui";
 import { Blog, Resources } from "../components/SelfCare";
 import { Fqa, Testimonials, Staff } from "../components/AboutUs";
@@ -10,6 +12,7 @@ import { StaffDetail } from "../components/AboutUs/components/StaffDetail";
 export const AppRouter = () => {
   return (
     <>
+
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
