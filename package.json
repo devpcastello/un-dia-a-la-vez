@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "tailwind": "npx tailwindcss -i ./src/index.css --watch",
-    "start": "serve dist -s -n -L $PORT"
+    "start": "serve dist -s -n -L -p $PORT"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.17",
