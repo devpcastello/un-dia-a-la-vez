@@ -19,7 +19,7 @@ export const TestimonialCard = () => {
   const currentTestimonial = testimonials[currentImageIndex];
 
   return (
-    <section className="bg-dark-green h-[750px] w-[350px] rounded-xl flex flex-col items-center justify-evenly">
+    <section className="bg-color6 h-[750px] w-[350px] rounded-xl flex flex-col items-center justify-evenly">
       <div className="text-center relative  h-[700px] rounded-2xl flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-center my-8">
           {currentImageIndex > 0 && (

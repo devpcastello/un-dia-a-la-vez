@@ -9,7 +9,7 @@ export const StaffPanel = () => {
     <>
       <div className="w-full h-full flex flex-row  gap-8" key={name}>
         {staff.map(({ id, name, image }) => (
-          <div className="bg-light-green relative w-[350px] h-[480px] rounded-2xl flex flex-col justify-center items-center ">
+          <div className="bg-color9 relative w-[350px] h-[480px] rounded-2xl flex flex-col justify-center items-center ">
             <div className="flex flex-col justify-center items-center mt-10">
               <div className="w-[280px] h-[360px] flex items-center justify-center">
                 <img
