@@ -13,13 +13,13 @@ body{
   --light-green: #DEEDF0;
 }
 
-.dark-button{
+/* .dark-button{
   @apply bg-color7 text-white
 }
 
 .bright-button{
   @apply bg-color7 text-white
-}
+} */
 
 .card-image{
   object-fit: cover;
