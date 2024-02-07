@@ -23,7 +23,7 @@ export const StaffCard = () => {
 
   return (
     <section className="w-full h-auto flex flex-col justify-center items-center gap-8">
-      <div className="bg-light-green relative w-[350px] h-[480px] rounded-2xl flex flex-col justify-center items-center ">
+      <div className="bg-color9 relative w-[350px] h-[480px] rounded-2xl flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-center mt-10">
           {currentImageIndex > 0 && (
             <ChevronLeftIcon

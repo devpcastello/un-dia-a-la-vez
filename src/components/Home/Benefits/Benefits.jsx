@@ -89,7 +89,7 @@ export const Benefits = () => {
           ))}
         </div>
 
-        <button className="w-fit py-2 px-4 mt-5 rounded-full bg-bright-green md:py-3 md:px-5 md:text-xl">
+        <button className="w-fit py-2 px-4 mt-5 rounded-full bg-color7 md:py-3 md:px-5 md:text-xl">
           <Link to="/about">Descubrir más</Link>
         </button>
       </div>

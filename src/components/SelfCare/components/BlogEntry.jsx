@@ -6,7 +6,7 @@ export const BlogEntry = () => {
   const post = posts.find((p) => p.id === parseInt(index));
 
   return (
-    <div className="bg-dark-green pt-14">
+    <div className="bg-color6 pt-14">
       {post ? (
         <>
           <div className="w-full h-64 rounded-b-xl overflow-hidden">

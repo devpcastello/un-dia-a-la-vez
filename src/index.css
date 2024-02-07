@@ -14,11 +14,11 @@ body{
 }
 
 .dark-button{
-  @apply bg-light-green text-white
+  @apply bg-color7 text-white
 }
 
 .bright-button{
-  @apply bg-bright-green text-white
+  @apply bg-color7 text-white
 }
 
 .card-image{

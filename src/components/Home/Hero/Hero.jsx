@@ -31,7 +31,7 @@ export const Hero = () => {
           Nuestros servicios se diferencian por
         </p>
       </div>
-      <button className="bg-dark-green bottom-10 absolute py-2 px-4 rounded-full text-white xl:text-2xl xl:py-4 xl:px-6">
+      <button className="bg-color6 bottom-10 absolute py-2 px-4 rounded-full text-white xl:text-2xl xl:py-4 xl:px-6">
         <Link to="/about">Quiero saber más!</Link>
       </button>
     </div>
