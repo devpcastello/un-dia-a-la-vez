@@ -1,24 +1,65 @@
-export const menu = [
+export const menuOptions = [
   {
     name: "Terapia Online",
-    options: null,
+    link: "/",
+    options: [],
   },
   {
     name: "Otros Servicios",
+    link: "/therapy",
     options: [
-      "Terapia Presencial",
-      "Costo Social",
-      "Piscoterapia Familiar",
-      "Charlas",
-      "Talleres",
+      {
+        subLinkName: "Terapia Presencial",
+        subLink: "/therapy/in-person",
+      },
+      {
+        subLinkName: "Costo Social",
+        subLink: "/therapy/social",
+      },
+      {
+        subLinkName: "Psicoterapia Familiar",
+        subLink: "/therapy/familiar",
+      },
+      {
+        subLinkName: "Psicoterapia Familiar",
+        subLink: "/therapy/familiar",
+      },
+      {
+        subLinkName: "Charlas",
+        subLink: "test",
+      },
+      {
+        subLinkName: "Talleres",
+        subLink: "test",
+      },
     ],
   },
   {
     name: "Acerca de nosotros",
-    options: ["Equipo", "Testimonios"],
+    link: "/about",
+    options: [
+      {
+        subLinkName: "Equipo",
+        subLink: "/about/staff",
+      },
+      {
+        subLinkName: "Testimonios",
+        subLink: "/about/testimonials",
+      },
+    ],
   },
   {
-    name: "Recursos",
-    options: ["Newsletter", "Blog"],
+    name: "Auto cuidado",
+    subLink: "/self-care",
+    options: [
+      {
+        subLinkName: "Blog",
+        subLink: "/self-care/blog",
+      },
+      {
+        subLinkName: "Recursos",
+        subLink: "/self-care/resources",
+      },
+    ],
   },
 ];
