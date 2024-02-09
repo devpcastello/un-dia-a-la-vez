@@ -1,4 +1,4 @@
-.menu-button{
+/* .menu-button{
   flex-direction: column;
   width: 1.25rem;
   height: 1rem;
@@ -6,8 +6,8 @@
   background: transparent;
   gap: 0.3rem;
   z-index: 100;
-}
-
+} */
+/*
 .menu-button >div {
   background: black;
   height: 2px;
@@ -15,9 +15,9 @@
   border-radius: 5px;
   transition: all .5s;
   transform-origin: left;
-}
+} */
 
-button:hover div:first-child{
+/* button:hover div:first-child{
   transform: rotate(45deg);
 }
 
@@ -27,7 +27,7 @@ button:hover div:nth-child(2){
 
 button:hover div:nth-child(3){
   transform: rotate(-45deg);
-}
+} */
 
 ul {
   list-style-type: none;
@@ -50,6 +50,7 @@ li {
   display: block;
 }
 
+/* Despliega el menu en mobile */
 .links.active{
   background: #438997;
   width: 100%;

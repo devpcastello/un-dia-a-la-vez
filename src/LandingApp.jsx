@@ -10,7 +10,7 @@ function LandingApp() {
   return (
     <>
       <AppRouter />
-      <FloatingWhatsApp
+      {/* <FloatingWhatsApp
         phoneNumber="+51977133653"
         accountName="Un día a la vez"
         statusMessage="Estamos disponibles"
@@ -19,7 +19,7 @@ function LandingApp() {
         notificationSound
         notification
         allowClickAway
-      />
+      /> */}
     </>
   );
 }
