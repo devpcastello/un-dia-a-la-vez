@@ -57,37 +57,39 @@ export const Navbar = () => {
           <div
             className={`fixed inset-0 top-[4rem] z-50 list-item  flex-col md:hidden xl:hidden bg-dark-green`}
           >
-            <ul className="flex w-full flex-col text-white">
-              {menuOptions.map(({ name, link, options }) => (
-                <ul key={name}>
-                  <li
-                    onClick={() => {
-                      toggleNav();
-                      setIsOpen((prev) => !prev);
-                    }}
-                    className="bg-light-blue text-left"
-                  >
-                    {name}
-                    {!isOpen ? UpChevron : UpChevron}
-                  </li>
+            {/* <ul className=""> */}
+            {menuOptions.map(({ name, link, options }) => (
+              <ul key={name} className="flex w-full flex-col text-white mt-6 ">
+                <li
+                  onClick={() => {
+                    toggleNav();
+                    setIsOpen((prev) => !prev);
+                  }}
+                  className="bg-light-blue text-left rounded-full px-4 py-2 mb-4 flex justify-between items-center"
+                >
+                  {name}
+                  {!isOpen && options ? <DownChevron /> : <UpChevron />}
+                </li>
 
-                  {/* Opciones de la lista desplegable */}
-                  {options.map(({ subLinkName, subLink }) => (
-                    <li value="">
-                      <a key={subLinkName}>
-                        <Link
-                          to={subLink}
-                          onClick={toggleNav}
-                          className="text-left"
-                        >
-                          {subLinkName}
-                        </Link>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              ))}
-            </ul>
+                {/* Opciones de la lista desplegable */}
+                {isOpen
+                  ? options.map(({ subLinkName, subLink }) => (
+                      <li value="">
+                        <a key={subLinkName}>
+                          <Link
+                            to={subLink}
+                            onClick={toggleNav}
+                            className="text-left pl-7"
+                          >
+                            {subLinkName}
+                          </Link>
+                        </a>
+                      </li>
+                    ))
+                  : null}
+              </ul>
+            ))}
+            {/* </ul> */}
           </div>
         )}
       </div>
