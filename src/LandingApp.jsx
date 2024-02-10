@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-import logo from "./assets/logo.svg";
+import logo from "./assets/Logo.jsx";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
