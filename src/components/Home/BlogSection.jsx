@@ -1,8 +1,8 @@
 import React from "react";
-import { BlogCard } from "../BlogCard/BlogCard";
+import { BlogCard } from "./BlogCard";
 
-import image1 from "../../../assets/posts/post2.jpg";
-import image2 from "../../../assets/posts/post3.jpg";
+import image1 from "../../assets/posts/post2.jpg";
+import image2 from "../../assets/posts/post3.jpg";
 
 export const BlogSection = () => {
   return (

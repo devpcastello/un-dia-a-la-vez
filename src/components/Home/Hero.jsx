@@ -1,5 +1,5 @@
-import dulcinea from "../../../assets/dulcinea-1.png";
-import blob from "../../../assets/blob.svg";
+import dulcinea from "../../assets/dulcinea-1.png";
+import blob from "../../assets/blob.svg";
 import { Link } from "react-router-dom";
 
 export const Hero = () => {

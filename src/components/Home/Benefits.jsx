@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
-import { benefits } from "../../../data/benefits";
-import CaminoBlob from "../../../assets/CaminoBlob";
+import { benefits } from "../../data/benefits";
+import CaminoBlob from "../../assets/CaminoBlob";
 
 export const Benefits = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

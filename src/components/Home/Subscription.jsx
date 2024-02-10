@@ -1,6 +1,6 @@
 import React from "react";
 
-import dulcinea from "../../../assets/dulcinea-3.png";
+import dulcinea from "../../assets/dulcinea-3.png";
 
 export const Subscription = () => {
   return (
