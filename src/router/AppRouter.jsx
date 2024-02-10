@@ -31,7 +31,6 @@ export const AppRouter = () => {
 
         <Route path="/self-care/resources" element={<Resources />} />
 
-        {/* <Route path="/*" element={<Navigate to={"/"} />} /> */}
       </Routes>
 
       <Footer />
