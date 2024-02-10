@@ -10,15 +10,11 @@ export const menuOptions = [
     options: [
       {
         subLinkName: "Terapia Presencial",
-        subLink: "/therapy/in-person",
+        subLink: "/therapy",
       },
       {
         subLinkName: "Costo Social",
         subLink: "/therapy/social",
-      },
-      {
-        subLinkName: "Psicoterapia Familiar",
-        subLink: "/therapy/familiar",
       },
       {
         subLinkName: "Psicoterapia Familiar",
