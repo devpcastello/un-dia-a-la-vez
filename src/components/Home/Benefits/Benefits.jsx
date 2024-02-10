@@ -8,7 +8,7 @@ import CaminoBlob from "../../../assets/CaminoBlob";
 
 export const Benefits = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  // Muestra la descripción en pantallas xl
+
   const [selectedBenefitDescription, setSelectedBenefitDescription] = useState(
     benefits[0].description
   );
@@ -30,7 +30,7 @@ export const Benefits = () => {
   return (
     <section className="bg-gray-1 mx-auto flex flex-col px-6 py-16 lg:px-32 lg:py-16 items-center">
       <div className="relative md:hidden max-w-xs">
-        <p>Te ayudamos a encontrar tu camino.</p>
+        <h2>Te ayudamos a encontrar tu camino.</h2>
         <strong>Un día a la vez</strong>
         <CaminoBlob />
         <p className="absolute top-56 left-14">
