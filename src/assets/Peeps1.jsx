@@ -1,10 +1,9 @@
 import React from "react";
 
-const PeepsLink = ({ width, height }) => {
+const PeepsLink1 = ({ width, height }) => {
   return (
     <a
       className="css-peeps"
-      href="https://css-peeps.com/"
       target="_blank"
       style={{
         "--peep-head": "teddy",
@@ -25,10 +24,9 @@ const PeepsLink = ({ width, height }) => {
         width: `${width}px`, // Usa la variable width
         height: `${height}px`, // Usa la variable height
         background: "white",
-        borderRadius: "10px",
       }}
     ></a>
   );
 };
 
-export default PeepsLink;
+export default PeepsLink1;
