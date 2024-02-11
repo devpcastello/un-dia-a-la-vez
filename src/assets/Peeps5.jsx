@@ -22,8 +22,8 @@ const PeepsLink5 = ({ width, height }) => {
           "--peep-body-offset-x": "0px",
           "--peep-body-offset-y": "10px",
           display: "inline-block",
-          width: `${width}px`, // Usa la variable width
-          height: `${height}px`, // Usa la variable height
+          width: `${width}px`,
+          height: `${height}px`,
           background: "white",
         }}
       ></a>

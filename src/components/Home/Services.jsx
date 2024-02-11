@@ -4,11 +4,11 @@ import { services } from "../../data/services";
 
 export const Services = () => {
   return (
-    <section className="bg-dark-green mx-auto flex flex-col px-6 py-16 lg:px-32 lg:py-16 items-center ">
-      <h2 className="justify-self-start align-self-start text-h4 text-white font-bold mb-8 ">
+    <section className="bg-lemon-green bg-opacity-50 mx-auto flex flex-col px-6 py-16 lg:px-32 lg:py-16 items-center ">
+      <h2 className="justify-self-start align-self-start text-h4 text-gray-9 font-bold mb-8 ">
         Nuestros servicios
       </h2>
-      <p className="text-white text-h6 mb-10">
+      <p className="text-gray-9 text-h6 mb-10">
         Conoce más acerca de nuestros servicios
       </p>
 

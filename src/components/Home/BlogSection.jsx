@@ -25,7 +25,7 @@ export const BlogSection = () => {
         <p className="text-base ">
           Contenido gratuito que te ayudará a conocerte a ti mismo
         </p>
-        <button className="px-6 py-3 rounded-full bg-swamp-green mt-6 text-base">
+        <button className="px-6 py-3 rounded-full bg-swamp-green mt-6 text-base font-semibold">
           Ver más
         </button>
       </div>
@@ -44,7 +44,7 @@ export const BlogSection = () => {
         <p className="text-base ">
           Contenido gratuito que te ayudará a conocerte a ti mismo
         </p>
-        <button className="px-6 py-3 rounded-full bg-swamp-green mt-6 text-base">
+        <button className="px-6 py-3 rounded-full bg-swamp-green mt-6 text-base font-semibold">
           Ver más
         </button>
       </div>

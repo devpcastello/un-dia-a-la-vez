@@ -28,7 +28,7 @@ export const Benefits = () => {
   const currentBenefit = benefits[currentImageIndex];
 
   return (
-    <section className="bg-gray-1 mx-auto flex flex-col px-6 py-16 lg:px-32 lg:py-16 items-center">
+    <section className="bg-lemon-green bg-opacity-50 mx-auto flex flex-col px-6 py-16 lg:px-32 lg:py-16 items-center">
       <div className="relative md:hidden max-w-xs">
         <h2>Te ayudamos a encontrar tu camino.</h2>
         <strong>Un día a la vez</strong>
