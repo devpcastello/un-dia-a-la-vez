@@ -28,9 +28,9 @@ body{
 }
 
 
-#home{
+/* #home{ */
   /* min-height: 100vh; */
-  background-image: url('./src/assets/home-background-image.jpg');
+  /* background-image: url('./src/assets/home-background-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,4 +47,4 @@ body{
   background: gray;
   opacity: 0.45;
   z-index: 0;
-}
+} */
