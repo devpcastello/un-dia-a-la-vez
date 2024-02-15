@@ -1,10 +1,12 @@
-import { React } from "react";
-
-const CaminoBlob = () => {
+const CaminoBlobMobile = () => {
   return (
     <svg
-      width="293"
-      height="859"
+      width="100%" // Haz que el ancho sea el 100% del contenedor
+      height="auto" // Mantiene la proporción de aspecto
+      style={{
+        display: "block", // Elimina el espacio adicional debajo del SVG
+        margin: "0 auto", // Centra el SVG horizontalmente
+      }}
       viewBox="0 0 293 859"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -368,4 +370,4 @@ const CaminoBlob = () => {
   );
 };
 
-export default CaminoBlob;
+export default CaminoBlobMobile;

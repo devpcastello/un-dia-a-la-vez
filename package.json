@@ -8,12 +8,16 @@
     "start": "serve dist -s -n -L -p $PORT",
     "build": "vite build",
     "preview": "vite preview",
-    "tailwind": "npx tailwindcss -i ./src/index.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/index.css --watch",
+    "lint": "eslint ./src",
+    "lint:debug": "eslint ./src --debug",
+    "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.17",
     "@tailwindcss/typography": "^0.5.10",
     "css-peeps": "^1.0.1",
+    "eslint-plugin-tailwindcss": "^3.14.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
