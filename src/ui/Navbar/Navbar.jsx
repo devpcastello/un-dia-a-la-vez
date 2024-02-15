@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Logo from "../../assets/Logo";
-import UpChevron from "../../assets/UpChevron";
-import DownChevron from "../../assets/DownChevron";
+import ChevronUp from "../../assets/ChevronUp";
+import ChevronDown from "../../assets/ChevronDown";
 import { menuOptions } from "../../data/menuOptions";
 
 // import "./styles.css";
@@ -58,20 +58,20 @@ export const Navbar = () => {
           </li>
         </ul>
         <button
-          className="h-12 w-24  bg-white flex items-center justify-around rounded-full md:hidden "
+          className="h-12 w-24 bg-white flex items-center justify-around rounded-full md:hidden "
           onClick={toggleNav}
         >
-          <p className="block text-dark-green font-bold">Menu</p>
+          <p className="block text-forest-green font-bold">Menu</p>
           {!isNavOpen ? (
-            <DownChevron color="border-strong-green" />
+            <ChevronDown color="#029E7D" />
           ) : (
-            <UpChevron />
+            <ChevronUp color="#029E7D" />
           )}
         </button>
 
         {isNavOpen && (
           <div
-            className={`fixed inset-0 top-[4rem] z-50  flex-col md:hidden xl:hidden bg-dark-green flex `}
+            className={`fixed inset-0 top-[4rem] z-50  flex-col md:hidden xl:hidden bg-dark-green flex text-semibold`}
           >
             {/* <ul className=""> */}
             {menuOptions.map(({ name, link, options }) => (
@@ -88,7 +88,7 @@ export const Navbar = () => {
                   }`}
                 >
                   {name}
-                  {!isOpen && options ? <DownChevron /> : <UpChevron />}
+                  {!isOpen && options ? <ChevronUp /> : <ChevronDown />}
                 </li>
 
                 {/* Opciones de la lista desplegable */}

@@ -1,9 +1,14 @@
-const UpChevron = ({ color = "#000", width = 16, height = 10 }) => {
+const ChevronUp = ({
+  color = "#000",
+  width = 20,
+  height = 12,
+  strokeWidth = 1.5,
+}) => {
   return (
     <svg
       width={`${width}`}
       height={`${height}`}
-      viewBox="0 0 16 9"
+      viewBox={`0 0 16 9`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -11,6 +16,7 @@ const UpChevron = ({ color = "#000", width = 16, height = 10 }) => {
         {`.cls-1 {
             fill: none;
             stroke: ${color};
+            stroke-width: ${strokeWidth};
           }`}
       </style>
       <path
@@ -23,4 +29,4 @@ const UpChevron = ({ color = "#000", width = 16, height = 10 }) => {
   );
 };
 
-export default UpChevron;
+export default ChevronUp;
