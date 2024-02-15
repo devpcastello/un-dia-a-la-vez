@@ -8,20 +8,20 @@ const ChevronUp = ({
     <svg
       width={`${width}`}
       height={`${height}`}
-      viewBox={`0 0 16 9`}
+      viewBox="0 0 16 9"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <style>
-        {`.cls-1 {
-            fill: none;
+        {`.chevron-up {
+            fill: block;
             stroke: ${color};
             stroke-width: ${strokeWidth};
           }`}
       </style>
       <path
         d="M1 8L7.24742 0.860087C7.64584 0.404759 8.35417 0.40476 8.75258 0.860087L15 8"
-        className="cls-1"
+        className="chevron-up"
         stroke-linecap="round"
         stroke-linejoin="round"
       />

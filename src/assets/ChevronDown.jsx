@@ -13,7 +13,7 @@ const ChevronDown = ({
       xmlns="http://www.w3.org/2000/svg"
     >
       <style>
-        {`.cls-1 {
+        {`.chevron-down {
             fill: none;
             stroke: ${color};
             stroke-width: ${strokeWidth};
@@ -21,7 +21,7 @@ const ChevronDown = ({
       </style>
       <path
         d="M15 1L8.75258 8.13991C8.35416 8.59524 7.64583 8.59524 7.24742 8.13991L1 1"
-        className="cls-1"
+        className="chevron-down"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
