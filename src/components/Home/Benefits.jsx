@@ -48,25 +48,28 @@ export const Benefits = () => {
           </p>
         </div>
 
-        <div className="hidden relative w-full md:flex md:text-h6 md:min-h-[500px] md:items-center md:justify-center lg:text-h5">
-          <h2 className="absolute top-0 left-0 md:text-h5 lg:text-h4 lg:left-32">
+        <div className="hidden relative w-full md:flex md:text-h6 md:min-h-[500px] md:items-center md:justify-center lg:text-h5 xl:my-20">
+          <h2 className="absolute top-0 left-0 md:text-h5 lg:text-h4 lg:left-32 xl:left-28">
             Te ayudamos a encontrar tu camino.
             <br />
             <strong>Un día a la vez</strong>
           </h2>
-          <div className="md:min-w-[700px] lg:min-w-[1100px] lg:my-40">
+          <div className="md:min-w-[700px] lg:min-w-[780px] lg:my-40 xl:min-w-[1050px]">
             <CaminoBlobDesktop />
           </div>
-          <p className="absolute bottom-12 left-12 md:flex md:w-64 lg:left-[250px]">
-            Te acompañamos en cada fase del proceso de sanación
-          </p>
-          <p className="absolute md:top-[110px] md:left-[200px] lg:top-[160px] lg:left-[430px]">
+
+          <p className="absolute md:top-[110px] md:left-[200px] lg:top-[160px] lg:left-[430px] ">
             <span className="font-bold">No hay límites</span> geográficos
           </p>
-          <p className="absolute md:bottom-20 md:right-20 lg:bottom-28 lg:right-72">
-            Un espacio <span className="font-bold">amigable</span> y{" "}
-            <span className="font-bold">seguro</span>
-          </p>
+          <div className="absolute bottom-6 w-full h-auto flex gap-6 xl:gap-[110px] xl:left-[250px]">
+            <p className="w-80">
+              Te acompañamos en cada fase del proceso de sanación
+            </p>
+            <p className="">
+              Un espacio <span className="font-bold">amigable</span> y{" "}
+              <span className="font-bold">seguro</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
