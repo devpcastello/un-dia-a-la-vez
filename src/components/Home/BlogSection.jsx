@@ -48,10 +48,6 @@ export const BlogSection = () => {
           Ver más
         </button>
       </div>
-
-      <div className="hidden md:flex">
-        <BlogCard />
-      </div>
     </section>
   );
 };
