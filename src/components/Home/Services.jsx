@@ -12,7 +12,7 @@ export const Services = () => {
         Conoce más acerca de nuestros servicios
       </p>
 
-      <div className="w-full h-auto flex flex-col items-center justify-center gap-10 text-forest-green">
+      <div className="w-full h-auto grid grid-cols-1 items-center justify-center gap-10 text-forest-green md:min-w-[600px] md:max-w-[800px] md:grid-cols-2 lg:min-w-[1200px] lg:grid-cols-3 ">
         {services.map(({ name, description, image }) => (
           <div className="bg-white rounded-lg  px-8 pt-12 h-80 flex flex-col flex-1 items-center justify-center ">
             <div>
