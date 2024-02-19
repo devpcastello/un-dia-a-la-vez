@@ -18,7 +18,7 @@ const PeepsLink2 = ({ width, height }) => {
           "--peep-object-color": "#47c82d",
           "--peep-clothes-color": "#47c82d",
           "--peep-body-offset-x": "0px",
-          "--peep-body-offset-y": "10px",
+          "--peep-body-offset-y": "0px",
           display: "inline-block",
           width: `${width}px`,
           height: `${height}px`,
