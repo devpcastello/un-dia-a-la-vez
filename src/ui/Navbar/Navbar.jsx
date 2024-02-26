@@ -34,6 +34,7 @@ export const Navbar = () => {
             isNavOpen ? "bg-dark-green" : null
           }`}
         >
+        {/* Logo */}
           <Link
             to="/"
             onClick={() => {
@@ -45,48 +46,41 @@ export const Navbar = () => {
             </div>
           </Link>
 
-          <div className="flex gap-5">
-          {
-            menuOptions.map(({name,link,options})=>(
-              <ul className="hidden md:flex md:justify-stretch gap-8 text-base text-white md:text-gray-12" key={name}>
-                <li
-                  onClick={() => {
-                    toggleMenu(name);
-                  }}
-                  className={`${
-                    isOpen[name] ? null : null
-                  }`}
-                >
-                  <Link to={link} className="mr-2">
-                  {name}
-                  </Link>
-                  <button>
-                    {!isOpen && options ? (
-                        <ChevronUp color="#444444" />
-                      ) : (
+          {/* Desktop navbar */}
+          <div className="flex gap-5 h-6">
+            {
+              menuOptions.map(({ name, link, options }) => (
+                <ul className="hidden md:flex md:justify-stretch gap-8 text-base text-white md:text-gray-12" key={name}>
+                  <li className={`relative ${isOpen[name] ? 'mb-4' : ''}`}>
+                    <Link to={link} className="mr-2">
+                      {name}
+                    </Link>
+                    <button onClick={() => toggleMenu(name)}>
+                      {!isOpen[name] && options ? (
                         <ChevronDown color="#444444" />
+                      ) : (
+                        <ChevronUp  color="#444444" />
+                      )}
+                    </button>
+                    {isOpen[name] && (
+                      <div className="absolute top-full left-0 bg-white py-2 px-4 rounded-lg mt-8">
+                        {options.map(({ subLinkName, subLink }) => (
+                          <li key={subLinkName} className="text-left">
+                            <Link to={subLink} onClick={toggleNav}>
+                              {subLinkName}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
                     )}
-                  </button>
+                  </li>
+                </ul>
+              ))
+            }
 
-                    {isOpen[name]
-                    ? options.map(({ subLinkName, subLink }) => (
-                      <li value="" className="text-left pl-14 self-start bg-white py-2 px-4">
-                        <a key={subLinkName}>
-                          <Link to={subLink} onClick={toggleNav}>
-                            {subLinkName}
-                          </Link>
-                        </a>
-                      </li>
-                    ))
-                    : null}
-
-                </li>
-              </ul>
-            ))
-          }
           </div>
 
-
+          {/* Mobile button */}
           <button
             className="h-12 w-24 bg-white flex items-center justify-around rounded-full md:hidden "
             onClick={toggleNav}
@@ -99,6 +93,7 @@ export const Navbar = () => {
             )}
           </button>
 
+          {/* Mobile navbar */}
           {isNavOpen && (
             <div
               className={`fixed inset-0 top-[4rem] z-50  flex-col md:hidden xl:hidden bg-dark-green flex text-semibold`}
