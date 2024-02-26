@@ -49,7 +49,7 @@ export const Benefits = () => {
             </p>
           </div>
 
-          <div className="hidden relative w-full md:flex md:text-h6 md:min-h-[500px] md:items-center md:justify-center lg:text-h5 xl:my-20">
+          <div className="hidden relative w-[1200px] md:flex md:text-h6 md:min-h-[500px] md:items-center md:justify-center lg:text-h5 xl:my-20">
             <h2 className="absolute top-0 left-0 md:text-h5 lg:text-h4 lg:left-32 xl:left-28">
               Te ayudamos a encontrar tu camino.
               <br />

@@ -57,15 +57,15 @@ export const Navbar = () => {
                     </Link>
                     <button onClick={() => toggleMenu(name)}>
                       {!isOpen[name] && options ? (
-                        <ChevronDown color="#444444" />
+                        <ChevronDown color="#444444" width={16} height={8}/>
                       ) : (
-                        <ChevronUp  color="#444444" />
+                        <ChevronUp  color="#444444" width={16} height={8}/>
                       )}
                     </button>
                     {isOpen[name] && (
-                      <div className="absolute top-full left-0 bg-white py-2 px-4 rounded-lg mt-8">
+                      <div className="absolute left-0 bg-white py-2 px-4 rounded-lg mt-3 w-auto text-nowrap">
                         {options.map(({ subLinkName, subLink }) => (
-                          <li key={subLinkName} className="text-left">
+                          <li key={subLinkName} className="text-left mb-2">
                             <Link to={subLink} onClick={toggleNav}>
                               {subLinkName}
                             </Link>
