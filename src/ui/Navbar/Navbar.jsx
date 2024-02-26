@@ -44,29 +44,58 @@ export const Navbar = () => {
               <Logo width={"2.5rem"} height={" 2.5rem"} />
             </div>
           </Link>
-          <ul className="hidden md:flex lg:flex gap-8 text-h6 text-white md:text-gray-12">
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/therapy">Terapia</Link>
-            </li>
-            <li>
-              <Link to="/about">Sobre nosotros</Link>
-            </li>
-            <li>
-              <Link to="/self-care">Autocuidado</Link>
-            </li>
-          </ul>
+
+          <div className="flex gap-5">
+          {
+            menuOptions.map(({name,link,options})=>(
+              <ul className="hidden md:flex md:justify-stretch gap-8 text-base text-white md:text-gray-12" key={name}>
+                <li
+                  onClick={() => {
+                    toggleMenu(name);
+                  }}
+                  className={`${
+                    isOpen[name] ? null : null
+                  }`}
+                >
+                  <Link to={link} className="mr-2">
+                  {name}
+                  </Link>
+                  <button>
+                    {!isOpen && options ? (
+                        <ChevronUp color="#444444" />
+                      ) : (
+                        <ChevronDown color="#444444" />
+                    )}
+                  </button>
+
+                    {isOpen[name]
+                    ? options.map(({ subLinkName, subLink }) => (
+                      <li value="" className="text-left pl-14 self-start bg-white py-2 px-4">
+                        <a key={subLinkName}>
+                          <Link to={subLink} onClick={toggleNav}>
+                            {subLinkName}
+                          </Link>
+                        </a>
+                      </li>
+                    ))
+                    : null}
+
+                </li>
+              </ul>
+            ))
+          }
+          </div>
+
+
           <button
             className="h-12 w-24 bg-white flex items-center justify-around rounded-full md:hidden "
             onClick={toggleNav}
           >
             <p className="block text-forest-green font-bold">Menu</p>
             {!isNavOpen ? (
-              <ChevronDown color="#029E7D" />
+              <ChevronDown color="#444444" />
             ) : (
-              <ChevronUp color="#029E7D" />
+              <ChevronUp color="#444444" />
             )}
           </button>
 
@@ -110,7 +139,6 @@ export const Navbar = () => {
                     : null}
                 </ul>
               ))}
-              {/* </ul> */}
             </div>
           )}
         </div>
