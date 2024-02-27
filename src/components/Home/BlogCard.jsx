@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { posts } from "../../data/posts";
+import { Link } from 'react-router-dom'
+import { posts } from '../../data/posts'
 
 export const BlogCard = () => {
   return (
@@ -29,5 +29,5 @@ export const BlogCard = () => {
         </Link>
       ))}
     </div>
-  );
-};
+  )
+}
