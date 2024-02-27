@@ -1,9 +1,6 @@
-import React from 'react';
-
 import logo from '../../../src/assets/navbar-logo.png';
 import facebook from '../../../src/assets/icon _facebook_.png';
 import instagram from '../../../src/assets/icon _instagram_.png';
-import whatsapp from '../../../src/assets/icon _whatsapp_.png';
 import youtube from '../../../src/assets/icon _youtube_.png';
 
 export const Footer = () => {
