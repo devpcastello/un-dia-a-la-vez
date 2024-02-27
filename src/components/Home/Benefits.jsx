@@ -44,17 +44,18 @@ export const Benefits = () => {
             </p>
           </div>
 
-          <div className='relative hidden w-[1200px] md:flex md:min-h-[500px] md:items-center md:justify-center md:text-h6 lg:text-h5 xl:my-20'>
-            <h2 className='absolute left-0 top-0 md:text-h5 lg:left-32 lg:text-h4 xl:left-28'>
+          <div className='m-auto hidden justify-center lg:flex'>
+            <CaminoBlobDesktop width={1200} height={600} />
+          </div>
+          {/* <div className='relative hidden w-[1200px] md:flex md:min-h-[500px] md:items-center md:justify-center md:text-h6 lg:text-h5 xl:my-20'> */}
+          {/* <h2 className='absolute left-0 top-0 md:text-h5 lg:left-32 lg:text-h4 xl:left-28'>
               Te ayudamos a encontrar tu camino.
               <br />
               <strong>Un día a la vez</strong>
-            </h2>
-            <div className='md:min-w-[700px] lg:my-40 lg:min-w-[780px] xl:min-w-[1050px]'>
-              <CaminoBlobDesktop />
-            </div>
+            </h2> */}
+          {/* <div className='md:min-w-[700px] lg:my-40 lg:min-w-[780px] xl:min-w-[1050px]'></div> */}
 
-            <p className='absolute md:left-[200px] md:top-[110px] lg:left-[430px] lg:top-[160px] '>
+          {/* <p className='absolute md:left-[200px] md:top-[110px] lg:left-[430px] lg:top-[160px] '>
               <span className='font-bold'>No hay límites</span> geográficos
             </p>
             <div className='absolute bottom-6 flex h-auto w-full gap-6 xl:left-[250px] xl:gap-[110px]'>
@@ -65,8 +66,8 @@ export const Benefits = () => {
                 Un espacio <span className='font-bold'>amigable</span> y{' '}
                 <span className='font-bold'>seguro</span>
               </p>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </div>
     </section>
