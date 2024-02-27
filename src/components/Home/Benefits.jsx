@@ -1,32 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/solid'
 
-import { benefits } from "../../data/benefits";
-import CaminoBlobMobile from "../../assets/CaminoBlobMobile";
-import CaminoBlobDesktop from "../../assets/CaminoBlobDesktop";
+import { benefits } from '../../data/benefits'
+import CaminoBlobMobile from '../../assets/CaminoBlobMobile'
+import CaminoBlobDesktop from '../../assets/CaminoBlobDesktop'
 
 export const Benefits = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const [selectedBenefitDescription, setSelectedBenefitDescription] = useState(
     benefits[0].description
-  );
+  )
 
   const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => prevIndex + 1);
-  };
+    setCurrentImageIndex((prevIndex) => prevIndex + 1)
+  }
 
   const handlePrevImage = () => {
-    setCurrentImageIndex((prevIndex) => prevIndex - 1);
-  };
+    setCurrentImageIndex((prevIndex) => prevIndex - 1)
+  }
 
   const handleBenefitClick = (description) => {
-    setSelectedBenefitDescription(description);
-  };
+    setSelectedBenefitDescription(description)
+  }
 
-  const currentBenefit = benefits[currentImageIndex];
+  const currentBenefit = benefits[currentImageIndex]
 
   return (
     <section className=" w-full bg-dark-green">
@@ -44,7 +44,7 @@ export const Benefits = () => {
               <span className="font-bold">No hay límites</span> geográficos
             </p>
             <p className="absolute top-[600px] left-10">
-              Un espacio <span className="font-bold">amigable</span> y{" "}
+              Un espacio <span className="font-bold">amigable</span> y{' '}
               <span className="font-bold">seguro</span>
             </p>
           </div>
@@ -67,7 +67,7 @@ export const Benefits = () => {
                 Te acompañamos en cada fase del proceso de sanación
               </p>
               <p className="">
-                Un espacio <span className="font-bold">amigable</span> y{" "}
+                Un espacio <span className="font-bold">amigable</span> y{' '}
                 <span className="font-bold">seguro</span>
               </p>
             </div>
@@ -75,5 +75,5 @@ export const Benefits = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

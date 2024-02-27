@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const CaminoBlobDesktop = ({ width, height }) => {
   return (
@@ -318,8 +318,8 @@ export const CaminoBlobDesktop = ({ width, height }) => {
         fill="#444444"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M1090.59 180.051C1093.54 198.287 1118.89 208.553 1118.79 227.019C1118.71 244.732 1104.07 260.094 1090.13 270.862C1076.93 281.058 1055.59 274.723 1042.94 285.604C1027.5 298.884 1028.28 325.229 1012.28 337.829C995.13 351.343 972.438 361.358 950.836 358.166C929.48 355.011 898.758 342.712 898.419 321.006C897.859 285.171 958.366 262.257 948.797 227.704C941.353 200.822 881.483 236.008 868.106 211.545C857.835 192.761 917.937 199.264 921.734 178.212C926.804 150.104 880.865 127.888 888.172 100.29C893.396 80.5576 927.079 78.6494 946.427 84.9393C968.996 92.2762 972.706 130.601 995.946 135.326C1014.71 139.142 1024.92 107.842 1043.79 104.736C1063.34 101.519 1090.63 101.079 1101.15 118.015C1112.35 136.04 1087.19 159.092 1090.59 180.051Z"
         fill="url(#paint0_linear_757_34)"
       />
@@ -360,12 +360,12 @@ export const CaminoBlobDesktop = ({ width, height }) => {
           y2="237.795"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#029E7D" stop-opacity="0.87" />
-          <stop offset="1" stop-color="#AEFA94" stop-opacity="0.88" />
+          <stop stopColor="#029E7D" stopOpacity="0.87" />
+          <stop offset="1" stopColor="#AEFA94" stopOpacity="0.88" />
         </linearGradient>
       </defs>
     </svg>
-  );
-};
+  )
+}
 
-export default CaminoBlobDesktop;
+export default CaminoBlobDesktop
