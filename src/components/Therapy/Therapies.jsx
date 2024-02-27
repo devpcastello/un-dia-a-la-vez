@@ -2,7 +2,7 @@ import { therapies } from '../../data/services';
 
 export const Therapies = () => {
   return (
-    <div>
+    <div className='mx-auto flex px-6 pb-16 pt-20 sm:w-full lg:px-32'>
       {therapies.map((therapy) => (
         <div key={therapy.title} className='m-4 xl:mx-16 xl:mb-20'>
           <h1 className='m-10 text-center text-3xl font-bold text-gray-10 xl:text-4xl'>
