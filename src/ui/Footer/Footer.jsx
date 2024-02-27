@@ -1,37 +1,31 @@
-import React from "react";
+import React from 'react';
 
-import logo from "../../../src/assets/navbar-logo.png";
-import facebook from "../../../src/assets/icon _facebook_.png";
-import instagram from "../../../src/assets/icon _instagram_.png";
-import whatsapp from "../../../src/assets/icon _whatsapp_.png";
-import youtube from "../../../src/assets/icon _youtube_.png";
+import logo from '../../../src/assets/navbar-logo.png';
+import facebook from '../../../src/assets/icon _facebook_.png';
+import instagram from '../../../src/assets/icon _instagram_.png';
+import whatsapp from '../../../src/assets/icon _whatsapp_.png';
+import youtube from '../../../src/assets/icon _youtube_.png';
 
 export const Footer = () => {
   return (
-    <div className=" bg-light-green h-[580px]  relative">
-      <div className="h-[500px] flex flex-col justify-center items-center  gap-6">
-        <div className="pb-5 border-b-2 border-slate-700">
-          <img className="mt-5 min-w-[360px] max-h-[120px]" src={logo} alt="" />
+    <div className='flex h-[500px] flex-col justify-items-end'>
+      <div className='flex h-[500px] flex-col items-center justify-center  gap-6'>
+        <div className='border-b-2 border-slate-700 pb-5'>
+          <img className='mt-5 max-h-[120px] min-w-[360px]' src={logo} alt='' />
         </div>
         <div>
-          <p className="mb-3">Conoce nuestras redes sociales:</p>
-          <div className=" h-10 w-full flex flex-row justify-around mb-2">
-            <img className="w-10 h-10" src={facebook} alt="" />
-            <img className="w-12 h-10" src={youtube} alt="" />
-            <a href="https://www.instagram.com/undiaalavezpsico/">
-              <img className="w-10 h-10" src={instagram} alt="" />
+          <p className='mb-3'>Conoce nuestras redes sociales:</p>
+          <div className=' mb-2 flex h-10 w-full flex-row justify-around'>
+            <img className='size-10' src={facebook} alt='' />
+            <img className='h-10 w-12' src={youtube} alt='' />
+            <a href='https://www.instagram.com/undiaalavezpsico/'>
+              <img className='size-10' src={instagram} alt='' />
             </a>
           </div>
         </div>
-        <div className="bg-wtpp-green rounded-xl text-white flex flex-col items-center p-3">
-          <p>Contáctanos por Whatsapp</p>
-          <div>
-            <img className="h-12" src={whatsapp} alt="" />
-          </div>
-        </div>
       </div>
-      <div className="w-full h-20 text-white p-3 mt-8 left-0 bg-slate-900 absolute bottom-0 right-0">
-        <p>2023</p>
+      <div className='flex h-20 w-full flex-row items-center justify-start gap-5 bg-slate-900 p-5 text-white'>
+        <p>2024</p>
         <p>Todos los derechos reservados</p>
       </div>
     </div>
