@@ -1,4 +1,5 @@
 import bgOnline from '../assets/bgSections/bgTherapyOnline-2-min.jpg';
+import onlineDescriptionImage from '../assets/therapyOnline-descriptionImage.svg';
 
 export const therapies = [
   {
@@ -8,10 +9,11 @@ export const therapies = [
     heroSubtitle:
       'La confianza y la comunicación se construyen un día a la vez',
     heroButton: 'Solicitar terapia de pareja',
-    descriptionTitle: '¡Quiero comenzar terapia de pareja!',
+    descriptionTitle: '¡Quiero comenzar terapia ahora mismo!',
     description: `
     Este tratamiento se centra en asistir a parejas que experimentan conflictos o atraviesan una crisis, brindándoles herramientas para aprovechar sus diferencias y restablecer una convivencia plena y feliz.
     `,
+    descriptionImage: onlineDescriptionImage,
     troublesTitle: 'Los problemas más importantes a tratar...',
     troublesCards: [
       {
