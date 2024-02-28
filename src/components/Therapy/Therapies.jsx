@@ -2,17 +2,49 @@ import { therapies } from '../../data/services';
 
 export const Therapies = () => {
   return (
-    <div className='mx-auto flex px-6 pb-16 pt-20 sm:w-full lg:px-32'>
-      {therapies.map((therapy) => (
-        <div key={therapy.title} className='m-4 xl:mx-16 xl:mb-20'>
-          <h1 className='m-10 text-center text-3xl font-bold text-gray-10 xl:text-4xl'>
-            {therapy.title}
-          </h1>
-          <p className='mt-5 font-light text-gray-8 xl:text-xl'>
-            {therapy.description}
-          </p>
-        </div>
-      ))}
-    </div>
+    <main>
+      {therapies.map(
+        ({
+          id,
+          heroBackground,
+          heroTitle,
+          heroSubtitle,
+          heroButton,
+          descriptionTitle,
+          description,
+          troublesTitle,
+          troublesCards,
+          benefitsTitle,
+          benefitsCards,
+        }) => (
+          <section
+            key={id}
+            className='relative z-[-15] flex h-screen w-full flex-col items-center justify-center gap-20 bg-center text-white md:gap-8'
+            style={{
+              backgroundImage: `url(${heroBackground})`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center center',
+              height: '100vh',
+              width: '100%',
+            }}
+          >
+            <div
+              className='absolute inset-0 z-[-10]  bg-gradient-to-b from-transparent to-yellow-green to-70% opacity-100'
+              style={{ filter: 'blur(0px)' }}
+            ></div>
+            <div>
+              <div className='mx-10 flex flex-col items-center justify-center gap-5 text-center '>
+                <h1 className='text-white'>{heroTitle}</h1>
+                <p className='text-white'>{heroSubtitle}</p>
+                <p className='text-white'>{descriptionTitle}</p>
+                <button>Solicitar terapia de pareja</button>
+              </div>
+            </div>
+            <div></div>
+          </section>
+        ),
+      )}
+    </main>
   );
 };

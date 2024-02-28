@@ -1,7 +1,9 @@
+import bgOnline from '../assets/bgSections/bgTherapyOnline-2-min.jpg';
+
 export const therapies = [
   {
     id: 'terapia-online',
-    heroBackground: './',
+    heroBackground: bgOnline,
     heroTitle: 'Terapia online',
     heroSubtitle:
       'La confianza y la comunicación se construyen un día a la vez',

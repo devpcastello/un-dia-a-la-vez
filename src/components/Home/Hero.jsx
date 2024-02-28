@@ -5,7 +5,7 @@ import bgImage from '../../assets/home-background-image.jpg';
 
 export const Hero = () => {
   return (
-    <div
+    <main
       className='relative flex h-screen w-full flex-col items-center justify-center gap-20 bg-center text-white md:gap-8'
       style={{
         backgroundImage: `url(${bgImage})`,
@@ -20,7 +20,7 @@ export const Hero = () => {
       <div className=' relative'>
         <div className='relative z-10 flex h-1/2 w-auto items-center justify-center md:mt-[150px]'>
           <img
-            className='w-min-96 animate__animated animate__fadeInUp absolute z-[-10] w-[400px] max-w-80 md:min-h-[500px] md:min-w-[500px] xl:min-h-[700px] xl:min-w-[700px]'
+            className='animate__animated animate__fadeInUp absolute z-[-10] w-[400px] max-w-80 md:min-h-[500px] md:min-w-[500px] xl:min-h-[700px] xl:min-w-[700px]'
             src={blob}
             alt=''
           />
@@ -34,6 +34,6 @@ export const Hero = () => {
       <button className='absolute bottom-10 z-20 rounded-full bg-dark-green px-4 py-2 text-white xl:px-6 xl:py-4 xl:text-2xl'>
         <Link to='/about'>¿Empezamos tu proceso?</Link>
       </button>
-    </div>
+    </main>
   );
 };
