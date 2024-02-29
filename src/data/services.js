@@ -1,5 +1,9 @@
 import bgOnline from '../assets/bgSections/bgTherapyOnline-2-min.jpg';
 import onlineDescriptionImage from '../assets/therapyOnline-descriptionImage.svg';
+import onlineTroubleCardImage1 from '../assets/therapies/undraw_spread_love_re_v3cl.svg';
+import onlineTroubleCardImage2 from '../assets/therapies/undraw_right_direction_tge8.svg';
+import onlineBenefitsCardImage1 from '../assets/therapies/undraw_heartbroken_cble.svg';
+import onlineBenefitsCardImage2 from '../assets/therapies/undraw_feeling_blue_-4-b7q.svg';
 
 export const therapies = [
   {
@@ -8,34 +12,42 @@ export const therapies = [
     heroTitle: 'Terapia online',
     heroSubtitle:
       'La confianza y la comunicación se construyen un día a la vez',
+
+    heroMessage:
+      '¡Esas conductas que dañan tu relación de pareja se pueden cambiar en un proceso guiado por un terapeuta!',
     heroButton: 'Solicitar terapia de pareja',
     descriptionTitle: '¡Quiero comenzar terapia ahora mismo!',
     description: `
     Este tratamiento se centra en asistir a parejas que experimentan conflictos o atraviesan una crisis, brindándoles herramientas para aprovechar sus diferencias y restablecer una convivencia plena y feliz.
     `,
     descriptionImage: onlineDescriptionImage,
-    troublesTitle: 'Los problemas más importantes a tratar...',
+    troublesTitle:
+      'Los problemas a solucionar en terapia de pareja más comunes son:',
     troublesCards: [
       {
         title: 'Problemas de comunicación',
         description:
           "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into ",
-        image: './',
+        image: onlineTroubleCardImage1,
       },
       {
         title: 'Problemas de comunicación',
         description:
           "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into ",
-        image: './',
+        image: onlineTroubleCardImage2,
       },
     ],
     benefitsTitle: 'Descubre los beneficios de llevar terapia de pareja',
     benefitsCards: [
       {
-        title: 'Problemas de comunicación',
         description:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into ",
-        image: './',
+          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",
+        image: onlineBenefitsCardImage1,
+      },
+      {
+        description:
+          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",
+        image: onlineBenefitsCardImage2,
       },
     ],
   },
