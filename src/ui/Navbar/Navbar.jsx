@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import Logo from "../../assets/Logo";
-import ChevronUp from "../../assets/ChevronUp";
-import ChevronDown from "../../assets/ChevronDown";
-import { menuOptions } from "../../data/menuOptions";
+import Logo from '../../assets/Logo';
+import ChevronUp from '../../assets/ChevronUp';
+import ChevronDown from '../../assets/ChevronDown';
+import { menuOptions } from '../../data/menuOptions';
 
 // import "./styles.css";
 
@@ -16,7 +16,7 @@ export const Navbar = () => {
     setIsNavOpen(!isNavOpen);
   };
 
-  //TODO manejar el navbar cuando se cierra en mobile y se pasa a desktop
+  // TODO manejar el navbar cuando se cierra en mobile y se pasa a desktop
 
   const toggleMenu = (menuName) => {
     setIsOpen((prev) => ({
@@ -26,105 +26,109 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="fixed m-auto left-0 top-0 z-50 w-full justify-center">
-      <div className="h-16 flex lg:justify-center justify-between lg:mt-6">
+    <header className='fixed left-0 top-0 z-50 m-auto w-full justify-center'>
+      <div className='flex h-16 justify-between lg:mt-6 lg:justify-center'>
         {/* Añadir lógica para volver transparente el bg del navbar */}
         <div
-          className={`w-full flex h-full items-center justify-between px-6 md:bg-white  lg:max-w-[1100px] lg:self-center lg:rounded-full lg:px-10  ${
-            isNavOpen ? "bg-dark-green" : null
+          className={`flex size-full items-center justify-between px-6 md:bg-white lg:max-w-[1100px]  lg:self-center lg:rounded-full lg:px-10  ${
+            isNavOpen ? 'bg-dark-green' : null
           }`}
         >
-        {/* Logo */}
+          {/* Logo */}
           <Link
-            to="/"
+            to='/'
             onClick={() => {
               toggleMenu(name);
             }}
           >
-            <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center">
-              <Logo width={"2.5rem"} height={" 2.5rem"} />
+            <div className='flex size-12 items-center justify-center rounded-full bg-white'>
+              <Logo width={'2.5rem'} height={' 2.5rem'} />
             </div>
           </Link>
 
           {/* Desktop navbar */}
-          <div className="flex gap-5 h-6">
-            {
-              menuOptions.map(({ name, link, options }) => (
-                <ul className="hidden md:flex md:justify-stretch gap-8 text-base text-white md:text-gray-12" key={name}>
-                  <li className={`relative ${isOpen[name] ? 'mb-4' : ''}`}>
-                    <Link to={link} className="mr-2">
-                      {name}
-                    </Link>
-                    <button onClick={() => toggleMenu(name)}>
-                      {!isOpen[name] && options ? (
-                        <ChevronDown color="#444444" width={16} height={8}/>
-                      ) : (
-                        <ChevronUp  color="#444444" width={16} height={8}/>
-                      )}
-                    </button>
-                    {isOpen[name] && (
-                      <div className="absolute left-0 bg-white py-2 px-4 rounded-lg mt-3 w-auto text-nowrap">
-                        {options.map(({ subLinkName, subLink }) => (
-                          <li key={subLinkName} className="text-left mb-2">
-                            <Link to={subLink} onClick={toggleNav}>
-                              {subLinkName}
-                            </Link>
-                          </li>
-                        ))}
-                      </div>
+          <div className='flex h-6 gap-5'>
+            {menuOptions.map(({ name, link, options }) => (
+              <ul
+                className='hidden gap-8 text-base text-white md:flex md:justify-stretch md:text-gray-12'
+                key={name}
+              >
+                <li className={`relative ${isOpen[name] ? 'mb-4' : ''}`}>
+                  <Link to={link} className='mr-2'>
+                    {name}
+                  </Link>
+                  <button onClick={() => toggleMenu(name)}>
+                    {!isOpen[name] && options ? (
+                      <ChevronDown color='#444444' width={16} height={8} />
+                    ) : (
+                      <ChevronUp color='#444444' width={16} height={8} />
                     )}
-                  </li>
-                </ul>
-              ))
-            }
-
+                  </button>
+                  {isOpen[name] && (
+                    <div className='absolute left-0 mt-3 w-auto text-nowrap rounded-lg bg-white px-4 py-2'>
+                      {options.map(({ subLinkName, subLink }) => (
+                        <li key={subLinkName} className='mb-2 text-left'>
+                          <Link to={subLink} onClick={toggleNav}>
+                            {subLinkName}
+                          </Link>
+                        </li>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              </ul>
+            ))}
           </div>
 
           {/* Mobile button */}
           <button
-            className="h-12 w-24 bg-white flex items-center justify-around rounded-full md:hidden "
+            className='flex h-12 w-24 items-center justify-around rounded-full bg-white md:hidden '
             onClick={toggleNav}
           >
-            <p className="block text-forest-green font-bold">Menu</p>
+            <p className='block font-bold text-forest-green'>Menu</p>
             {!isNavOpen ? (
-              <ChevronDown color="#444444" />
+              <ChevronDown color='#444444' />
             ) : (
-              <ChevronUp color="#444444" />
+              <ChevronUp color='#444444' />
             )}
           </button>
 
           {/* Mobile navbar */}
           {isNavOpen && (
             <div
-              className={`fixed inset-0 top-[4rem] z-50  flex-col md:hidden xl:hidden bg-dark-green flex text-semibold`}
+              className={`fixed inset-0 top-[4rem]  z-50 flex flex-col bg-dark-green md:hidden xl:hidden`}
             >
               {/* <ul className=""> */}
               {menuOptions.map(({ name, link, options }) => (
                 <ul
                   key={name}
-                  className="flex w-full flex-col text-white mt-6 items-center"
+                  className='mt-6 flex w-full flex-col items-center text-white'
                 >
                   <li
                     onClick={() => {
                       toggleMenu(name);
                     }}
-                    className={`bg-light-blue text-left rounded-full px-4 py-2 flex justify-between items-center w-11/12 ${
-                      isOpen[name] ? "mb-4" : null
+                    className={`flex w-11/12 items-center justify-between rounded-full bg-light-blue px-4 py-2 text-left ${
+                      isOpen[name] ? 'mb-4' : null
                     }`}
                   >
                     {name}
                     {!isOpen && options ? (
-                      <ChevronUp color="#444444" />
+                      <ChevronUp color='#444444' />
                     ) : (
-                      <ChevronDown color="#444444" />
+                      <ChevronDown color='#444444' />
                     )}
                   </li>
 
                   {/* Opciones de la lista desplegable */}
                   {isOpen[name]
                     ? options.map(({ subLinkName, subLink }) => (
-                        <li value="" className="text-left pl-14 self-start">
-                          <a key={subLinkName}>
+                        <li
+                          key={subLinkName}
+                          value=''
+                          className='self-start pl-14 text-left'
+                        >
+                          <a>
                             <Link to={subLink} onClick={toggleNav}>
                               {subLinkName}
                             </Link>
