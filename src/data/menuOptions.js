@@ -2,10 +2,11 @@ export const menuOptions = [
   {
     id: 'terapia-online',
     name: 'Terapia Online',
-    link: '/',
+    link: '/therapy',
     options: [],
   },
   {
+    id: 'other-services',
     name: 'Otros Servicios',
     link: '/therapy',
     options: [
@@ -42,6 +43,7 @@ export const menuOptions = [
     ],
   },
   {
+    id: 'about-us',
     name: 'Acerca de nosotros',
     link: '/about',
     options: [
@@ -56,6 +58,7 @@ export const menuOptions = [
     ],
   },
   {
+    id: 'self-care',
     name: 'Auto cuidado',
     subLink: '/self-care',
     options: [

@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom';
-// import { Therapies } from '../components/Therapy';
 import { services } from '../data/services';
 export const TherapyPage = () => {
   const { service } = useParams();
@@ -24,7 +23,6 @@ export const TherapyPage = () => {
           buttonTherapy,
         }) => {
           if (service === id) {
-            console.log(service);
             return (
               <main key={id}>
                 <section
@@ -122,9 +120,6 @@ export const TherapyPage = () => {
               </main>
             );
           }
-          console.log('no sirve');
-          console.log(service);
-          console.log(id);
           return null;
         },
       )}

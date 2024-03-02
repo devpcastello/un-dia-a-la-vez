@@ -53,17 +53,21 @@ export const Navbar = () => {
 
           {/* Desktop navbar */}
           <div className='flex h-6 gap-5'>
-            {menuOptions.map(({ name, link, options }) => (
+            {menuOptions.map(({ id, name, link, options }) => (
               <ul
                 className='hidden gap-8 text-base text-white md:flex md:justify-stretch md:text-gray-12'
                 key={name}
               >
                 <li className={`relative flex ${isOpen[name] ? 'mb-4' : ''}`}>
-                  <Link to={link} className='mr-2'>
-                    {name}
-                  </Link>
+                  {id === 'terapia-online' ? (
+                    <Link to={`${link}/${id}`} className='mr-2 bg-red-400'>
+                      {name}
+                    </Link>
+                  ) : (
+                    <span className='mr-2'>{name}</span>
+                  )}
                   <button onClick={() => toggleMenu(name)}>
-                    {!isOpen[name] && options ? (
+                    {!isOpen[name] && id !== 'terapia-online' ? (
                       <ChevronDown color='#444444' width={16} height={8} />
                     ) : (
                       <ChevronUp color='#444444' width={16} height={8} />
@@ -127,14 +131,14 @@ export const Navbar = () => {
 
                   {/* Opciones de la lista desplegable */}
                   {isOpen[name]
-                    ? options.map(({ subLinkName, subLink }) => (
+                    ? options.map(({ id, subLinkName, subLink }) => (
                         <li
                           key={subLinkName}
                           value=''
                           className='self-start pl-14 text-left'
                         >
                           <a>
-                            <Link to={subLink} onClick={toggleNav}>
+                            <Link to={`${link}/${id}`} onClick={toggleNav}>
                               {subLinkName}
                             </Link>
                           </a>
