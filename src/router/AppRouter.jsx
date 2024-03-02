@@ -1,5 +1,5 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { HomePage, AboutPage, SelfCarePage, TherapyPage } from '../Pages';
+import { HomePage, AboutPage, SelfCarePage, ServicesPage } from '../Pages';
 
 import { Footer, Navbar } from '../ui';
 import { Blog, Resources } from '../components/SelfCare';
@@ -14,7 +14,7 @@ export const AppRouter = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />
 
-        <Route path='/therapy/:service' element={<TherapyPage />} />
+        <Route path='/service/:service' element={<ServicesPage />} />
 
         <Route path='/about' element={<AboutPage />} />
         <Route path='/about/testimonials' element={<Testimonials />} />

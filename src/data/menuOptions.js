@@ -2,43 +2,43 @@ export const menuOptions = [
   {
     id: 'terapia-online',
     name: 'Terapia Online',
-    link: '/therapy',
+    link: '/service',
     options: [],
   },
   {
     id: 'other-services',
     name: 'Otros Servicios',
-    link: '/therapy',
+    link: '/service',
     options: [
       {
         id: 'terapia-pareja',
         subLinkName: 'Terapia de Pareja',
-        subLink: '/therapy',
+        subLink: '/service',
       },
       {
         id: 'terapia-presencial',
         subLinkName: 'Terapia Presencial',
-        subLink: '/therapy',
+        subLink: '/service',
       },
       {
         id: 'costo-social',
         subLinkName: 'Costo Social',
-        subLink: '/therapy',
+        subLink: '/service',
       },
       {
         id: 'terapia-familiar',
         subLinkName: 'Psicoterapia Familiar',
-        subLink: '/therapy',
+        subLink: '/service',
       },
       {
         id: 'charlas',
         subLinkName: 'Charlas',
-        subLink: '/therapy',
+        subLink: '/service',
       },
       {
         id: 'talleres',
         subLinkName: 'Talleres',
-        subLink: '/therapy',
+        subLink: '/service',
       },
     ],
   },

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { services } from '../data/services';
-export const TherapyPage = () => {
+export const ServicesPage = () => {
   const { service } = useParams();
 
   return (
@@ -76,26 +76,27 @@ export const TherapyPage = () => {
                     </p>
                   </div>
                 </section>
-
                 <section className='px-5 py-20'>
                   <h2 className='mb-20 text-center text-h4 font-semibold leading-h4 md:mb-10'>
                     {troublesTitle}
                   </h2>
                   <div className='m-auto grid grid-cols-1 gap-16 md:w-full md:grid-cols-2  lg:w-2/3 xl:w-1/2'>
-                    {troublesCards.map(({ title, description, image }) => (
-                      <div
-                        key={title}
-                        className='m-auto flex flex-col items-center justify-center gap-3  text-center sm:w-full'
-                      >
-                        <img
-                          src={image}
-                          alt='trouble-card'
-                          className='size-40'
-                        />
-                        <h3 className='text-h6 font-bold'>{title}</h3>
-                        <p>{description}</p>
-                      </div>
-                    ))}
+                    {troublesCards.map(
+                      ({ title, description, image }, index) => (
+                        <div
+                          key={`${title}-${index}`}
+                          className='m-auto flex flex-col items-center justify-center gap-3  text-center sm:w-full'
+                        >
+                          <img
+                            src={image}
+                            alt='trouble-card'
+                            className='size-40'
+                          />
+                          <h3 className='text-h6 font-bold'>{title}</h3>
+                          <p>{description}</p>
+                        </div>
+                      ),
+                    )}
                   </div>
                 </section>
                 <section className='flex flex-col gap-10 px-5 py-20'>
@@ -103,9 +104,9 @@ export const TherapyPage = () => {
                     {benefitsTitle}
                   </h2>
                   <div className='m-auto grid grid-cols-1 gap-16 lg:w-2/3'>
-                    {benefitsCards.map(({ description, image }) => (
+                    {benefitsCards.map(({ description, image }, index) => (
                       <div
-                        key={image}
+                        key={`${image}-${index}`}
                         className='flex items-center gap-5 text-center'
                       >
                         <img src={image} alt='benefit-card' className='w-24' />

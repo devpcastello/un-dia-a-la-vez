@@ -6,18 +6,13 @@ import ChevronUp from '../../assets/ChevronUp';
 import ChevronDown from '../../assets/ChevronDown';
 import { menuOptions } from '../../data/menuOptions';
 
-// import "./styles.css";
-
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpen, setIsOpen] = useState({});
-  // const [clickedLink, setClickedLink] = useState(null);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-
-  // TODO manejar el navbar cuando se cierra en mobile y se pasa a desktop
 
   const toggleMenu = (menuName) => {
     setIsOpen((prev) => ({
@@ -25,11 +20,6 @@ export const Navbar = () => {
       [menuName]: !prev[menuName],
     }));
   };
-
-  // const selectedLink = (id) => {
-  //   setClickedLink(id);
-  //   console.log(clickedLink);
-  // };
 
   return (
     <header className='fixed left-0 top-0 z-50 m-auto w-full justify-center'>
@@ -58,7 +48,10 @@ export const Navbar = () => {
                 className='hidden gap-8 text-base text-white md:flex md:justify-stretch md:text-gray-12'
                 key={name}
               >
-                <li className={`relative flex ${isOpen[name] ? 'mb-4' : ''}`}>
+                <li
+                  className={`relative flex cursor-pointer ${isOpen[name] ? 'mb-4' : ''}`}
+                  onClick={() => toggleMenu(name)}
+                >
                   {id === 'terapia-online' ? (
                     <Link to={`${link}/${id}`} className='mr-2 bg-red-400'>
                       {name}
@@ -66,7 +59,7 @@ export const Navbar = () => {
                   ) : (
                     <span className='mr-2'>{name}</span>
                   )}
-                  <button onClick={() => toggleMenu(name)}>
+                  <button>
                     {!isOpen[name] && id !== 'terapia-online' ? (
                       <ChevronDown color='#444444' width={16} height={8} />
                     ) : (
@@ -76,11 +69,14 @@ export const Navbar = () => {
                   {isOpen[name] && (
                     <div className='absolute left-0 mt-3 w-auto text-nowrap rounded-lg bg-white px-4 py-2'>
                       {options.map(({ id, subLinkName, subLink }) => (
-                        <li key={subLinkName} className='mb-2 text-left'>
+                        <span
+                          key={subLinkName}
+                          className='mb-2 flex flex-col text-left'
+                        >
                           <Link to={`${link}/${id}`} onClick={toggleNav}>
                             {subLinkName}
                           </Link>
-                        </li>
+                        </span>
                       ))}
                     </div>
                   )}
