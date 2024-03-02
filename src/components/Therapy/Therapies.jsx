@@ -1,9 +1,10 @@
-import { therapies } from '../../data/services';
+import { services } from '../../data/services';
+import PropTypes from 'prop-types';
 
-export const Therapies = () => {
+export const Therapies = ({ id }) => {
   return (
     <>
-      {therapies.map(
+      {services.map(
         ({
           id,
           heroBackground,
@@ -114,4 +115,32 @@ export const Therapies = () => {
       )}
     </>
   );
+};
+
+Therapies.propTypes = {
+  id: PropTypes.string.isRequired,
+  heroBackground: PropTypes.string.isRequired,
+  heroTitle: PropTypes.string.isRequired,
+  heroSubtitle: PropTypes.string.isRequired,
+  heroMessage: PropTypes.string.isRequired,
+  heroButton: PropTypes.string.isRequired,
+  descriptionTitle: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  descriptionImage: PropTypes.string.isRequired,
+  troublesTitle: PropTypes.string.isRequired,
+  troublesCards: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  benefitsTitle: PropTypes.string.isRequired,
+  benefitsCards: PropTypes.arrayOf(
+    PropTypes.shape({
+      description: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  buttonTherapy: PropTypes.string.isRequired,
 };

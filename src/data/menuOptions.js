@@ -1,60 +1,71 @@
 export const menuOptions = [
   {
-    name: "Terapia Online",
-    link: "/",
+    id: 'terapia-online',
+    name: 'Terapia Online',
+    link: '/',
     options: [],
   },
   {
-    name: "Otros Servicios",
-    link: "/therapy",
+    name: 'Otros Servicios',
+    link: '/therapy',
     options: [
       {
-        subLinkName: "Terapia Presencial",
-        subLink: "/therapy",
+        id: 'terapia-pareja',
+        subLinkName: 'Terapia de Pareja',
+        subLink: '/therapy',
       },
       {
-        subLinkName: "Costo Social",
-        subLink: "/therapy/social",
+        id: 'terapia-presencial',
+        subLinkName: 'Terapia Presencial',
+        subLink: '/therapy',
       },
       {
-        subLinkName: "Psicoterapia Familiar",
-        subLink: "/therapy/familiar",
+        id: 'costo-social',
+        subLinkName: 'Costo Social',
+        subLink: '/therapy',
       },
       {
-        subLinkName: "Charlas",
-        subLink: "test",
+        id: 'terapia-familiar',
+        subLinkName: 'Psicoterapia Familiar',
+        subLink: '/therapy',
       },
       {
-        subLinkName: "Talleres",
-        subLink: "test",
+        id: 'charlas',
+        subLinkName: 'Charlas',
+        subLink: '/therapy',
+      },
+      {
+        id: 'talleres',
+        subLinkName: 'Talleres',
+        subLink: '/therapy',
       },
     ],
   },
   {
-    name: "Acerca de nosotros",
-    link: "/about",
+    name: 'Acerca de nosotros',
+    link: '/about',
     options: [
       {
-        subLinkName: "Equipo",
-        subLink: "/about/staff",
+        subLinkName: 'Equipo',
+        subLink: '/about/staff',
       },
       {
-        subLinkName: "Testimonios",
-        subLink: "/about/testimonials",
+        subLinkName: 'Testimonios',
+        subLink: '/about/testimonials',
       },
     ],
   },
   {
-    name: "Auto cuidado",
-    subLink: "/self-care",
+    name: 'Auto cuidado',
+    subLink: '/self-care',
     options: [
       {
-        subLinkName: "Blog",
-        subLink: "/self-care/blog",
+        subLinkName: 'Blog',
+        subLink: '/self-care/blog',
       },
       {
-        subLinkName: "Recursos",
-        subLink: "/self-care/resources",
+        subLinkName: 'Recursos',
+        subLink: '/self-care/resources',
       },
     ],
   },

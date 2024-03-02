@@ -11,6 +11,7 @@ import { menuOptions } from '../../data/menuOptions';
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpen, setIsOpen] = useState({});
+  // const [clickedLink, setClickedLink] = useState(null);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -21,14 +22,18 @@ export const Navbar = () => {
   const toggleMenu = (menuName) => {
     setIsOpen((prev) => ({
       ...prev,
-      [menuName]: !prev[menuName], // Cambiar el estado específico para este menú
+      [menuName]: !prev[menuName],
     }));
   };
+
+  // const selectedLink = (id) => {
+  //   setClickedLink(id);
+  //   console.log(clickedLink);
+  // };
 
   return (
     <header className='fixed left-0 top-0 z-50 m-auto w-full justify-center'>
       <div className='flex h-16 justify-between lg:mt-6 lg:justify-center'>
-        {/* Añadir lógica para volver transparente el bg del navbar */}
         <div
           className={`flex size-full items-center justify-between px-6 md:bg-white lg:max-w-[1100px]  lg:self-center lg:rounded-full lg:px-10  ${
             isNavOpen ? 'bg-dark-green' : null
@@ -53,7 +58,7 @@ export const Navbar = () => {
                 className='hidden gap-8 text-base text-white md:flex md:justify-stretch md:text-gray-12'
                 key={name}
               >
-                <li className={`relative ${isOpen[name] ? 'mb-4' : ''}`}>
+                <li className={`relative flex ${isOpen[name] ? 'mb-4' : ''}`}>
                   <Link to={link} className='mr-2'>
                     {name}
                   </Link>
@@ -66,9 +71,9 @@ export const Navbar = () => {
                   </button>
                   {isOpen[name] && (
                     <div className='absolute left-0 mt-3 w-auto text-nowrap rounded-lg bg-white px-4 py-2'>
-                      {options.map(({ subLinkName, subLink }) => (
+                      {options.map(({ id, subLinkName, subLink }) => (
                         <li key={subLinkName} className='mb-2 text-left'>
-                          <Link to={subLink} onClick={toggleNav}>
+                          <Link to={`${link}/${id}`} onClick={toggleNav}>
                             {subLinkName}
                           </Link>
                         </li>
