@@ -42,33 +42,37 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop navbar */}
-          <div className='flex h-6 gap-5'>
+          <div className='flex h-6 gap-10'>
             {menuOptions.map(({ id, name, link, options }) => (
               <ul
-                className='hidden gap-8 text-base text-white md:flex md:justify-stretch md:text-gray-12'
+                className='hidden text-base text-white md:flex md:justify-stretch md:text-gray-12'
                 key={name}
               >
                 <li
-                  className={`relative flex cursor-pointer ${isOpen[name] ? 'mb-4' : ''}`}
+                  className='relative flex cursor-pointer gap-1'
                   onClick={() => toggleMenu(name)}
                 >
                   {id === 'terapia-online' ? (
-                    <Link to={`${link}/${id}`} className='mr-2 bg-red-400'>
+                    <Link
+                      to={`${link}/${id}`}
+                      className=' m-auto rounded-full bg-red-400  px-3 text-white'
+                    >
                       {name}
                     </Link>
                   ) : (
-                    <span className='mr-2'>{name}</span>
+                    <span className=''>{name}</span>
                   )}
                   <button>
-                    {!isOpen[name] && id !== 'terapia-online' ? (
-                      <ChevronDown color='#444444' width={16} height={8} />
-                    ) : (
-                      <ChevronUp color='#444444' width={16} height={8} />
-                    )}
+                    {options.length > 1 &&
+                      (!isOpen[name] ? (
+                        <ChevronDown color='#444444' width={16} height={8} />
+                      ) : (
+                        <ChevronUp color='#444444' width={16} height={8} />
+                      ))}
                   </button>
-                  {isOpen[name] && (
-                    <div className='absolute left-0 mt-3 w-auto text-nowrap rounded-lg bg-white px-4 py-2'>
-                      {options.map(({ id, subLinkName, subLink }) => (
+                  {isOpen[name] && options.length > 1 && (
+                    <div className='absolute left-0 mt-10 w-auto text-nowrap rounded-lg bg-white px-4 py-2'>
+                      {options.map(({ id, subLinkName }) => (
                         <span
                           key={subLinkName}
                           className='mb-2 flex flex-col text-left'
