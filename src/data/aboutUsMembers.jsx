@@ -1,3 +1,4 @@
+import bgOnline from '../assets/about/staff.jpg';
 import person1 from '../assets/people/person1.jpg';
 import person2 from '../assets/people/person2.jpg';
 import person3 from '../assets/people/person3.jpg';
@@ -5,7 +6,7 @@ import person3 from '../assets/people/person3.jpg';
 export const members = [
   {
     id: 'staff',
-    // heroBackground: bgOnline,
+    heroBackground: bgOnline,
     heroTitle: 'El equipo de Un Día a la Vez',
     heroMessage:
       'Nuestro equipo de Psicólogos matriculados con años de experiencia en el campo de la psicoterapia conductual están al servicio de nuestros pacientes cuando estos lo requieran',

@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { services } from '../data/servicesServices';
-import { HeroSection } from '../components/components/HeroSection';
+import { HeroSection } from '../components/Services/components/HeroSection';
+import { DescriptionSection } from '../components/Services/components/DescriptionSection';
 
 export const ServicesPage = () => {
   const { service } = useParams();
@@ -34,21 +35,11 @@ export const ServicesPage = () => {
                   heroMessage={heroMessage}
                   heroButton={heroButton}
                 />
-                <section className='m-auto grid w-full grid-cols-1 items-center justify-center gap-8 bg-yellow-green px-5 pb-20 pt-10 text-white lg:grid-cols-2 lg:px-40'>
-                  <img
-                    src={descriptionImage}
-                    alt=''
-                    className='order-last m-auto w-56 sm:order-first'
-                  />
-                  <div className='flex flex-col gap-8 md:gap-4'>
-                    <h2 className='text-center text-h4 font-semibold leading-h4 md:text-left md:text-h6 lg:text-h5'>
-                      {descriptionTitle}
-                    </h2>
-                    <p className='leading-[18px] lg:text-h6 lg:leading-[24px]'>
-                      {description}
-                    </p>
-                  </div>
-                </section>
+                <DescriptionSection
+                  descriptionImage={descriptionImage}
+                  descriptionTitle={descriptionTitle}
+                  description={description}
+                />
                 <section className='px-5 py-20'>
                   <h2 className='mb-20 text-center text-h4 font-semibold leading-h4 md:mb-10'>
                     {troublesTitle}
