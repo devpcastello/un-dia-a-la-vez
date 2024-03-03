@@ -1,4 +1,4 @@
-import { BlogCard } from '../../Home/BlogCard';
+import { BlogCard } from '../Home/BlogCard';
 
 export const Blog = () => {
   return (
