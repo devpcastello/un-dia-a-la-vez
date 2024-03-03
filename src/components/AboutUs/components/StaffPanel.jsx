@@ -6,7 +6,10 @@ export const StaffPanel = () => {
   console.log(staff);
   return (
     <>
-      <div className='flex size-full flex-row gap-8' key={name}>
+      <div
+        className='m-auto grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3'
+        key={name}
+      >
         {staff.map(({ id, name, image }) => (
           <div
             key={id}

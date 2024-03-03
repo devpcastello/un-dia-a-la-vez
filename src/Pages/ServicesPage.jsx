@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { services } from '../data/services';
+import { services } from '../data/servicesServices';
+import { HeroSection } from '../components/components/HeroSection';
+
 export const ServicesPage = () => {
   const { service } = useParams();
 
@@ -25,42 +27,13 @@ export const ServicesPage = () => {
           if (service === id) {
             return (
               <main key={id}>
-                <section
-                  className='relative z-[-15] flex h-screen w-full flex-col items-center justify-center gap-20 bg-center text-white md:gap-8'
-                  style={{
-                    backgroundImage: `url(${heroBackground})`,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center center',
-                    height: '100vh',
-                    width: '100%',
-                  }}
-                >
-                  <div
-                    className='absolute inset-0 z-[-10]  bg-gradient-to-b from-transparent to-yellow-green to-70% opacity-100'
-                    style={{ filter: 'blur(0px)' }}
-                  ></div>
-                  <div>
-                    <div className='mx-auto flex flex-col items-center justify-center gap-10 text-center md:w-1/2 lg:w-2/3'>
-                      <div className='mx-auto flex flex-col gap-4'>
-                        <h1 className='font-semibold text-white lg:text-h6'>
-                          {heroTitle}
-                        </h1>
-                        <p className=' text-h4 font-bold text-white md:text-h5 lg:text-h1 lg:leading-[60px]'>
-                          {heroSubtitle}
-                        </p>
-                      </div>
-                      <div className='flex flex-col items-center justify-center gap-4'>
-                        <p className='text-base text-white lg:text-h6'>
-                          {heroMessage}
-                        </p>
-                        <button className='w-64 rounded-full bg-dark-green px-4 py-2'>
-                          {heroButton}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                <HeroSection
+                  heroBackground={heroBackground}
+                  heroTitle={heroTitle}
+                  heroSubtitle={heroSubtitle}
+                  heroMessage={heroMessage}
+                  heroButton={heroButton}
+                />
                 <section className='m-auto grid w-full grid-cols-1 items-center justify-center gap-8 bg-yellow-green px-5 pb-20 pt-10 text-white lg:grid-cols-2 lg:px-40'>
                   <img
                     src={descriptionImage}

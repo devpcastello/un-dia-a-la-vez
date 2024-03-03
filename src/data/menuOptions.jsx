@@ -48,14 +48,14 @@ export const menuOptions = [
     link: '/about',
     options: [
       {
-        id: 'staff',
-        subLinkName: 'Equipo',
-        subLink: '/about/staff',
-      },
-      {
         id: 'testimonials',
         subLinkName: 'Testimonios',
         subLink: '/about/testimonials',
+      },
+      {
+        id: 'staff',
+        subLinkName: 'Equipo',
+        subLink: '/about/staff',
       },
     ],
   },

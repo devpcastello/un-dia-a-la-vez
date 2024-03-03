@@ -21,7 +21,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='flex h-20 w-full flex-row items-center justify-start gap-5 bg-slate-900 p-5 text-white'>
+      <div className='flex h-20 w-full flex-row items-center justify-center gap-3 bg-slate-900 p-5 text-white'>
         <p>2024</p>
         <p>Todos los derechos reservados</p>
       </div>
