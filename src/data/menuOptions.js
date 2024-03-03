@@ -48,10 +48,12 @@ export const menuOptions = [
     link: '/about',
     options: [
       {
+        id: 'equipo',
         subLinkName: 'Equipo',
         subLink: '/about/staff',
       },
       {
+        id: 'testimonials',
         subLinkName: 'Testimonios',
         subLink: '/about/testimonials',
       },
@@ -63,10 +65,12 @@ export const menuOptions = [
     subLink: '/self-care',
     options: [
       {
+        id: 'blog',
         subLinkName: 'Blog',
         subLink: '/self-care/blog',
       },
       {
+        id: 'resources',
         subLinkName: 'Recursos',
         subLink: '/self-care/resources',
       },
