@@ -1,5 +1,5 @@
-import { StaffCard } from '../components/StaffCard';
-import { StaffPanel } from '../components/StaffPanel';
+import { StaffCard } from './components/StaffCard';
+import { StaffPanel } from './components/StaffPanel';
 
 export const Staff = () => {
   return (

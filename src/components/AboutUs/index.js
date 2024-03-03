@@ -1,3 +1,3 @@
-export * from "./Staff/Staff";
-export * from "./Testimonials/Testimonials";
-export * from "./FQA/Fqa";
+export * from './Staff';
+export * from './Testimonials';
+export * from './Fqa';
