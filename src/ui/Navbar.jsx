@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../../assets/Logo';
-import ChevronUp from '../../assets/ChevronUp';
-import ChevronDown from '../../assets/ChevronDown';
-import { menuOptions } from '../../data/menuOptions';
+import Logo from '../assets/Logo';
+import ChevronUp from '../assets/ChevronUp';
+import ChevronDown from '../assets/ChevronDown';
+import { menuOptions } from '../data/menuOptions';
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

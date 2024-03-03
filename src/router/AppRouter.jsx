@@ -1,5 +1,5 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import { HomePage, AboutPage, SelfCarePage, ServicesPage } from '../Pages';
+import { HomePage, ServicesPage } from '../Pages';
 
 import { Footer, Navbar } from '../ui';
 import { Blog, Resources } from '../components/SelfCare';
