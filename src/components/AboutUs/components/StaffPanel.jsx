@@ -1,28 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { staff } from "../../../data/staff";
+import { staff } from '../../../data/staff';
 
 export const StaffPanel = () => {
   console.log(staff);
   return (
     <>
-      <div className="w-full h-full flex flex-row  gap-8" key={name}>
+      <div className='flex size-full flex-row gap-8' key={name}>
         {staff.map(({ id, name, image }) => (
-          <div className="bg-color9 relative w-[350px] h-[480px] rounded-2xl flex flex-col justify-center items-center ">
-            <div className="flex flex-col justify-center items-center mt-10">
-              <div className="w-[280px] h-[360px] flex items-center justify-center">
-                <img
-                  className="cover rounded-xl h-[380px]"
-                  src={image}
-                  alt=""
-                />
+          <div
+            key={id}
+            className='relative flex h-[480px] w-[350px] flex-col items-center justify-center rounded-2xl bg-dark-green '
+          >
+            <div className='mt-10 flex flex-col items-center justify-center'>
+              <div className='flex h-[360px] w-[280px] items-center justify-center'>
+                <img className=' h-[380px] rounded-xl' src={image} alt={name} />
               </div>
             </div>
             <div>
-              <h2 className="text-xl font-medium mt-5">{name}</h2>
+              <h2 className='mt-5 text-xl font-medium'>{name}</h2>
               <Link to={`/about/staff/${id}`}>
-                <p className="text-sm text-center font-light">Ver más</p>
+                <p className='text-center text-sm font-light'>Ver más</p>
               </Link>
             </div>
           </div>

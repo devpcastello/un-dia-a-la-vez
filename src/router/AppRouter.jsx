@@ -16,19 +16,17 @@ export const AppRouter = () => {
 
         <Route path='/service/:service' element={<ServicesPage />} />
 
-        <Route path='/about' element={<AboutPage />} />
+        {/* <Route path='/about' element={<AboutPage />} /> */}
         <Route path='/about/testimonials' element={<Testimonials />} />
         <Route path='/about/fqa' element={<Fqa />} />
         <Route path='/about/staff' element={<Staff />} />
         <Route path='/about/staff/:index' element={<StaffDetail />} />
 
-        <Route path='/self-care' element={<SelfCarePage />} />
+        {/* <Route path='/self-care' element={<SelfCarePage />} /> */}
         <Route path='/self-care/blog' element={<Blog />} />
         <Route path='/self-care/blog/:index' element={<BlogEntry />} />
-
         <Route path='/self-care/resources' element={<Resources />} />
       </Routes>
-
       <Footer />
       <Outlet />
     </>

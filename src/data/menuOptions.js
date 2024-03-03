@@ -48,7 +48,7 @@ export const menuOptions = [
     link: '/about',
     options: [
       {
-        id: 'equipo',
+        id: 'staff',
         subLinkName: 'Equipo',
         subLink: '/about/staff',
       },
@@ -62,7 +62,7 @@ export const menuOptions = [
   {
     id: 'self-care',
     name: 'Auto cuidado',
-    subLink: '/self-care',
+    link: '/self-care',
     options: [
       {
         id: 'blog',
@@ -70,7 +70,7 @@ export const menuOptions = [
         subLink: '/self-care/blog',
       },
       {
-        id: 'resources',
+        id: 'recursos',
         subLinkName: 'Recursos',
         subLink: '/self-care/resources',
       },
