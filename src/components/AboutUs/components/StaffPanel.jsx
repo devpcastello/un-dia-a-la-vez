@@ -1,16 +1,11 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import { staff } from '../../../data/staff';
-
-export const StaffPanel = () => {
-  console.log(staff);
+export const StaffPanel = ({ cards }) => {
   return (
-    <>
-      <div
-        className='m-auto grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3'
-        key={name}
-      >
-        {staff.map(({ id, name, image }) => (
+    <div className='m-auto grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3'>
+      {cards.map(({ id, name, image, description }) => (
+        <div key={name}>
           <div
             key={id}
             className='relative flex h-[480px] w-[350px] flex-col items-center justify-center rounded-2xl bg-dark-green '
@@ -27,8 +22,12 @@ export const StaffPanel = () => {
               </Link>
             </div>
           </div>
-        ))}
-      </div>
-    </>
+        </div>
+      ))}
+    </div>
   );
+};
+
+StaffPanel.propTypes = {
+  cards: PropTypes.array.isRequired,
 };

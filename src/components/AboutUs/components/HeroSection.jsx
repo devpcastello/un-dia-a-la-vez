@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 export const HeroSection = ({
   heroBackground,
   heroTitle,
-  heroSubtitle,
   heroMessage,
-  heroButton,
+  heroImage,
 }) => {
   return (
     <section
@@ -24,19 +23,14 @@ export const HeroSection = ({
         style={{ filter: 'blur(0px)' }}
       ></div>
       <div>
-        <div className='mx-auto flex flex-col items-center justify-center gap-10 text-center md:w-1/2 lg:w-2/3'>
-          <div className='mx-auto flex flex-col gap-4'>
-            <h1 className='font-semibold text-white lg:text-h6'>{heroTitle}</h1>
-            <p className=' text-h4 font-bold text-white md:text-h5 lg:text-h1 lg:leading-[60px]'>
-              {heroSubtitle}
-            </p>
-          </div>
-          <div className='flex flex-col items-center justify-center gap-4'>
+        <div className='mx-auto grid w-11/12 grid-cols-1 items-center justify-center gap-10 text-center md:w-3/4 lg:w-3/4 lg:grid-cols-2 lg:gap-20'>
+          <div className='mx-auto flex flex-col gap-5 lg:gap-10'>
+            <h1 className=' text-h4 font-bold text-white md:text-h3 lg:text-h1 lg:leading-[60px]'>
+              {heroTitle}
+            </h1>
             <p className='text-base text-white lg:text-h6'>{heroMessage}</p>
-            <button className='w-64 rounded-full bg-dark-green px-4 py-2'>
-              {heroButton}
-            </button>
           </div>
+          <img className='rounded-lg' src={heroImage} alt={heroTitle} />
         </div>
       </div>
     </section>
@@ -46,7 +40,6 @@ export const HeroSection = ({
 HeroSection.propTypes = {
   heroBackground: PropTypes.string.isRequired,
   heroTitle: PropTypes.string.isRequired,
-  heroSubtitle: PropTypes.string.isRequired,
+  heroImage: PropTypes.string.isRequired,
   heroMessage: PropTypes.string.isRequired,
-  heroButton: PropTypes.string.isRequired,
 };
