@@ -1,11 +1,11 @@
-import person1 from "../assets/people/person1.jpg";
-import person2 from "../assets/people/person2.jpg";
-import person3 from "../assets/people/person3.jpg";
+import person1 from '../assets/people/person1.jpg';
+import person2 from '../assets/people/person2.jpg';
+import person3 from '../assets/people/person3.jpg';
 
 export const staff = [
   {
     id: 1,
-    name: "Almendra",
+    name: 'Almendra',
     image: `${person1}`,
     description: `
     ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
@@ -17,7 +17,7 @@ export const staff = [
   },
   {
     id: 2,
-    name: "Angela Napolitana",
+    name: 'Angela Napolitana',
     image: `${person2}`,
     description: `
     ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
@@ -29,7 +29,7 @@ export const staff = [
   },
   {
     id: 3,
-    name: "Oscar Bermudez",
+    name: 'Oscar Bermudez',
     image: `${person3}`,
     description: `
     ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.

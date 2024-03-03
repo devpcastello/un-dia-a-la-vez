@@ -1,23 +1,21 @@
-import { useParams } from "react-router-dom";
-import { staff } from "../../../data/staff.js";
-
-const person1 = "../../../assets/people/person2.jpg";
+import { useParams } from 'react-router-dom';
+import { staff } from '../../../data/staff';
 
 export const StaffDetail = () => {
   const { index } = useParams();
-  const person = staff.find((p) => p.id === parseInt(index));
-
-  console.log(person);
+  const { name, image, description } = staff.find(
+    (p) => p.id === parseInt(index),
+  );
 
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center gap-8 p-8 pt-14">
-      {person ? (
+    <div className='flex h-auto w-full flex-col items-center justify-center gap-8 p-8 pt-14'>
+      {name ? (
         <>
-          <h2 className="text-4xl font-bold text-gray-10">{person.name}</h2>
-          <div className=" w-[280px] h-[360px] flex items-center justify-center">
-            <img className="h-[380px] cover" src={person.image} alt="" />
+          <h2 className='text-4xl font-bold text-gray-10'>{name}</h2>
+          <div className=' flex h-[360px] w-[280px] items-center justify-center'>
+            <img className='h-[380px]' src={image} alt='' />
           </div>
-          <p className="text-gray-8 font-light">{person.description}</p>
+          <p className='font-light text-gray-8'>{description}</p>
           <ul>
             <li></li>
             <li></li>
