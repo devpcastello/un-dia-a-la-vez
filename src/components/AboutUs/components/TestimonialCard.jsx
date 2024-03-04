@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/solid';
-import { testimonials } from '../../../data/testimonials';
 import { PropTypes } from 'prop-types';
 
 export const TestimonialCard = ({ cards }) => {
@@ -39,7 +38,7 @@ export const TestimonialCard = ({ cards }) => {
               alt={currentTestimonial.name}
             />
           </div>
-          {currentImageIndex < testimonials.length - 1 && (
+          {currentImageIndex < cards.length - 1 && (
             <ChevronRightIcon
               className='absolute right-0 size-10 cursor-pointer text-white   '
               onClick={handleNextImage}

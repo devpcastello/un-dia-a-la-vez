@@ -63,14 +63,14 @@ export const Navbar = () => {
                     <span className=''>{name}</span>
                   )}
                   <button>
-                    {options.length > 1 &&
+                    {options.length > 0 &&
                       (!isOpen[name] ? (
                         <ChevronDown color='#444444' width={16} height={8} />
                       ) : (
                         <ChevronUp color='#444444' width={16} height={8} />
                       ))}
                   </button>
-                  {isOpen[name] && options.length > 1 && (
+                  {isOpen[name] && options.length > 0 && (
                     <div className='absolute left-0 mt-10 w-auto text-nowrap rounded-lg bg-white px-4 py-2'>
                       {options.map(({ id, subLinkName }) => (
                         <span
