@@ -25,7 +25,7 @@ export const DescriptionSection = ({
   );
 };
 
-DescriptionSection.PropTypes = {
+DescriptionSection.propTypes = {
   descriptionImage: PropTypes.string.isRequired,
   descriptionTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

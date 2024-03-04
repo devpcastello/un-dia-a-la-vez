@@ -47,11 +47,11 @@ export const menuOptions = [
     name: 'Acerca de nosotros',
     link: '/about',
     options: [
-      // {
-      //   id: 'testimonials',
-      //   subLinkName: 'Testimonios',
-      //   subLink: '/about/testimonials',
-      // },
+      {
+        id: 'testimonials',
+        subLinkName: 'Testimonios',
+        subLink: '/about/testimonials',
+      },
       // {
       //   id: 'vision',
       //   subLinkName: 'Vision',

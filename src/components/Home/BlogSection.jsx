@@ -1,5 +1,5 @@
-import image1 from '../../assets/posts/post2.jpg';
-import image2 from '../../assets/posts/post3.jpg';
+import image2 from '../../assets/selfCare/posts/post3.jpg';
+import image1 from '../../assets/selfCare/posts/post2.jpg';
 
 export const BlogSection = () => {
   return (
