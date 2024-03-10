@@ -18,6 +18,7 @@ module.exports = {
         'swamp-green': '#68C482',
         'forest-green': '#029E7D',
         yellow: '#F0DF7D',
+        red: '#ff8282 ',
         'yellow-green': '#8CE88F',
         'lemon-green': '#AEFA94',
         'gray-1': '#DDDDDD',

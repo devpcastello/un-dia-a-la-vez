@@ -55,7 +55,7 @@ export const Navbar = () => {
                   {id === 'terapia-online' ? (
                     <Link
                       to={`${link}/${id}`}
-                      className=' m-auto rounded-full bg-red-400  px-3 text-white'
+                      className=' bg-red-400 m-auto rounded-full  bg-red px-3 text-white'
                     >
                       {name}
                     </Link>
