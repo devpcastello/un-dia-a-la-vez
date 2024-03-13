@@ -52,7 +52,7 @@ export const Navbar = () => {
                   className='relative flex cursor-pointer gap-1'
                   onClick={() => toggleMenu(name)}
                 >
-                  {id === 'terapia-online' ? (
+                  {id === 'fast-assistance' ? (
                     <Link
                       to={`${link}/${id}`}
                       className=' bg-red-400 m-auto rounded-full  bg-red px-3 text-white'

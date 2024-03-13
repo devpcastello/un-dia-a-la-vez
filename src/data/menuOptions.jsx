@@ -5,17 +5,17 @@ export const menuOptions = [
     link: '/',
     options: [],
   },
-  {
-    id: 'terapia-online',
-    name: 'Terapia Online',
-    link: '/service',
-    options: [],
-  },
+
   {
     id: 'other-services',
     name: 'Otros Servicios',
     link: '/service',
     options: [
+      {
+        id: 'terapia-online',
+        subLinkName: 'Terapia Online',
+        subLink: '/service',
+      },
       {
         id: 'terapia-pareja',
         subLinkName: 'Terapia de Pareja',
