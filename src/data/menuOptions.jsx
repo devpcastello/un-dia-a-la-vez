@@ -1,5 +1,11 @@
 export const menuOptions = [
   {
+    id: 'fast-assistance',
+    name: '¡Necesito Ayuda!',
+    link: '/',
+    options: [],
+  },
+  {
     id: 'terapia-online',
     name: 'Terapia Online',
     link: '/service',
@@ -47,11 +53,11 @@ export const menuOptions = [
     name: 'Acerca de nosotros',
     link: '/about',
     options: [
-      {
-        id: 'testimonials',
-        subLinkName: 'Testimonios',
-        subLink: '/about/testimonials',
-      },
+      // {
+      //   id: 'testimonials',
+      //   subLinkName: 'Testimonios',
+      //   subLink: '/about/testimonials',
+      // },
       // {
       //   id: 'vision',
       //   subLinkName: 'Vision',
@@ -69,21 +75,21 @@ export const menuOptions = [
       },
     ],
   },
-  {
-    id: 'self-care',
-    name: 'Auto cuidado',
-    link: '/self-care',
-    options: [
-      {
-        id: 'blog',
-        subLinkName: 'Blog',
-        subLink: '/self-care/blog',
-      },
-      {
-        id: 'recursos',
-        subLinkName: 'Recursos',
-        subLink: '/self-care/resources',
-      },
-    ],
-  },
+  // {
+  //   id: 'self-care',
+  //   name: 'Auto cuidado',
+  //   link: '/self-care',
+  //   options: [
+  //     {
+  //       id: 'blog',
+  //       subLinkName: 'Blog',
+  //       subLink: '/self-care/blog',
+  //     },
+  //     {
+  //       id: 'recursos',
+  //       subLinkName: 'Recursos',
+  //       subLink: '/self-care/resources',
+  //     },
+  //   ],
+  // },
 ];
