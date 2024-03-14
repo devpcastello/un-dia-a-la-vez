@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { services } from '../../data/homeServices';
 
 export const Services = () => {
@@ -12,8 +13,9 @@ export const Services = () => {
         </p>
 
         <div className='grid h-auto w-full grid-cols-1 items-center justify-center gap-10 text-forest-green md:min-w-[600px] md:max-w-[800px] md:grid-cols-2 lg:max-w-[1200px]  lg:grid-cols-3 '>
-          {services.map(({ name, description, image }) => (
-            <div
+          {services.map(({ link, name, description, image }) => (
+            <Link
+              to={link}
               key={name}
               className='flex h-96  flex-col items-center justify-between rounded-lg bg-white px-8 pt-12'
             >
@@ -24,7 +26,7 @@ export const Services = () => {
                 </div>
               </div>
               <div className='lg:min-w-20'>{image}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
