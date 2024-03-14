@@ -1,6 +1,20 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
-export const Modal = ({ name, image, fullDescription, onClose }) => {
+export const Modal = ({ image, fullDescription, onClose }) => {
+  const [keyName, setKeyName] = useState('');
+  const [name, setName] = useState('');
+  const isValidNumber = (input) => /^\d{9}$/.test(input);
+
+  const handleButtonClick = () => {
+    window.open(
+      `https://wa.me/+51923022460?text=${encodeURIComponent(`${wtppMessage}`)}`,
+      '_blank',
+    );
+  };
+
+  const wtppMessage = `Hola, soy ${name}. Estoy interesado en llevar sesiones de terapia online.`;
+
   return (
     <div className='fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto overflow-x-hidden bg-slate-500 bg-opacity-30 outline-none focus:outline-none'>
       <div className='relative mx-auto my-6 w-10/12  md:w-8/12 lg:w-1/3'>
@@ -22,19 +36,23 @@ export const Modal = ({ name, image, fullDescription, onClose }) => {
             <input
               type='text'
               placeholder='Nombre'
-              className='rounded-full border-none bg-light-blue py-2 placeholder:px-4 placeholder:text-white'
+              className='rounded-full border-none bg-light-blue px-4 py-2 text-white  placeholder:text-white'
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
-            {/* <input
-              type='text'
-              placeholder='Email'
-              className='rounded-full border-none bg-light-blue py-2 placeholder:px-4 placeholder:text-white'
-            /> */}
             <input
               type='text'
               placeholder='Whatsapp'
-              className='rounded-full border-none bg-light-blue py-2 placeholder:px-4 placeholder:text-white'
+              className='rounded-full border-none bg-light-blue px-4 py-2 text-white placeholder:text-white'
+              onChange={(e) => {
+                setKeyName(e.target.value);
+              }}
             />
-            <button className='rounded-full bg-red px-4 py-2 text-white hover:font-bold'>
+            <button
+              className='rounded-full bg-red px-4 py-2 text-white hover:font-bold'
+              onClick={handleButtonClick}
+            >
               Solicitar ayuda
             </button>
           </div>

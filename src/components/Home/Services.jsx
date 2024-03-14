@@ -3,8 +3,8 @@ import { services } from '../../data/homeServices';
 export const Services = () => {
   return (
     <section className='w-full bg-dark-green'>
-      <div className='mx-auto flex flex-col items-center bg-lemon-green px-6 py-16 lg:rounded-t-[300px] lg:px-32 lg:py-16'>
-        <h2 className='mb-8 self-start justify-self-start text-h4 font-bold text-gray-9 '>
+      <div className='mx-auto flex flex-col items-center bg-lemon-green px-6 py-16 lg:rounded-t-[200px] lg:px-32 lg:py-16'>
+        <h2 className='mb-8 self-center text-h4 font-bold text-gray-9 '>
           Nuestros servicios
         </h2>
         <p className='mb-10 text-h6 text-gray-9'>
