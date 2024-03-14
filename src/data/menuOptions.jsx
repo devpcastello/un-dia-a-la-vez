@@ -2,7 +2,7 @@ export const menuOptions = [
   {
     id: 'fast-assistance',
     name: '¡Necesito Ayuda!',
-    link: '/',
+    link: '#',
     options: [],
   },
 

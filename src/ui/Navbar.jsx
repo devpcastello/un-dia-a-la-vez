@@ -5,10 +5,20 @@ import Logo from '../assets/Logo';
 import ChevronUp from '../assets/ChevronUp';
 import ChevronDown from '../assets/ChevronDown';
 import { menuOptions } from '../data/menuOptions';
+import { Modal } from './components/Modal';
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpen, setIsOpen] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(null);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(null);
+  };
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -55,7 +65,8 @@ export const Navbar = () => {
                   {id === 'fast-assistance' ? (
                     <Link
                       to={`${link}/${id}`}
-                      className=' bg-red-400 m-auto rounded-full  bg-red px-3 text-white'
+                      className='m-auto rounded-full  bg-red px-3 text-white'
+                      onClick={() => openModal()}
                     >
                       {name}
                     </Link>
@@ -151,6 +162,7 @@ export const Navbar = () => {
           )}
         </div>
       </div>
+      {isModalOpen && <Modal onClose={closeModal} />}
     </header>
   );
 };
