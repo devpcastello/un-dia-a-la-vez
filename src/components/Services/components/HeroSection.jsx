@@ -7,6 +7,13 @@ export const HeroSection = ({
   heroMessage,
   heroButton,
 }) => {
+  const handleOpenWtpp = (heroTitle) => {
+    window.open(
+      `https://wa.me/+51923022460?text=${encodeURIComponent(`Hola, me gustaría agendar una cita de ${heroTitle}`)}`,
+      '_blank',
+    );
+  };
+
   return (
     <section
       className='relative z-[-15] flex h-screen w-full flex-col items-center justify-center gap-20 bg-center text-white md:gap-8'
@@ -33,7 +40,12 @@ export const HeroSection = ({
           </div>
           <div className='flex flex-col items-center justify-center gap-4'>
             <p className='text-base text-white lg:text-h6'>{heroMessage}</p>
-            <button className='w-64 rounded-full bg-dark-green px-4 py-2'>
+            <button
+              className='w-64 cursor-pointer rounded-full bg-dark-green px-4 py-2'
+              onClick={() => {
+                handleOpenWtpp(heroTitle);
+              }}
+            >
               {heroButton}
             </button>
           </div>
