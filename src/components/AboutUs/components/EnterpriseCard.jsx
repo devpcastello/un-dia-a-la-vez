@@ -15,7 +15,7 @@ export const EnterpriseCards = ({ cards }) => {
           key={name}
           className='relative flex h-[250px] max-w-[500px] flex-col items-center justify-center  rounded-full bg-dark-green'
         >
-          <div className='grid max-w-[260px] grid-cols-1 items-center justify-center pr-10 lg:max-w-full lg:grid-cols-2'>
+          <div className='grid  grid-cols-2 items-center justify-center pr-10 lg:max-w-full'>
             <img
               className='size-[250px] rounded-full object-cover '
               src={image}
