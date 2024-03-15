@@ -31,8 +31,8 @@ export const Hero = () => {
           />
         </div>
       </div>
-      <button className='absolute bottom-10 z-20 rounded-full bg-dark-green px-4 py-2 text-white xl:px-6 xl:py-4 xl:text-2xl'>
-        <Link to='/about'>¿Empezamos tu proceso?</Link>
+      <button className='absolute bottom-10 z-20 rounded-full bg-dark-green px-4 py-2 text-white xl:px-6 xl:py-3 xl:text-h5'>
+        <Link to='/service/terapia-online'>¿Empezamos tu proceso?</Link>
       </button>
     </main>
   );

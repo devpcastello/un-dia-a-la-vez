@@ -13,6 +13,13 @@ export const StaffPanel = ({ cards }) => {
     setModalInfo(null);
   };
 
+  const handleOpenWtpp = (name) => {
+    window.open(
+      `https://wa.me/+51923022460?text=${encodeURIComponent(`Hola, me gustaría agendar una cita con ${name}`)}`,
+      '_blank',
+    );
+  };
+
   return (
     <div className='m-auto grid grid-cols-1 gap-20 lg:grid-cols-2'>
       {cards.map(({ id, name, image, shortDescription, fullDescription }) => (
@@ -22,7 +29,7 @@ export const StaffPanel = ({ cards }) => {
         >
           <div className='grid max-w-[260px] grid-cols-1 items-center justify-center lg:max-w-full lg:grid-cols-2 '>
             <img
-              className='max-h-[400px] rounded-t-xl object-contain lg:rounded-l-xl'
+              className='h-[350px] rounded-t-xl object-cover lg:rounded-l-xl'
               src={image}
               alt={name}
             />
@@ -31,12 +38,20 @@ export const StaffPanel = ({ cards }) => {
                 <h2 className='text-h6 font-medium'>{name}</h2>
                 <p className='text-sm'>{shortDescription}</p>
               </div>
-              <button
-                className='rounded-full bg-red p-1 px-2 text-sm font-light'
-                onClick={() => openModal({ name, image, fullDescription })}
-              >
-                Ver más
-              </button>
+              <div className='flex gap-5'>
+                <button
+                  className='rounded-full bg-light-blue p-1 px-2 text-sm font-medium'
+                  onClick={() => openModal({ name, image, fullDescription })}
+                >
+                  Ver más
+                </button>
+                <button
+                  className='rounded-full bg-red p-1 px-2 text-sm font-medium'
+                  onClick={() => handleOpenWtpp(name)}
+                >
+                  Solicitar sesión
+                </button>
+              </div>
             </div>
           </div>
         </div>

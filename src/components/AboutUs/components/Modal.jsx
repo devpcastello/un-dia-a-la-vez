@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Modal = ({ name, image, fullDescription, onClose }) => {
   return (
-    <div className='fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none'>
+    <div className='fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto overflow-x-hidden bg-slate-500 bg-opacity-50 outline-none focus:outline-none'>
       <div className='relative mx-auto my-6 w-auto max-w-3xl'>
         <div className='relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none'>
           <div className='flex items-start justify-between rounded-t border-b border-solid p-5'>

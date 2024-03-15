@@ -1,8 +1,11 @@
 import bgStaff from '../assets/about/staff.jpg';
 import heroImage from '../assets/about/staff-2.jpg';
 import person1 from '../assets/people/person1.jpg';
-import person2 from '../assets/people/person2.jpg';
 import person3 from '../assets/people/person3.jpg';
+import ana from '../assets/staff/ana.png';
+import almendra from '../assets/staff/almendra.png';
+import eduardo from '../assets/staff/eduardo.png';
+import jeyck from '../assets/staff/jeyck.png';
 
 export const members = [
   {
@@ -17,41 +20,35 @@ export const members = [
     psychologistCards: [
       {
         id: 1,
-        name: 'Almendra',
-        image: `${person1}`,
+        name: 'Almendra Vizcarra',
+        image: `${almendra}`,
         shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
         fullDescription: `
         ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
 
-        Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-
-        Mi objetivo es proporcionar un espacio seguro y de apoyo donde los clientes puedan explorar sus pensamientos, sentimientos y comportamientos de manera abierta y sin prejuicios. Estoy comprometido con ayudar a mis clientes a alcanzar sus metas y trabajar juntos para superar los desafíos que enfrentan. Si está interesado en explorar la terapia conmigo, estaré encantado de trabajar juntos para ayudarle a alcanzar su mejor versión.
+        Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso. \n
         `,
       },
       {
         id: 2,
-        name: 'Angela Napolitana',
-        image: `${person2}`,
+        name: 'Ana Lucía',
+        image: `${ana}`,
         shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
         fullDescription: `
         ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
 
         Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-
-        Mi objetivo es proporcionar un espacio seguro y de apoyo donde los clientes puedan explorar sus pensamientos, sentimientos y comportamientos de manera abierta y sin prejuicios. Estoy comprometido con ayudar a mis clientes a alcanzar sus metas y trabajar juntos para superar los desafíos que enfrentan. Si está interesado en explorar la terapia conmigo, estaré encantado de trabajar juntos para ayudarle a alcanzar su mejor versión.
         `,
       },
       {
         id: 3,
-        name: 'Oscar Bermudez',
-        image: `${person3}`,
+        name: 'Eduardo Pérez',
+        image: `${eduardo}`,
         shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
         fullDescription: `
         ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
 
         Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-
-        Mi objetivo es proporcionar un espacio seguro y de apoyo donde los clientes puedan explorar sus pensamientos, sentimientos y comportamientos de manera abierta y sin prejuicios. Estoy comprometido con ayudar a mis clientes a alcanzar sus metas y trabajar juntos para superar los desafíos que enfrentan. Si está interesado en explorar la terapia conmigo, estaré encantado de trabajar juntos para ayudarle a alcanzar su mejor versión.
         `,
       },
     ],
@@ -60,42 +57,38 @@ export const members = [
     enterpriseCards: [
       {
         id: 1,
-        name: 'Almendra',
+        name: 'Erick Alpaca',
         image: `${person1}`,
-        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
-        fullDescription: `
-        ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
-
-        Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-
-        Mi objetivo es proporcionar un espacio seguro y de apoyo donde los clientes puedan explorar sus pensamientos, sentimientos y comportamientos de manera abierta y sin prejuicios. Estoy comprometido con ayudar a mis clientes a alcanzar sus metas y trabajar juntos para superar los desafíos que enfrentan. Si está interesado en explorar la terapia conmigo, estaré encantado de trabajar juntos para ayudarle a alcanzar su mejor versión.
-        `,
+        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. `,
+        link: '#',
       },
       {
         id: 2,
-        name: 'Angela Napolitana',
-        image: `${person2}`,
-        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
-        fullDescription: `
-        ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
-
-        Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-
-        Mi objetivo es proporcionar un espacio seguro y de apoyo donde los clientes puedan explorar sus pensamientos, sentimientos y comportamientos de manera abierta y sin prejuicios. Estoy comprometido con ayudar a mis clientes a alcanzar sus metas y trabajar juntos para superar los desafíos que enfrentan. Si está interesado en explorar la terapia conmigo, estaré encantado de trabajar juntos para ayudarle a alcanzar su mejor versión.
-        `,
+        name: 'Jeyck',
+        image: `${jeyck}`,
+        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y .`,
+        link: '#',
       },
       {
         id: 3,
-        name: 'Oscar Bermudez',
+        name: 'Memo',
         image: `${person3}`,
-        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
-        fullDescription: `
-        ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
-
-        Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-
-        Mi objetivo es proporcionar un espacio seguro y de apoyo donde los clientes puedan explorar sus pensamientos, sentimientos y comportamientos de manera abierta y sin prejuicios. Estoy comprometido con ayudar a mis clientes a alcanzar sus metas y trabajar juntos para superar los desafíos que enfrentan. Si está interesado en explorar la terapia conmigo, estaré encantado de trabajar juntos para ayudarle a alcanzar su mejor versión.
-        `,
+        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y .`,
+        link: '#',
+      },
+      {
+        id: 4,
+        name: 'Jennie',
+        image: `${person3}`,
+        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y .`,
+        link: '#',
+      },
+      {
+        id: 5,
+        name: 'Enrique Palomino',
+        image: `${person3}`,
+        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y .`,
+        link: '#',
       },
     ],
   },

@@ -6,7 +6,7 @@ export const Modal = ({ image, fullDescription, onClose }) => {
   const [name, setName] = useState('');
   const isValidNumber = (input) => /^\d{9}$/.test(input);
 
-  const handleButtonClick = () => {
+  const handleOpenWtpp = () => {
     window.open(
       `https://wa.me/+51923022460?text=${encodeURIComponent(`${wtppMessage}`)}`,
       '_blank',
@@ -51,7 +51,7 @@ export const Modal = ({ image, fullDescription, onClose }) => {
             />
             <button
               className='rounded-full bg-red px-4 py-2 text-white hover:font-bold'
-              onClick={handleButtonClick}
+              onClick={handleOpenWtpp}
             >
               Solicitar ayuda
             </button>

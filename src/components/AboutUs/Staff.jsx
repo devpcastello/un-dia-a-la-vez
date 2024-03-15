@@ -4,6 +4,7 @@ import { StaffPanel } from './components/StaffPanel';
 import { members } from '../../data/aboutUsMembers';
 import { useParams } from 'react-router-dom';
 import { HeroSection } from './components/HeroSection';
+import { EnterpriseCards } from './components/EnterpriseCard';
 
 export const Staff = () => {
   const { staff } = useParams();
@@ -57,7 +58,7 @@ export const Staff = () => {
                     </p>
                   </div>
                   <div className='flex w-full items-center justify-center'>
-                    <StaffPanel cards={enterpriseCards} />
+                    <EnterpriseCards cards={enterpriseCards} />
                   </div>
                 </section>
               </main>
