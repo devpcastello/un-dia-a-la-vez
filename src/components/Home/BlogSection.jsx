@@ -1,26 +1,13 @@
 import image2 from '../../assets/selfCare/posts/post3.jpg';
 import image1 from '../../assets/selfCare/posts/post2.jpg';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/all';
+// import gsap from 'gsap';
+// import { useGSAP } from '@gsap/react';
+// import { ScrollTrigger } from 'gsap/all';
+import { blogSectionAnim } from '../../utils/blogSectionAnim';
 
 export const BlogSection = () => {
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ScrollTrigger.create({
-      trigger: '#box', // Selector del elemento que actúa como desencadenador
-      start: 'top bottom', // Punto de inicio del desencadenador
-      end: 'bottom center', // Punto de finalización del desencadenador
-      toggleActions: 'play none none none', // Acciones de activación del desencadenador
-      // Agrega la animación a ScrollTrigger
-      animation: gsap.fromTo(
-        '#box', // Selector del elemento
-        { opacity: 0, y: 50, x: 300 }, // Estado inicial (from)
-        { opacity: 1, y: 0, x: 0, duration: 1, ease: 'power2.out' }, // Estado final (to)
-      ),
-    });
-  }, []);
+  blogSectionAnim('#card1', 300, 0, 50, 0);
+  blogSectionAnim('#card2', -300, 0, 50, 0);
 
   return (
     <section className='mx-auto flex flex-col items-center bg-dark-green px-6 py-16 lg:px-32 lg:py-16'>
@@ -74,7 +61,7 @@ export const BlogSection = () => {
         </h2>
         <div
           className='mb-10 mr-40 self-end text-white md:max-w-[700px]'
-          id='box'
+          id='card1'
         >
           <div className='relative mb-6 max-w-[1400px] md:w-[600px]'>
             <img
@@ -94,7 +81,10 @@ export const BlogSection = () => {
             Ver más
           </button>
         </div>
-        <div className='ml-40 self-start text-white md:max-w-[600px]'>
+        <div
+          className='ml-40 self-start text-white md:max-w-[600px]'
+          id='card2'
+        >
           <div className='relative mb-6 grid grid-cols-2 overflow-hidden rounded-xl bg-light-blue'>
             <img
               src={image2}
