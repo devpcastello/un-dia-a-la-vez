@@ -14,10 +14,12 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.0",
     "@heroicons/react": "^2.0.17",
     "@tailwindcss/typography": "^0.5.10",
     "css-peeps": "^1.0.1",
     "eslint-plugin-tailwindcss": "^3.14.2",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../assets/Logo';
@@ -6,11 +6,37 @@ import ChevronUp from '../assets/ChevronUp';
 import ChevronDown from '../assets/ChevronDown';
 import { menuOptions } from '../data/menuOptions';
 import { Modal } from './components/Modal';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpen, setIsOpen] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(null);
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    const handleScroll = () => {
+      const currentScrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollTop > lastScrollTop) {
+        gsap.to(navbar, { y: -navbar.offsetHeight, duration: 0.3 });
+      } else {
+        gsap.to(navbar, { y: 0, duration: 0.5 });
+      }
+
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -32,7 +58,10 @@ export const Navbar = () => {
   };
 
   return (
-    <header className='fixed left-0 top-0 z-50 m-auto w-full justify-center'>
+    <header
+      className='fixed left-0 top-0 z-50 m-auto w-full justify-center'
+      id='navbar'
+    >
       <div className='flex h-16 justify-between lg:mt-6 lg:justify-center'>
         <div
           className={`flex size-full items-center justify-between px-6 md:bg-white lg:max-w-[1100px]  lg:self-center lg:rounded-full lg:px-10  ${
@@ -119,7 +148,7 @@ export const Navbar = () => {
               className={`fixed inset-0 top-[4rem]  z-50 flex flex-col bg-dark-green md:hidden xl:hidden`}
             >
               {/* <ul className=""> */}
-              {menuOptions.map(({ name, link, options }) => (
+              {menuOptions.map(({ id, name, link, options }) => (
                 <ul
                   key={name}
                   className='mt-6 flex w-full flex-col items-center text-white'
@@ -132,12 +161,26 @@ export const Navbar = () => {
                       isOpen[name] ? 'mb-4' : null
                     }`}
                   >
-                    {name}
-                    {!isOpen && options ? (
-                      <ChevronUp color='#444444' />
+                    {id === 'fast-assistance' ? (
+                      <Link
+                        to={`${link}/${id}`}
+                        className='m-auto rounded-full  bg-red px-3 text-white'
+                        onClick={() => openModal()}
+                      >
+                        {name}
+                      </Link>
                     ) : (
-                      <ChevronDown color='#444444' />
+                      <span className=''>{name}</span>
                     )}
+
+                    <button>
+                      {!isOpen.length > 0 &&
+                        (!isOpen[name] ? (
+                          <ChevronUp color='#444444' />
+                        ) : (
+                          <ChevronDown color='#444444' />
+                        ))}
+                    </button>
                   </li>
 
                   {/* Opciones de la lista desplegable */}
