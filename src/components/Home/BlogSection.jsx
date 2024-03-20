@@ -1,20 +1,39 @@
 import image2 from '../../assets/selfCare/posts/post3.jpg';
 import image1 from '../../assets/selfCare/posts/post2.jpg';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
 
 export const BlogSection = () => {
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.create({
+      trigger: '#box', // Selector del elemento que actúa como desencadenador
+      start: 'top bottom', // Punto de inicio del desencadenador
+      end: 'bottom center', // Punto de finalización del desencadenador
+      toggleActions: 'play none none none', // Acciones de activación del desencadenador
+      // Agrega la animación a ScrollTrigger
+      animation: gsap.fromTo(
+        '#box', // Selector del elemento
+        { opacity: 0, y: 50, x: 300 }, // Estado inicial (from)
+        { opacity: 1, y: 0, x: 0, duration: 1, ease: 'power2.out' }, // Estado final (to)
+      ),
+    });
+  }, []);
+
   return (
     <section className='mx-auto flex flex-col items-center bg-dark-green px-6 py-16 lg:px-32 lg:py-16'>
       <div className='md:hidden '>
-        <h2 className='mb-12 text-h4 font-semibold text-white'>
+        <h2
+          id='resources-title'
+          className='mb-12 text-h4 font-semibold text-white'
+        >
           Descubre los recursos disponibles para ayudarte
         </h2>
         <div className='mb-10 text-white'>
           <div className='relative mb-6'>
-            <img
-              src={image1}
-              alt=''
-              className='card-image size-full rounded-xl'
-            />
+            <img src={image1} alt='' className='size-full rounded-xl' />
             <p className='absolute bottom-0 px-5 py-2 text-h6 font-semibold '>
               Información valiosa para tu bienestar mental
             </p>
@@ -32,7 +51,7 @@ export const BlogSection = () => {
             <img
               src={image2}
               alt=''
-              className='card-image size-full rounded-xl px-5 pt-5'
+              className='size-full rounded-xl px-5 pt-5'
             />
             <p className='px-5 py-2 text-h6 font-semibold '>
               Información valiosa para tu bienestar mental
@@ -53,7 +72,10 @@ export const BlogSection = () => {
         <h2 className='mb-12 self-end text-h4 font-semibold text-white'>
           Descubre los recursos disponibles para ayudarte
         </h2>
-        <div className='mb-10 mr-40 self-end text-white md:max-w-[700px]'>
+        <div
+          className='mb-10 mr-40 self-end text-white md:max-w-[700px]'
+          id='box'
+        >
           <div className='relative mb-6 max-w-[1400px] md:w-[600px]'>
             <img
               src={image1}
