@@ -6,8 +6,8 @@ import image1 from '../../assets/selfCare/posts/post2.jpg';
 import { blogSectionAnim } from '../../utils/blogSectionAnim';
 
 export const BlogSection = () => {
-  blogSectionAnim('#card1', 300, 0, 50, 0);
-  blogSectionAnim('#card2', -300, 0, 50, 0);
+  blogSectionAnim('#card1', 300, 0, 50, 0, 0, 1);
+  blogSectionAnim('#card2', -300, 0, 50, 0, 0, 1);
 
   return (
     <section className='mx-auto flex flex-col items-center bg-dark-green px-6 py-16 lg:px-32 lg:py-16'>

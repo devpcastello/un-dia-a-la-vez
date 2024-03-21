@@ -2,7 +2,15 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 
-export const blogSectionAnim = (element, startX, endX, startY, endY) => {
+export const blogSectionAnim = (
+  element,
+  startX,
+  endX,
+  startY,
+  endY,
+  startOpacity,
+  endOpacity,
+) => {
   console.log(element);
 
   useGSAP(() => {
@@ -16,8 +24,14 @@ export const blogSectionAnim = (element, startX, endX, startY, endY) => {
       // Agrega la animación a ScrollTrigger
       animation: gsap.fromTo(
         element, // Selector del elemento
-        { opacity: 0, y: startY, x: startX }, // Estado inicial (from)
-        { opacity: 1, y: endY, x: endX, duration: 2, ease: 'power2.out' }, // Estado final (to)
+        { opacity: startOpacity, y: startY, x: startX }, // Estado inicial (from)
+        {
+          opacity: endOpacity,
+          y: endY,
+          x: endX,
+          duration: 2,
+          ease: 'power2.out',
+        }, // Estado final (to)
       ),
     });
   }, []);

@@ -17,7 +17,7 @@ export const Services = () => {
             <Link
               to={link}
               key={name}
-              className='flex h-96  flex-col items-center justify-between rounded-lg bg-white px-8 pt-12'
+              className='flex h-96 flex-col items-center justify-between rounded-lg bg-white px-8 pt-12 shadow-2xl duration-300 ease-in-out hover:scale-110'
             >
               <div className=''>
                 <div>
