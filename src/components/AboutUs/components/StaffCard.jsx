@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
-import { staff } from "../../../data/staff";
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/solid';
+import { staff } from '../../../data/staff';
 
 export const StaffCard = () => {
   // Se crea un estado para almacenar dónde estamos al momento de mostrar las tarjetas
@@ -22,33 +22,33 @@ export const StaffCard = () => {
   console.log(currentStaff);
 
   return (
-    <section className="w-full h-auto flex flex-col justify-center items-center gap-8">
-      <div className="bg-light-green relative w-[350px] h-[480px] rounded-2xl flex flex-col justify-center items-center ">
-        <div className="flex flex-col justify-center items-center mt-10">
+    <section className='flex h-auto w-full flex-col items-center justify-center gap-8'>
+      <div className='bg-color9 relative flex h-[480px] w-[350px] flex-col items-center justify-center rounded-2xl '>
+        <div className='mt-10 flex flex-col items-center justify-center'>
           {currentImageIndex > 0 && (
             <ChevronLeftIcon
-              className="absolute w-10 h-10 left-0 cursor-pointer"
+              className='absolute left-0 size-10 cursor-pointer'
               onClick={handlePrevImage}
             />
           )}
-          <div className="w-[280px] h-[360px] flex items-center justify-center">
+          <div className='flex h-[360px] w-[280px] items-center justify-center'>
             <img
-              className="cover rounded-xl h-[380px]"
+              className='cover h-[380px] rounded-xl'
               src={currentStaff.image}
-              alt=""
+              alt=''
             />
           </div>
           {currentImageIndex < staff.length - 1 && (
             <ChevronRightIcon
-              className="absolute w-10 h-10 right-0 cursor-pointer"
+              className='absolute right-0 size-10 cursor-pointer'
               onClick={handleNextImage}
             />
           )}
         </div>
         <div>
-          <h2 className="text-xl font-medium mt-5">{currentStaff.name}</h2>
+          <h2 className='mt-5 text-xl font-medium'>{currentStaff.name}</h2>
           <Link to={`/about/staff/${currentStaff.id}`}>
-            <p className="text-sm text-center font-light">Ver más</p>
+            <p className='text-center text-sm font-light'>Ver más</p>
           </Link>
         </div>
       </div>

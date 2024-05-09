@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontWeight: {
@@ -13,27 +10,29 @@ module.exports = {
         light: 200,
       },
       colors: {
-        "dark-green": "#438997",
-        "light-blue": "#8CCEDC",
-        "dull-blue": "#81A7AE",
-        "white-blue": "#DEEDF0",
-        "strong-green": "#2DB742",
-        "swamp-green": "#68C482",
-        "yellow": "#F0DF7D",
-        "yellow-green": "#8CE88F",
-        "lemon-green": "#AEFA94",
-        "gray-1": "#DDDDDD",
-        "gray-2": "#CCCCCC",
-        "gray-3": "#BBBBBB",
-        "gray-4": "#AAAAAA",
-        "gray-5": "#999999",
-        "gray-6": "#888888",
-        "gray-7": "#777777",
-        "gray-8": "#666666",
-        "gray-9": "#555555",
-        "gray-10": "#444444",
-        "gray-11": "#333333",
-        "gray-12": "#222222",
+        'dark-green': '#438997',
+        'light-blue': '#8CCEDC',
+        'dull-blue': '#81A7AE',
+        'white-blue': '#DEEDF0',
+        'strong-green': '#2DB742',
+        'swamp-green': '#68C482',
+        'forest-green': '#029E7D',
+        yellow: '#F0DF7D',
+        red: '#ff8282 ',
+        'yellow-green': '#8CE88F',
+        'lemon-green': '#AEFA94',
+        'gray-1': '#DDDDDD',
+        'gray-2': '#CCCCCC',
+        'gray-3': '#BBBBBB',
+        'gray-4': '#AAAAAA',
+        'gray-5': '#999999',
+        'gray-6': '#888888',
+        'gray-7': '#777777',
+        'gray-8': '#666666',
+        'gray-9': '#555555',
+        'gray-10': '#444444',
+        'gray-11': '#333333',
+        'gray-12': '#222222',
       },
       fontSize: {
         h1: '64px',
@@ -54,7 +53,6 @@ module.exports = {
         h5: '30px',
         h6: '24px',
       },
-
       maxWidth: {
         320: '320px',
         440: '440px',
@@ -77,5 +75,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // Agrega el plugin de fuentes personalizadas de Tailwind CSS
+    require('@tailwindcss/typography'),
+  ],
 };
