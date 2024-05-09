@@ -67,20 +67,26 @@ export const services = [
     heroButton: 'Solicitar terapia de pareja',
     descriptionTitle: '¡Quiero comenzar terapia de pareja!',
     description: `
-    Este tratamiento se centra en asistir a parejas que experimentan conflictos o atraviesan una crisis, brindándoles herramientas para aprovechar sus diferencias y restablecer una convivencia plena y feliz.
+    Este tratamiento se centra en asistir a parejas que experimentan conflictos o atraviesan una crisis, brindándoles herramientas para llegar a acuerdos y tener una comunicación efectiva. Además, se dan sesiones individuales con cada uno, pues antes de ser pareja somos personas con nuestra propia historia de vida y aprendizajes.
     `,
     troublesTitle: 'Los problemas más importantes a tratar...',
     troublesCards: [
       {
         title: 'Problemas de comunicación',
         description:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into ",
+          'Los desacuerdos y malentendidos son abordados para ayudar a mejorar la comunicación entre parejas, al enseñar habilidades efectivas de escucha y expresión emocional.',
         image: './',
       },
       {
-        title: 'Problemas de comunicación',
+        title: 'Conflictos persistentes',
         description:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into ",
+          'Se proporcionan herramientas para gestionar conflictos de manera constructiva, lo que facilita la resolución de problemas y la creación de un ambiente de compromiso mutuo.',
+        image: './',
+      },
+      {
+        title: 'Falta de conexión emocional',
+        description:
+          'Se fortalece el vínculo afectivo, cultivando un sentido más profundo de intimidad y comprensión en la relación.',
         image: './',
       },
     ],
@@ -89,7 +95,13 @@ export const services = [
       {
         title: 'Problemas de comunicación',
         description:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into ",
+          'Facilita un mayor entendimiento entre los miembros de la pareja, lo que les ayuda a alinearse en sus objetivos y a trabajar juntos para alcanzarlos.',
+        image: './',
+      },
+      {
+        title: 'Problemas de comunicación',
+        description:
+          'Fomenta una conexión más fuerte entre los miembros de la pareja, a través de herramientas prácticas para superar desafíos juntos, fortaleciendo su unión.',
         image: './',
       },
     ],
