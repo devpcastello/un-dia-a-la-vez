@@ -27,23 +27,18 @@ export const menuOptions = [
         subLink: '/service',
       },
       {
+        id: 'terapia-familiar',
+        subLinkName: 'Terapia Familiar',
+        subLink: '/service',
+      },
+      {
         id: 'costo-social',
         subLinkName: 'Costo Social',
         subLink: '/service',
       },
       {
-        id: 'terapia-familiar',
-        subLinkName: 'Psicoterapia Familiar',
-        subLink: '/service',
-      },
-      {
-        id: 'charlas',
-        subLinkName: 'Charlas',
-        subLink: '/service',
-      },
-      {
-        id: 'talleres',
-        subLinkName: 'Talleres',
+        id: 'charlas-talleres',
+        subLinkName: 'Charlas y talleres',
         subLink: '/service',
       },
     ],

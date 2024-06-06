@@ -408,7 +408,7 @@ export const services = [
     buttonTherapy: '¡Quiero más información!',
   },
   {
-    id: 'charlas',
+    id: 'charlas-talleres',
     heroBackground: '',
     heroTitle: 'Charlas y Talleres',
     heroSubtitle:
