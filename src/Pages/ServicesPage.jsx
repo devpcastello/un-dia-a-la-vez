@@ -74,7 +74,7 @@ export const ServicesPage = () => {
                         className='flex items-center gap-5 text-center'
                       >
                         <img src={image} alt='benefit-card' className='w-24' />
-                        <p>{description}</p>
+                        <p className='text-left'>{description}</p>
                       </div>
                     ))}
                     <button className='m-auto w-72 rounded-full bg-dark-green px-4 py-2 text-white'>
