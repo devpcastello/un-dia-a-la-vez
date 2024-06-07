@@ -21,6 +21,14 @@ import ShareLink from '../assets/therapies/DrawShareLink.svg';
 import Spreadsheet from '../assets/therapies/DrawSpreadsheet.svg';
 import FolderFiles from '../assets/therapies/DrawFolderFiles.svg';
 import BusinessDeal from '../assets/therapies/DrawBusinessDeal.svg';
+import PublicDiscussion from '../assets/therapies/DrawPublicDiscussion.svg';
+import HavingFun from '../assets/therapies/DrawHavingFun.svg';
+import MissedChances from '../assets/therapies/DrawMissedChances.svg';
+import WithFriends from '../assets/therapies/DrawWithFriends.svg';
+import QualityTime from '../assets/therapies/DrawQualityTime.svg';
+import Chilling from '../assets/therapies/DrawChilling.svg';
+import Conversation from '../assets/therapies/DrawConversation.svg';
+import Family from '../assets/therapies/DrawFamily.svg';
 
 export const services = [
   {
@@ -232,6 +240,7 @@ export const services = [
     ],
     buttonTherapy: '¡Quiero comenzar terapia ahora!',
   },
+
   {
     id: 'terapia-familiar',
     heroBackground: '',
@@ -253,25 +262,25 @@ export const services = [
         title: 'Problemas de comunicación',
         description:
           'Las dificultades para comunicarse efectivamente pueden causar malentendidos y tensiones. La terapia ayuda a mejorar las habilidades de comunicación entre los miembros de la familia.',
-        image: '',
+        image: PublicDiscussion,
       },
       {
         title: 'Conflictos intergeneracionales',
         description:
           'Las diferencias entre generaciones pueden llevar a desacuerdos y conflictos. La terapia facilita la comprensión mutua y la resolución de estos conflictos.',
-        image: '',
+        image: HavingFun,
       },
       {
         title: 'Problemas de conducta en niños y adolescentes',
         description:
           'Los comportamientos problemáticos pueden afectar a toda la familia. La terapia familiar aborda estos problemas y promueve soluciones positivas.',
-        image: '',
+        image: MissedChances,
       },
       {
         title: 'Ajustes a cambios importantes',
         description:
           'Cambios como divorcio, mudanza o pérdida de un ser querido pueden ser difíciles de manejar. La terapia ayuda a la familia a adaptarse y sobrellevar estos cambios.',
-        image: '',
+        image: LateAtNight,
       },
     ],
     benefitsTitle: 'Descubre los beneficios de llevar terapia familiar',
@@ -279,32 +288,32 @@ export const services = [
       {
         description:
           'Mejora la comunicación y el entendimiento mutuo entre los miembros de la familia.',
-        image: '',
+        image: WithFriends,
       },
       {
         description:
           'Fomenta un ambiente de apoyo y colaboración dentro del hogar.',
-        image: '',
+        image: QualityTime,
       },
       {
         description:
           'Ayuda a resolver conflictos de manera constructiva y efectiva.',
-        image: '',
+        image: JobMeeting,
       },
       {
         description:
           'Fortalece los lazos familiares y promueve relaciones saludables.',
-        image: '',
+        image: Chilling,
       },
       {
         description:
           'Proporciona herramientas para manejar el estrés y los cambios importantes en la vida familiar.',
-        image: '',
+        image: Conversation,
       },
       {
         description:
           'Mejora la salud mental y el bienestar general de todos los miembros de la familia.',
-        image: '',
+        image: Family,
       },
     ],
     buttonTherapy: '¡Quiero comenzar terapia ahora!',
