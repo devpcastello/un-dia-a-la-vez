@@ -8,6 +8,12 @@ import LateAtNight from '../assets/therapies/DrawLateAtNight.svg';
 import MobileProfile from '../assets/therapies/DrawMobileProfile.svg';
 import RelaxingAtHome from '../assets/therapies/DrawRelaxingAtHome.svg';
 import JobMeeting from '../assets/therapies/DrawJobMeeting.svg';
+import Relaxation from '../assets/therapies/DrawRelaxation.svg';
+import InLove from '../assets/therapies/DrawInLove.svg';
+import LoveIt from '../assets/therapies/DrawLoveIt.svg';
+import Trip from '../assets/therapies/DrawTrip.svg';
+import HappyFeeling from '../assets/therapies/DrawHappyFeeling.svg';
+import FunMoments from '../assets/therapies/DrawFunMoments.svg';
 
 export const services = [
   {
@@ -90,19 +96,19 @@ export const services = [
         title: 'Problemas de comunicación',
         description:
           'Las dificultades para comunicarse efectivamente pueden generar malentendidos y conflictos. La terapia ayuda a mejorar las habilidades de comunicación entre los miembros de la pareja.',
-        image: '',
+        image: onlineDescriptionImage,
       },
       {
         title: 'Infidelidad',
         description:
           'La infidelidad puede romper la confianza en una relación. La terapia de pareja ayuda a las parejas a entender las causas subyacentes y trabajar en la reconstrucción de la confianza.',
-        image: '',
+        image: BrokenHeart,
       },
       {
         title: 'Desconexión emocional',
         description:
           'A veces, las parejas pueden sentir que se han distanciado emocionalmente. La terapia ofrece un espacio seguro para reconectar y fortalecer el vínculo emocional.',
-        image: '',
+        image: LateAtNight,
       },
     ],
     benefitsTitle: 'Descubre los beneficios de llevar terapia de pareja',
@@ -110,32 +116,32 @@ export const services = [
       {
         description:
           'Mejora la comunicación y entendimiento mutuo, lo que puede llevar a una relación más armoniosa y satisfactoria.',
-        image: '',
+        image: Relaxation,
       },
       {
         description:
           'Ayuda a resolver conflictos de manera constructiva, evitando que los problemas se agraven con el tiempo.',
-        image: '',
+        image: SpreadLove,
       },
       {
         description:
           'Fortalece el vínculo emocional, promoviendo una relación más cercana y afectuosa.',
-        image: '',
+        image: InLove,
       },
       {
         description:
           'Fomenta un mayor compromiso y colaboración en la relación, fortaleciendo la confianza mutua.',
-        image: '',
+        image: Trip,
       },
       {
         description:
           'Proporciona herramientas para manejar el estrés y la presión externa de manera conjunta y efectiva.',
-        image: '',
+        image: HappyFeeling,
       },
       {
         description:
           'Ayuda a redescubrir y valorar las fortalezas de cada miembro de la pareja, promoviendo un respeto y aprecio renovados.',
-        image: '',
+        image: FunMoments,
       },
     ],
     buttonTherapy: '¡Quiero comenzar terapia ahora!',
