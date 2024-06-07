@@ -1,4 +1,10 @@
 import bgOnline from '../assets/bgSections/bgTherapyOnline-2-min.jpg';
+import bgFamily from '../assets/bgSections/bgTherapyFamily-1-min.jpg';
+import bgWorkshop from '../assets/bgSections/bgWorkshop-1-min.jpg';
+import bgCouples from '../assets/bgSections/bgTherapyCouples-1.jpg';
+import bgSocialCost from '../assets/bgSections/bgWorkshop-2-min.jpg';
+import bgPresencialTherapy from '../assets/bgSections/bgPresencialTherapy.jpg';
+
 import onlineDescriptionImage from '../assets/therapyOnline-descriptionImage.svg';
 import SpreadLove from '../assets/therapies/DrawSpreadLove.svg';
 import RightDirection from '../assets/therapies/DrawRightDirection.svg';
@@ -29,6 +35,14 @@ import QualityTime from '../assets/therapies/DrawQualityTime.svg';
 import Chilling from '../assets/therapies/DrawChilling.svg';
 import Conversation from '../assets/therapies/DrawConversation.svg';
 import Family from '../assets/therapies/DrawFamily.svg';
+import Revenue from '../assets/therapies/DrawRevenue.svg';
+import Working from '../assets/therapies/DrawWorking.svg';
+import CoWorking from '../assets/therapies/DrawCo-Working.svg';
+import PureLove from '../assets/therapies/DrawPureLove.svg';
+import Meeting from '../assets/therapies/DrawMeeting.svg';
+import HappyNews from '../assets/therapies/DrawHappyNews.svg';
+import ThoughtProcess from '../assets/therapies/DrawThoughtProcess.svg';
+import OffRoad from '../assets/therapies/DrawOffRoad.svg';
 
 export const services = [
   {
@@ -45,7 +59,7 @@ export const services = [
     description: `
     Este tratamiento se centra en ofrecer apoyo a individuos y parejas que experimentan desafíos emocionales, proporcionando herramientas y estrategias para mejorar su bienestar y alcanzar una vida plena, todo desde la comodidad de su hogar.
     `,
-    descriptionImage: onlineDescriptionImage,
+    descriptionImage: CoWorking,
     troublesTitle:
       'Los problemas a solucionar en terapia online más comunes son:',
     troublesCards: [
@@ -91,7 +105,7 @@ export const services = [
 
   {
     id: 'terapia-pareja',
-    heroBackground: '',
+    heroBackground: bgCouples,
     heroTitle: 'Terapia de Pareja',
     heroSubtitle:
       'La confianza y la comunicación se construyen un día a la vez',
@@ -103,7 +117,7 @@ export const services = [
     description: `
     Este tratamiento se centra en asistir a parejas que experimentan conflictos o atraviesan una crisis, brindándoles herramientas para aprovechar sus diferencias y restablecer una convivencia plena y feliz.
     `,
-    descriptionImage: '',
+    descriptionImage: PureLove,
     troublesTitle:
       'Los problemas a solucionar en terapia de pareja más comunes son:',
     troublesCards: [
@@ -164,7 +178,7 @@ export const services = [
 
   {
     id: 'terapia-presencial',
-    heroBackground: '',
+    heroBackground: bgPresencialTherapy,
     heroTitle: 'Terapia Presencial',
     heroSubtitle:
       'Conéctate cara a cara con un profesional en un entorno seguro',
@@ -176,7 +190,7 @@ export const services = [
     description: `
     Este tratamiento se centra en ofrecer apoyo a individuos y parejas que experimentan desafíos emocionales y psicológicos, proporcionando herramientas y estrategias para mejorar su bienestar y alcanzar una vida plena a través de sesiones cara a cara.
     `,
-    descriptionImage: '',
+    descriptionImage: Meeting,
     troublesTitle:
       'Los problemas a solucionar en terapia presencial más comunes son:',
     troublesCards: [
@@ -243,7 +257,7 @@ export const services = [
 
   {
     id: 'terapia-familiar',
-    heroBackground: '',
+    heroBackground: bgFamily,
     heroTitle: 'Terapia Familiar',
     heroSubtitle: 'Fortalece los lazos familiares y mejora la comunicación',
 
@@ -254,7 +268,7 @@ export const services = [
     description: `
     La terapia familiar se enfoca en ayudar a los miembros de la familia a mejorar la comunicación, resolver conflictos y crear un ambiente familiar saludable y de apoyo. Este tratamiento es ideal para familias que enfrentan desafíos y desean fortalecer sus relaciones.
     `,
-    descriptionImage: '',
+    descriptionImage: Family,
     troublesTitle:
       'Los problemas a solucionar en terapia familiar más comunes son:',
     troublesCards: [
@@ -358,7 +372,7 @@ export const services = [
 
   {
     id: 'costo-social',
-    heroBackground: '',
+    heroBackground: bgSocialCost,
     heroTitle: 'Costo Social de No Tratar Problemas de Salud Mental',
     heroSubtitle: 'El impacto va más allá del individuo',
 
@@ -436,7 +450,7 @@ export const services = [
   },
   {
     id: 'charlas-talleres',
-    heroBackground: '',
+    heroBackground: bgWorkshop,
     heroTitle: 'Charlas y Talleres',
     heroSubtitle:
       'Inspiración y conocimiento para el crecimiento personal y profesional',
@@ -448,32 +462,32 @@ export const services = [
     description: `
     Nuestras charlas y talleres están diseñados para proporcionar información valiosa y herramientas prácticas sobre una variedad de temas relacionados con el bienestar mental, emocional y profesional. Únete a nosotros para aprender de expertos y conectar con otros participantes.
     `,
-    descriptionImage: '',
+    descriptionImage: OffRoad,
     troublesTitle: 'Principales temas abordados en nuestras charlas:',
     troublesCards: [
       {
         title: 'Manejo del estrés',
         description:
           'Aprende técnicas efectivas para manejar el estrés diario y mejorar tu bienestar emocional.',
-        image: '',
+        image: Relaxation,
       },
       {
         title: 'Mejora de la comunicación',
         description:
           'Descubre cómo comunicarte de manera más efectiva en tus relaciones personales y profesionales.',
-        image: '',
+        image: Chilling,
       },
       {
         title: 'Desarrollo de habilidades de liderazgo',
         description:
           'Desarrolla habilidades clave de liderazgo para avanzar en tu carrera y motivar a tu equipo.',
-        image: '',
+        image: Revenue,
       },
       {
         title: 'Salud mental en el lugar de trabajo',
         description:
           'Entiende la importancia de la salud mental en el entorno laboral y cómo crear un ambiente de trabajo positivo.',
-        image: '',
+        image: Working,
       },
     ],
     benefitsTitle:
@@ -482,31 +496,31 @@ export const services = [
       {
         description:
           'Accede a información y estrategias prácticas de expertos en diversos campos.',
-        image: '',
+        image: FolderFiles,
       },
       {
         description:
           'Mejora tus habilidades personales y profesionales para alcanzar tus objetivos.',
-        image: '',
+        image: JobMeeting,
       },
       {
         description:
           'Conecta con otros participantes y amplía tu red de contactos.',
-        image: '',
+        image: HavingFun,
       },
       {
         description: 'Fomenta un mayor bienestar emocional y mental.',
-        image: '',
+        image: HappyNews,
       },
       {
         description:
           'Desarrolla una comprensión más profunda de temas relevantes y actuales.',
-        image: '',
+        image: ThoughtProcess,
       },
       {
         description:
           'Participa en un entorno interactivo y dinámico que promueve el aprendizaje y el crecimiento.',
-        image: '',
+        image: OffRoad,
       },
     ],
     buttonTherapy: '¡Quiero más información sobre charlas!',
