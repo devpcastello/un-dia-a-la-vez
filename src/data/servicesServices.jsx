@@ -1,9 +1,13 @@
 import bgOnline from '../assets/bgSections/bgTherapyOnline-2-min.jpg';
 import onlineDescriptionImage from '../assets/therapyOnline-descriptionImage.svg';
-import onlineTroubleCardImage1 from '../assets/therapies/undraw_spread_love_re_v3cl.svg';
-import onlineTroubleCardImage2 from '../assets/therapies/undraw_right_direction_tge8.svg';
-import onlineBenefitsCardImage1 from '../assets/therapies/undraw_heartbroken_cble.svg';
-import onlineBenefitsCardImage2 from '../assets/therapies/undraw_feeling_blue_-4-b7q.svg';
+import SpreadLove from '../assets/therapies/DrawSpreadLove.svg';
+import RightDirection from '../assets/therapies/DrawRightDirection.svg';
+import BrokenHeart from '../assets/therapies/DrawBrokenHeart.svg';
+import BlueFeeling from '../assets/therapies/DrawBlueFeeling.svg';
+import LateAtNight from '../assets/therapies/DrawLateAtNight.svg';
+import MobileProfile from '../assets/therapies/DrawMobileProfile.svg';
+import RelaxingAtHome from '../assets/therapies/DrawRelaxingAtHome.svg';
+import JobMeeting from '../assets/therapies/DrawJobMeeting.svg';
 
 export const services = [
   {
@@ -28,19 +32,19 @@ export const services = [
         title: 'Ansiedad y Estrés',
         description:
           'La terapia online puede ayudarte a manejar y reducir los niveles de ansiedad y estrés, proporcionando técnicas de relajación y estrategias de afrontamiento.',
-        image: onlineTroubleCardImage1,
+        image: LateAtNight,
       },
       {
         title: 'Depresión',
         description:
           'Un terapeuta online puede ofrecerte el apoyo necesario para superar la depresión, ayudándote a identificar y cambiar patrones de pensamiento negativos.',
-        image: onlineTroubleCardImage2,
+        image: BlueFeeling,
       },
       {
         title: 'Problemas de Relaciones',
         description:
           'Ya sea con tu pareja, familia o amigos, la terapia online te brinda herramientas para mejorar la comunicación y resolver conflictos de manera efectiva.',
-        image: onlineTroubleCardImage2,
+        image: BrokenHeart,
       },
     ],
     benefitsTitle: 'Descubre los beneficios de la terapia online',
@@ -48,17 +52,17 @@ export const services = [
       {
         description:
           'Acceso a terapia desde cualquier lugar, eliminando la necesidad de desplazamientos y permitiendo flexibilidad horaria.',
-        image: onlineBenefitsCardImage1,
+        image: MobileProfile,
       },
       {
         description:
           'Privacidad y comodidad al realizar las sesiones desde un entorno seguro y familiar.',
-        image: onlineBenefitsCardImage2,
+        image: RelaxingAtHome,
       },
       {
         description:
           'Amplia disponibilidad de terapeutas, permitiéndote elegir el profesional que mejor se adapte a tus necesidades.',
-        image: onlineBenefitsCardImage2,
+        image: JobMeeting,
       },
     ],
     buttonTherapy: '¡Quiero comenzar terapia ahora!',
