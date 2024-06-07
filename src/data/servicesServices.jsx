@@ -14,6 +14,13 @@ import LoveIt from '../assets/therapies/DrawLoveIt.svg';
 import Trip from '../assets/therapies/DrawTrip.svg';
 import HappyFeeling from '../assets/therapies/DrawHappyFeeling.svg';
 import FunMoments from '../assets/therapies/DrawFunMoments.svg';
+import CookieLove from '../assets/therapies/DrawCookieLove.svg';
+import MobileUser from '../assets/therapies/DrawMobileUser.svg';
+import BusinessChat from '../assets/therapies/DrawBusinessChat.svg';
+import ShareLink from '../assets/therapies/DrawShareLink.svg';
+import Spreadsheet from '../assets/therapies/DrawSpreadsheet.svg';
+import FolderFiles from '../assets/therapies/DrawFolderFiles.svg';
+import BusinessDeal from '../assets/therapies/DrawBusinessDeal.svg';
 
 export const services = [
   {
@@ -148,6 +155,84 @@ export const services = [
   },
 
   {
+    id: 'terapia-presencial',
+    heroBackground: '',
+    heroTitle: 'Terapia Presencial',
+    heroSubtitle:
+      'Conéctate cara a cara con un profesional en un entorno seguro',
+
+    heroMessage:
+      '¡Transforma tu vida con la guía y el apoyo de un terapeuta profesional en persona!',
+    heroButton: 'Solicitar terapia presencial',
+    descriptionTitle: '¡Quiero comenzar terapia presencial ahora mismo!',
+    description: `
+    Este tratamiento se centra en ofrecer apoyo a individuos y parejas que experimentan desafíos emocionales y psicológicos, proporcionando herramientas y estrategias para mejorar su bienestar y alcanzar una vida plena a través de sesiones cara a cara.
+    `,
+    descriptionImage: '',
+    troublesTitle:
+      'Los problemas a solucionar en terapia presencial más comunes son:',
+    troublesCards: [
+      {
+        title: 'Ansiedad y Estrés',
+        description:
+          'La terapia presencial puede ayudarte a manejar y reducir los niveles de ansiedad y estrés, proporcionando técnicas de relajación y estrategias de afrontamiento.',
+        image: MobileUser,
+      },
+      {
+        title: 'Depresión',
+        description:
+          'Un terapeuta en persona puede ofrecerte el apoyo necesario para superar la depresión, ayudándote a identificar y cambiar patrones de pensamiento negativos.',
+        image: LateAtNight,
+      },
+      {
+        title: 'Problemas de Relaciones',
+        description:
+          'Ya sea con tu pareja, familia o amigos, la terapia presencial te brinda herramientas para mejorar la comunicación y resolver conflictos de manera efectiva.',
+        image: BrokenHeart,
+      },
+      {
+        title: 'Trastornos de la conducta alimentaria',
+        description:
+          'La terapia presencial puede ayudar a abordar y tratar problemas relacionados con la alimentación, como anorexia, bulimia y otros trastornos alimentarios.',
+        image: CookieLove,
+      },
+    ],
+    benefitsTitle: 'Descubre los beneficios de llevar terapia presencial',
+    benefitsCards: [
+      {
+        description:
+          'Interacción cara a cara, lo que permite una mayor conexión emocional y comprensión no verbal.',
+        image: BusinessChat,
+      },
+      {
+        description:
+          'Entorno seguro y confidencial para hablar abiertamente sobre tus problemas y preocupaciones.',
+        image: ShareLink,
+      },
+      {
+        description:
+          'Posibilidad de trabajar con terapeutas especializados en diversas áreas de la salud mental.',
+        image: JobMeeting,
+      },
+      {
+        description:
+          'Sesiones estructuradas y personalizadas para abordar tus necesidades específicas.',
+        image: Spreadsheet,
+      },
+      {
+        description:
+          'Acceso a recursos y materiales terapéuticos en el lugar de la terapia.',
+        image: FolderFiles,
+      },
+      {
+        description:
+          'Compromiso y responsabilidad aumentados debido a la naturaleza presencial de las sesiones.',
+        image: BusinessDeal,
+      },
+    ],
+    buttonTherapy: '¡Quiero comenzar terapia ahora!',
+  },
+  {
     id: 'terapia-familiar',
     heroBackground: '',
     heroTitle: 'Terapia Familiar',
@@ -261,84 +346,7 @@ export const services = [
       },
     ],
   },
-  {
-    id: 'terapia-presencial',
-    heroBackground: '',
-    heroTitle: 'Terapia Presencial',
-    heroSubtitle:
-      'Conéctate cara a cara con un profesional en un entorno seguro',
 
-    heroMessage:
-      '¡Transforma tu vida con la guía y el apoyo de un terapeuta profesional en persona!',
-    heroButton: 'Solicitar terapia presencial',
-    descriptionTitle: '¡Quiero comenzar terapia presencial ahora mismo!',
-    description: `
-    Este tratamiento se centra en ofrecer apoyo a individuos y parejas que experimentan desafíos emocionales y psicológicos, proporcionando herramientas y estrategias para mejorar su bienestar y alcanzar una vida plena a través de sesiones cara a cara.
-    `,
-    descriptionImage: '',
-    troublesTitle:
-      'Los problemas a solucionar en terapia presencial más comunes son:',
-    troublesCards: [
-      {
-        title: 'Ansiedad y Estrés',
-        description:
-          'La terapia presencial puede ayudarte a manejar y reducir los niveles de ansiedad y estrés, proporcionando técnicas de relajación y estrategias de afrontamiento.',
-        image: '',
-      },
-      {
-        title: 'Depresión',
-        description:
-          'Un terapeuta en persona puede ofrecerte el apoyo necesario para superar la depresión, ayudándote a identificar y cambiar patrones de pensamiento negativos.',
-        image: '',
-      },
-      {
-        title: 'Problemas de Relaciones',
-        description:
-          'Ya sea con tu pareja, familia o amigos, la terapia presencial te brinda herramientas para mejorar la comunicación y resolver conflictos de manera efectiva.',
-        image: '',
-      },
-      {
-        title: 'Trastornos de la conducta alimentaria',
-        description:
-          'La terapia presencial puede ayudar a abordar y tratar problemas relacionados con la alimentación, como anorexia, bulimia y otros trastornos alimentarios.',
-        image: '',
-      },
-    ],
-    benefitsTitle: 'Descubre los beneficios de llevar terapia presencial',
-    benefitsCards: [
-      {
-        description:
-          'Interacción cara a cara, lo que permite una mayor conexión emocional y comprensión no verbal.',
-        image: '',
-      },
-      {
-        description:
-          'Entorno seguro y confidencial para hablar abiertamente sobre tus problemas y preocupaciones.',
-        image: '',
-      },
-      {
-        description:
-          'Posibilidad de trabajar con terapeutas especializados en diversas áreas de la salud mental.',
-        image: '',
-      },
-      {
-        description:
-          'Sesiones estructuradas y personalizadas para abordar tus necesidades específicas.',
-        image: '',
-      },
-      {
-        description:
-          'Acceso a recursos y materiales terapéuticos en el lugar de la terapia.',
-        image: '',
-      },
-      {
-        description:
-          'Compromiso y responsabilidad aumentados debido a la naturaleza presencial de las sesiones.',
-        image: '',
-      },
-    ],
-    buttonTherapy: '¡Quiero comenzar terapia ahora!',
-  },
   {
     id: 'costo-social',
     heroBackground: '',
