@@ -1,4 +1,5 @@
-import logo from '../assets/navbar-logo.png';
+// import FullLogo from '../assets/FullLogo';
+import FullLogo from '../assets/FullLogo.svg';
 import { contactInfo } from '../data/contactInfo';
 import { socialMedia } from '../data/socialMedia';
 
@@ -7,7 +8,14 @@ export const Footer = () => {
     <section className='flex flex-col items-center justify-items-end'>
       <div className='grid w-10/12 flex-col items-center justify-center gap-10 py-20 lg:grid-cols-3 lg:items-start'>
         <div className=''>
-          <img className='max-h-[120px] min-w-[360px]' src={logo} alt='' />
+          <div className='h-28 w-40'>
+            <img
+              className='max-h-[120px] min-w-[360px]'
+              src={FullLogo}
+              alt=''
+            />
+            <p>Un día a la vez, centro psicológico</p>
+          </div>
         </div>
         <div className='border-b-2 border-slate-700 lg:hidden lg:border-r-2'></div>
         <div className='flex flex-col items-center justify-center gap-5'>
