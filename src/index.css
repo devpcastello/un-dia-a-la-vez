@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -36,6 +39,9 @@
       --ring: 222.2 84% 4.9%;
 
       --radius: 0.5rem;
+
+      --font-primary: 'Calistoga', sans-serif;
+      --font-secondary: 'Nunito Sans', sans-serif;
     }
 
     .dark {
@@ -75,5 +81,9 @@
     }
     body {
       @apply bg-background text-foreground;
+      font-family: var(--font-secondary);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-primary);
     }
   }

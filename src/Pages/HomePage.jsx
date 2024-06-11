@@ -2,10 +2,10 @@ import {
   Benefits,
   BlogSection,
   Hero,
-  Subscription,
+  // Subscription,
   WtppButton,
-} from "../components/Home";
-import { Services } from "../components/Home/Services";
+} from '../components/Home';
+import { Services } from '../components/Home/Services';
 
 export const HomePage = () => {
   return (
@@ -14,7 +14,7 @@ export const HomePage = () => {
       <Benefits />
       <BlogSection />
       <Services />
-      <Subscription />
+      {/* <Subscription /> */}
       <WtppButton />
     </>
   );
