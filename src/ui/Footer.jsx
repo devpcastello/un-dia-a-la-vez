@@ -1,5 +1,6 @@
 // import FullLogo from '../assets/FullLogo';
 import FullLogo from '../assets/FullLogo.svg';
+import { Input } from '../components/ui/input';
 import { contactInfo } from '../data/contactInfo';
 import { socialMedia } from '../data/socialMedia';
 
@@ -17,17 +18,21 @@ export const Footer = () => {
         </div>
 
         <div className='flex flex-col items-center justify-center gap-4'>
-          <p className='mb-5 text-h6 font-bold'>
+          <p className='text-h6 mb-5 font-bold'>
             Subscríbete a nuestro News Letter
           </p>
-          <p>
+          <div className='flex flex-col gap-4'>
+            <Input placeholder={'Ingrese su nombre'} />
+            <Input placeholder={'Ingrese su email'} />
+          </div>
+          <p className=''>
             Recibe contenido exclusivo en tu correo personal de forma semanal:
             libros, podcast, videos, conferencias, webinars entre otros.
           </p>
         </div>
 
         <div className='flex flex-col items-center justify-center gap-4'>
-          <p className='mb-5 text-h6 font-bold'>Ubicanos:</p>
+          <p className='text-h6 mb-5 font-bold'>Ubicanos:</p>
           <div className='flex w-full flex-col justify-around gap-6 px-5'>
             {contactInfo.map(({ description, image, link }) => (
               <section
@@ -42,7 +47,7 @@ export const Footer = () => {
         </div>
 
         <div className='flex flex-col items-center justify-center gap-4'>
-          <p className='mb-5 text-h6 font-bold'>Redes sociales:</p>
+          <p className='text-h6 mb-5 font-bold'>Redes sociales:</p>
           <div className='flex w-full flex-col justify-around gap-6 px-5'>
             {socialMedia.map(({ title, image, link }) => (
               <section key={title} className='flex flex-row items-center gap-4'>
