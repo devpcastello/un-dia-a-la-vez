@@ -8,9 +8,9 @@ import { socialMedia } from '../data/socialMedia';
 export const Footer = () => {
   return (
     <section className='flex flex-col items-center justify-items-end'>
-      <div className='grid w-10/12 flex-col items-center justify-center gap-12 py-20 lg:grid-cols-4 lg:items-start'>
-        <div className='flex flex-col items-center justify-center gap-4'>
-          <img className='' src={FullLogo} alt='' />
+      <div className='grid w-10/12 flex-col items-center justify-center gap-12 py-20  lg:grid-cols-4 lg:items-start'>
+        <div className='flex flex-col items-center justify-center gap-4 px-4'>
+          <img className='w-10/12 self-start' src={FullLogo} alt='' />
           <p className='w-full text-sm font-thin'>
             Un día a la vez, centro psicológico con filosofía centrada en la
             persona que integra metodologías científicas para brindar
@@ -22,7 +22,7 @@ export const Footer = () => {
           <p className='text-h6 mb-5 font-bold'>
             Subscríbete a nuestro News Letter
           </p>
-          <div className='flex w-full flex-col gap-4'>
+          <div className='flex w-full  flex-col  gap-4  px-4'>
             <Input placeholder={'Ingrese su nombre'} />
             <Input placeholder={'Ingrese su email'} />
             <Button>Suscribirse</Button>
@@ -31,14 +31,20 @@ export const Footer = () => {
 
         <div className='flex flex-col items-center justify-center gap-4'>
           <p className='text-h6 mb-5 font-bold'>Ubícanos</p>
-          <div className='flex w-full flex-col justify-around gap-6 px-5'>
-            {contactInfo.map(({ description, image, link }) => (
+          <div className='flex w-full flex-col justify-around gap-6 px-4'>
+            {contactInfo.map(({ description, icon, link }) => (
               <section
                 key={description}
                 className='flex flex-row items-center gap-4'
               >
-                <img className='w-6' src={image} alt={name} />
-                <a href='#' className='text-sm font-thin'>
+                {/* <img className='w-6' src={image} alt={name} /> */}
+                <a
+                  href='#'
+                  className='flex flex-row items-center gap-3 text-sm font-thin'
+                >
+                  <div className='text-primary hover:text-secondary'>
+                    {icon}
+                  </div>
                   {description}
                 </a>
               </section>
@@ -48,11 +54,17 @@ export const Footer = () => {
 
         <div className='flex flex-col items-center justify-center gap-4'>
           <p className='text-h6 mb-5 font-bold'>Redes sociales</p>
-          <div className='flex w-full flex-col justify-around gap-6 px-5'>
-            {socialMedia.map(({ title, image, link }) => (
+          <div className='flex w-full flex-col justify-around gap-6 px-4'>
+            {socialMedia.map(({ title, icon, link }) => (
               <section key={title} className='flex flex-row items-center gap-4'>
-                <img className='w-6' src={image} alt={title} />
-                <a href='#' className='text-sm font-thin'>
+                {/* <img className='w-6' src={image} alt={title} /> */}
+                <a
+                  href='#'
+                  className='flex flex-row items-center gap-3 text-sm font-thin'
+                >
+                  <div className='text-primary hover:text-secondary'>
+                    {icon}
+                  </div>
                   {title}
                 </a>
               </section>
