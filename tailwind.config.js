@@ -27,8 +27,9 @@ module.exports = {
         'grey-hover': 'var(--color-grey-hover)',
         'grey-neutral': 'var(--color-grey-neutral)',
         'grey-glass': 'var(--color-grey-glass)',
-        error: 'var(--color-error)',
-        active: 'var(--color-active)',
+        error: 'var(--error)',
+        active: 'var(--active)',
+        accent: 'var(--accent)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -41,10 +42,6 @@ module.exports = {
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
