@@ -18,19 +18,22 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        'twilight-navy': 'var(--color-twilight-navy)',
+        'whispering-white': 'var(--color-whispering-white)',
+        disabled: 'var(--color-grey-ash)',
+        'grey-subtext': 'var(--color-grey-subtext)',
+        'grey-hover': 'var(--color-grey-hover)',
+        'grey-neutral': 'var(--color-grey-neutral)',
+        'grey-glass': 'var(--color-grey-glass)',
+        error: 'var(--color-error)',
+        active: 'var(--color-active)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',

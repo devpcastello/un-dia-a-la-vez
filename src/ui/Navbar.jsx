@@ -75,7 +75,7 @@ export const Navbar = () => {
               toggleMenu(name);
             }}
           >
-            <div className='flex size-12 items-center justify-center rounded-full bg-white'>
+            <div className='text-tt flex size-12 items-center justify-center rounded-full bg-white'>
               <Logo width={'2.5rem'} height={' 2.5rem'} />
             </div>
           </Link>
@@ -84,7 +84,7 @@ export const Navbar = () => {
           <div className='flex h-6 gap-10'>
             {menuOptions.map(({ id, name, link, options }) => (
               <ul
-                className='hidden text-base text-white md:flex md:justify-stretch md:text-gray-12'
+                className='md:text-gray-12 hidden text-base text-white md:flex md:justify-stretch'
                 key={name}
               >
                 <li
@@ -94,7 +94,7 @@ export const Navbar = () => {
                   {id === 'fast-assistance' ? (
                     <Link
                       to={`${link}/${id}`}
-                      className='m-auto rounded-full  bg-red px-3 text-white'
+                      className='bg-red m-auto rounded-full px-3 text-white'
                       onClick={() => openModal()}
                     >
                       {name}
@@ -134,7 +134,7 @@ export const Navbar = () => {
             className='flex h-12 w-24 items-center justify-around rounded-full bg-white md:hidden '
             onClick={toggleNav}
           >
-            <p className='block font-bold text-forest-green'>Menu</p>
+            <p className='text-forest-green block font-bold'>Menu</p>
             {!isNavOpen ? (
               <ChevronDown color='#444444' />
             ) : (
@@ -145,7 +145,7 @@ export const Navbar = () => {
           {/* Mobile navbar */}
           {isNavOpen && (
             <div
-              className={`fixed inset-0 top-[4rem]  z-50 flex flex-col bg-dark-green md:hidden xl:hidden`}
+              className={`bg-dark-green fixed inset-0  top-16 z-50 flex flex-col md:hidden xl:hidden`}
             >
               {/* <ul className=""> */}
               {menuOptions.map(({ id, name, link, options }) => (
@@ -157,14 +157,14 @@ export const Navbar = () => {
                     onClick={() => {
                       toggleMenu(name);
                     }}
-                    className={`flex w-11/12 items-center justify-between rounded-full bg-light-blue px-4 py-2 text-left ${
+                    className={`bg-light-blue flex w-11/12 items-center justify-between rounded-full px-4 py-2 text-left ${
                       isOpen[name] ? 'mb-4' : null
                     }`}
                   >
                     {id === 'fast-assistance' ? (
                       <Link
                         to={`${link}/${id}`}
-                        className='m-auto rounded-full  bg-red px-3 text-white'
+                        className='bg-red m-auto  rounded-full px-3 text-white'
                         onClick={() => openModal()}
                       >
                         {name}

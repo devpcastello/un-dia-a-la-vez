@@ -18,9 +18,9 @@ export const Modal = ({ image, fullDescription, onClose }) => {
   return (
     <div className='fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto overflow-x-hidden bg-slate-500 bg-opacity-30 outline-none focus:outline-none'>
       <div className='relative mx-auto my-6 w-10/12  md:w-8/12 lg:w-1/3'>
-        <div className=' relative flex w-full flex-col rounded-lg border-0 bg-dark-green shadow-lg outline-none focus:outline-none'>
+        <div className=' bg-dark-green relative flex w-full flex-col rounded-lg border-0 shadow-lg outline-none focus:outline-none'>
           <div className='flex items-start justify-between rounded-t border-b border-solid p-5'>
-            <h2 className='text-h6 font-semibold text-white lg:text-h5'>
+            <h2 className='text-h6 lg:text-h5 font-semibold text-white'>
               Estamos aquí para ayudarte
             </h2>
             <button
@@ -36,7 +36,7 @@ export const Modal = ({ image, fullDescription, onClose }) => {
             <input
               type='text'
               placeholder='Nombre'
-              className='rounded-full border-none bg-light-blue px-4 py-2 text-white  placeholder:text-white'
+              className='bg-light-blue rounded-full border-none px-4 py-2 text-white  placeholder:text-white'
               onChange={(e) => {
                 setName(e.target.value);
               }}
@@ -44,13 +44,13 @@ export const Modal = ({ image, fullDescription, onClose }) => {
             <input
               type='text'
               placeholder='Whatsapp'
-              className='rounded-full border-none bg-light-blue px-4 py-2 text-white placeholder:text-white'
+              className='bg-light-blue rounded-full border-none px-4 py-2 text-white placeholder:text-white'
               onChange={(e) => {
                 setKeyName(e.target.value);
               }}
             />
             <button
-              className='rounded-full bg-red px-4 py-2 text-white hover:font-bold'
+              className='bg-red rounded-full px-4 py-2 text-white hover:font-bold'
               onClick={handleOpenWtpp}
             >
               Solicitar ayuda
