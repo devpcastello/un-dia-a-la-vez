@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/dialog';
 
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const getInContact = 'openGetInContact';
 
@@ -40,26 +41,25 @@ export const GetInContactDialog = ({ clickedAction, setClickedAction }) => {
         <DialogHeader>
           <DialogTitle>Estamos aquí para ayudarte</DialogTitle>
           <DialogDescription>
-            <div className='flex flex-col gap-5 p-6'>
-              <input
-                type='text'
-                placeholder='Nombre'
-                className='rounded-full border-none px-4 py-2 focus:border-none'
+            <div className='flex flex-col gap-4 py-6'>
+              <Input
+                placeholder={'Nombre'}
+                className='rounded-full text-twilight-navy'
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
               />
-              <input
-                type='text'
-                placeholder='Whatsapp'
-                className='rounded-full border-none px-4 py-2 placeholder:text-white'
+              <Input
+                placeholder={'Whatsapp'}
+                className='rounded-full text-twilight-navy'
                 onChange={(e) => {
                   setKeyName(e.target.value);
                 }}
               />
               <Button
-                className='rounded-full bg-accent px-4 py-2 text-white hover:font-bold'
+                className='rounded-full'
                 onClick={handleOpenWtpp}
+                variant={'accent'}
               >
                 Solicitar ayuda
               </Button>
