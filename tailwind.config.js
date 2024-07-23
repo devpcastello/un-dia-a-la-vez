@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
+        tertiary: 'var(--tertiary) ',
         'twilight-navy': 'var(--color-twilight-navy)',
         'whispering-white': 'var(--color-whispering-white)',
         disabled: 'var(--color-grey-ash)',

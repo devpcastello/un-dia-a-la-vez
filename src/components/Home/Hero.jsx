@@ -3,6 +3,8 @@ import blob from '../../assets/blob.svg';
 import { Link } from 'react-router-dom';
 import bgImage from '../../assets/home-background-image.jpg';
 
+import { Button } from '@/components/ui/button';
+
 export const Hero = () => {
   return (
     <main
@@ -16,11 +18,11 @@ export const Hero = () => {
           Una terapia enfocada en el ser humano
         </h2>
       </div>
-      <div className='absolute inset-0 size-full bg-gray-8 bg-opacity-20' />
+      <div className='bg-gray-8 absolute inset-0 size-full bg-opacity-20' />
       <div className=' relative'>
         <div className='relative z-10 flex h-1/2 w-auto items-center justify-center md:mt-[150px]'>
           <img
-            className='animate__animated animate__fadeInUp absolute z-[-10] w-[400px] max-w-80 md:min-h-[500px] md:min-w-[500px] xl:min-h-[700px] xl:min-w-[700px]'
+            className='animate__animated animate__fadeInUp absolute -z-10 w-[400px] max-w-80 md:min-h-[500px] md:min-w-[500px] xl:min-h-[700px] xl:min-w-[700px]'
             src={blob}
             alt=''
           />
@@ -31,9 +33,9 @@ export const Hero = () => {
           />
         </div>
       </div>
-      <button className='absolute bottom-10 z-20 rounded-full bg-dark-green px-4 py-2 text-white xl:px-6 xl:py-3 xl:text-h5'>
+      <Button className='absolute bottom-10 z-20 rounded-full '>
         <Link to='/service/terapia-online'>¿Empezamos tu proceso?</Link>
-      </button>
+      </Button>
     </main>
   );
 };
