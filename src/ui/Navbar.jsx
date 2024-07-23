@@ -2,16 +2,21 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../assets/Logo';
-import { menuOptions } from '../data/menuOptions';
+
 import { Modal } from './components/Modal';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
+import { menuOptions } from '../constants';
+
+import { GetInContactDialog } from '../ui/components/GetInContactDialog';
+
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpen, setIsOpen] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(null);
+  const [clickedAction, setClickedAction] = useState(null);
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -56,6 +61,12 @@ export const Navbar = () => {
     }));
   };
 
+  const handleActionClick = (action) => {
+    if (action) {
+      setClickedAction(action);
+    }
+  };
+
   return (
     <header
       className='fixed left-0 top-0 z-50 m-auto w-full justify-center'
@@ -81,7 +92,7 @@ export const Navbar = () => {
 
           {/* Desktop navbar */}
           <div className='flex h-6 gap-10'>
-            {menuOptions.map(({ id, name, link, options }) => (
+            {menuOptions.map(({ id, name, link, options, action }) => (
               <ul
                 className='hidden text-base  text-twilight-navy md:flex md:justify-stretch'
                 key={name}
@@ -94,7 +105,7 @@ export const Navbar = () => {
                     <Link
                       to={`${link}/${id}`}
                       className='m-auto rounded-full bg-accent px-3 text-white'
-                      onClick={() => openModal()}
+                      onClick={() => handleActionClick(action)}
                     >
                       {name}
                     </Link>
@@ -205,6 +216,10 @@ export const Navbar = () => {
         </div>
       </div>
       {isModalOpen && <Modal onClose={closeModal} />}
+      <GetInContactDialog
+        clickedAction={clickedAction}
+        setClickedAction={setClickedAction}
+      />
     </header>
   );
 };

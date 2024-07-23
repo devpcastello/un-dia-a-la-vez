@@ -4,6 +4,7 @@ export const menuOptions = [
     name: 'Solicitar Sesión',
     link: '#',
     options: [],
+    action: 'openGetInContact',
   },
 
   {
