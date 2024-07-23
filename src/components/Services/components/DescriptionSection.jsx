@@ -14,7 +14,6 @@ export const DescriptionSection = ({
       />
       <div className='flex flex-col gap-8 md:gap-4'>
         <h2 className='text-center text-h4 font-semibold leading-h4 md:text-left md:text-h6 lg:text-h5'>
-          module
           {descriptionTitle}
         </h2>
         <p className='leading-[18px] lg:text-h6 lg:leading-[24px]'>

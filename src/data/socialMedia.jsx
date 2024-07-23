@@ -1,27 +1,26 @@
-import tiktok from '../assets/socialMedia/tiktok.svg';
-import facebook from '../assets/socialMedia/facebook.svg';
-import instagram from '../assets/socialMedia/instagram.svg';
-import linkedin from '../assets/socialMedia/linkedin.svg';
+import { LucideFacebook } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import { LucideLinkedin } from 'lucide-react';
 
 export const socialMedia = [
   {
     title: 'facebook',
-    image: facebook,
+    icon: <LucideFacebook />,
     link: '#',
   },
-  {
-    title: 'tiktok',
-    image: tiktok,
-    link: '#',
-  },
+  /* {
+  //   title: 'tiktok',
+  //   image: tiktok,
+  //   link: '#',
+  // */
   {
     title: 'instagram',
-    image: instagram,
+    icon: <Instagram />,
     link: '#',
   },
   {
     title: 'linkedin',
-    image: linkedin,
+    icon: <LucideLinkedin />,
     link: '#',
   },
 ];
