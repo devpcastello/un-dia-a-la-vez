@@ -37,23 +37,23 @@ export const Staff = () => {
                 />
                 <section className='px-5 py-20'>
                   <div className='m-8 text-center'>
-                    <h2 className='m-8 text-4xl font-medium text-gray-10'>
+                    <h2 className='m-8 text-4xl font-medium'>
                       {psychologistTitle}
                     </h2>
-                    <p className='text-gray-8 xl:mx-16 xl:text-xl'>
+                    <p className='xl:mx-16 xl:text-xl'>
                       {psychologistDescription}
                     </p>
                   </div>
-                  <div className='flex w-full items-center justify-center'>
+                  <div className='flex w-full items-center justify-center bg-whispering-white'>
                     <StaffPanel cards={psychologistCards} />
                   </div>
                 </section>
                 <section className='px-5 py-20'>
                   <div className='m-8 text-center'>
-                    <h2 className='m-8 text-4xl font-medium text-gray-10'>
+                    <h2 className=' m-8 text-4xl font-medium'>
                       {enterpriseTitle}
                     </h2>
-                    <p className='text-gray-8 xl:mx-16 xl:text-xl'>
+                    <p className='xl:mx-16 xl:text-xl'>
                       {enterpriseDescription}
                     </p>
                   </div>

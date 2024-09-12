@@ -13,7 +13,7 @@ export const EnterpriseCards = ({ cards }) => {
       {cards.map(({ id, name, image, shortDescription }) => (
         <div
           key={name}
-          className='relative flex h-[250px] max-w-[500px] flex-col items-center justify-center  rounded-full bg-dark-green'
+          className='relative flex h-[250px] max-w-[500px] flex-col items-center justify-center  rounded-full bg-primary'
         >
           <div className='grid  grid-cols-2 items-center justify-center pr-10 lg:max-w-full'>
             <img
@@ -28,7 +28,7 @@ export const EnterpriseCards = ({ cards }) => {
               </div>
 
               <button
-                className='rounded-full bg-light-blue p-1 px-2 text-sm font-medium'
+                className='bg-light-blue rounded-full p-1 px-2 text-sm font-medium'
                 onClick={() => handleOpenWtpp(name)}
               >
                 Contacto
