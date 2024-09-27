@@ -35,16 +35,16 @@ export const Staff = () => {
                   heroMessage={heroMessage}
                   heroImage={heroImage}
                 />
-                <section className='px-5 py-20'>
-                  <div className='m-8 text-center'>
-                    <h2 className='m-8 text-4xl font-medium'>
+                <section className='flex flex-col gap-16 bg-whispering-white p-6'>
+                  <div className='text-center'>
+                    <h2 className='text-2xl font-medium'>
                       {psychologistTitle}
                     </h2>
-                    <p className='xl:mx-16 xl:text-xl'>
+                    {/* <p className='xl:mx-16 xl:text-xl'>
                       {psychologistDescription}
-                    </p>
+                    </p> */}
                   </div>
-                  <div className='flex w-full items-center justify-center bg-whispering-white'>
+                  <div className='flex w-full items-center justify-center '>
                     <StaffPanel cards={psychologistCards} />
                   </div>
                 </section>

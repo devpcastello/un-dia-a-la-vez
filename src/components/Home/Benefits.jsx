@@ -4,9 +4,9 @@ import CaminoBlobDesktop from '../../assets/CaminoBlobDesktop';
 
 export const Benefits = () => {
   return (
-    <section className=' w-full bg-secondary'>
+    <section className=' w-full bg-whispering-white'>
       <div className='mx-auto flex flex-col items-center bg-primary px-6 py-16 lg:items-start lg:rounded-b-[200px] lg:px-32'>
-        <div className='text-gray-8 lg:w-full'>
+        <div className='lg:w-full'>
           <div className='relative max-w-xs md:hidden'>
             <h2>Te ayudamos a encontrar tu camino.</h2>
             <strong>Un día a la vez</strong>
@@ -24,7 +24,7 @@ export const Benefits = () => {
             </p>
           </div>
 
-          <div className='m-auto hidden justify-center lg:flex lg:py-20'>
+          <div className='m-auto hidden justify-center lg:flex '>
             <CaminoBlobDesktop width={1200} height={600} />
           </div>
           <div className='m-auto hidden justify-center md:flex lg:hidden lg:py-20'>

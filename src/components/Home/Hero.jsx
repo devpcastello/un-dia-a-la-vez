@@ -18,7 +18,7 @@ export const Hero = () => {
           Una terapia enfocada en el ser humano
         </h2>
       </div>
-      <div className='bg-gray-8 absolute inset-0 size-full bg-opacity-20' />
+      <div className='bg-slate-400/20s absolute inset-0 size-full' />
       <div className=' relative'>
         <div className='relative z-10 flex h-1/2 w-auto items-center justify-center md:mt-[150px]'>
           <img
@@ -33,7 +33,7 @@ export const Hero = () => {
           />
         </div>
       </div>
-      <Button className='absolute bottom-10 z-20 rounded-full '>
+      <Button className='absolute bottom-10 z-20 text-base hover:bg-accent'>
         <Link to='/service/terapia-online'>¿Empezamos tu proceso?</Link>
       </Button>
     </main>

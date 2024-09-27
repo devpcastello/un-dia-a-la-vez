@@ -65,23 +65,29 @@ export const ServicesPage = () => {
                     )}
                   </div>
                 </section>
-                <section className='flex flex-col gap-10 rounded-t-[200px] bg-secondary px-5 py-20 text-white'>
-                  <h2 className='mb-20 text-center text-xl font-semibold leading-5 md:mb-10'>
-                    {benefitsTitle}
-                  </h2>
-                  <div className='m-auto grid grid-cols-1 gap-16 lg:w-2/3'>
-                    {benefitsCards.map(({ description, image }, index) => (
-                      <div
-                        key={`${image}-${index}`}
-                        className='flex items-center gap-5 text-center'
-                      >
-                        <img src={image} alt='benefit-card' className='w-24' />
-                        <p className='text-left'>{description}</p>
-                      </div>
-                    ))}
-                    <Button className='m-auto w-72 rounded-full'>
-                      {buttonTherapy}
-                    </Button>
+                <section className='bg-whispering-white'>
+                  <div className='flex flex-col gap-10 rounded-t-[200px] bg-secondary px-5 py-20 text-white'>
+                    <h2 className='mb-20 text-center text-xl font-semibold leading-5 md:mb-10'>
+                      {benefitsTitle}
+                    </h2>
+                    <div className='m-auto grid grid-cols-1 gap-16 lg:w-2/3'>
+                      {benefitsCards.map(({ description, image }, index) => (
+                        <div
+                          key={`${image}-${index}`}
+                          className='flex items-center gap-5 text-center'
+                        >
+                          <img
+                            src={image}
+                            alt='benefit-card'
+                            className='w-24'
+                          />
+                          <p className='text-left'>{description}</p>
+                        </div>
+                      ))}
+                      <Button className='m-auto w-72 rounded-full'>
+                        {buttonTherapy}
+                      </Button>
+                    </div>
                   </div>
                 </section>
               </main>
