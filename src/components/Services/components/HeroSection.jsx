@@ -17,23 +17,23 @@ export const HeroSection = ({
   };
 
   return (
-    <section
-      className='relative -z-20 flex h-screen w-full flex-col items-center justify-center gap-20 bg-center text-white md:gap-8'
-      style={{
-        backgroundImage: `url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        height: '100vh',
-        width: '100%',
-      }}
-    >
+    <section className='relative flex h-screen w-full flex-col items-center justify-center gap-20 bg-center text-white md:gap-8'>
       <div
-        className='absolute inset-0 -z-20  bg-gradient-to-b from-transparent to-tertiary to-70% opacity-100'
+        className='absolute inset-0 -z-30'
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
+
+      <div
+        className='absolute inset-0 -z-20 bg-gradient-to-b from-transparent to-tertiary to-70% opacity-100'
         style={{ filter: 'blur(0px)' }}
       ></div>
       <div>
-        <div className='gap-10Z mx-auto flex flex-col items-center justify-center text-center md:w-1/2 lg:w-2/3'>
+        <div className='mx-auto flex flex-col items-center justify-center gap-10 text-center md:w-1/2 lg:w-2/3'>
           <div className='mx-auto flex flex-col gap-4'>
             <h1 className='font-semibold text-white lg:text-2xl'>
               {heroTitle}

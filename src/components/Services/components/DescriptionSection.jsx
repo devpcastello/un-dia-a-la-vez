@@ -7,7 +7,7 @@ export const DescriptionSection = ({
 }) => {
   return (
     <section className='bg-whispering-white'>
-      <div className='m-auto grid w-full grid-cols-1 items-center justify-center gap-8 rounded-b-[200px] bg-tertiary px-5 pb-20 pt-10 text-white lg:grid-cols-2 lg:px-40'>
+      <div className='m-auto grid w-full grid-cols-1 items-center justify-center gap-8 rounded-b-[60px] bg-tertiary px-5 pb-20 pt-10 text-white sm:rounded-b-[200px] lg:grid-cols-2 lg:px-40'>
         <img
           src={descriptionImage}
           alt={descriptionImage}

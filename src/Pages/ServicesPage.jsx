@@ -66,7 +66,7 @@ export const ServicesPage = () => {
                   </div>
                 </section>
                 <section className='bg-whispering-white'>
-                  <div className='flex flex-col gap-10 rounded-t-[200px] bg-secondary px-5 py-20 text-white'>
+                  <div className='flex flex-col gap-10 rounded-t-[60px] bg-secondary px-5 py-20 text-white sm:rounded-t-[200px]'>
                     <h2 className='mb-20 text-center text-xl font-semibold leading-5 md:mb-10'>
                       {benefitsTitle}
                     </h2>
