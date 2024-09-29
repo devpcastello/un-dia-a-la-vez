@@ -4,7 +4,7 @@ import { services } from '../../data/homeServices';
 export const Services = () => {
   return (
     <section className='w-full bg-whispering-white'>
-      <div className='mx-auto flex flex-col items-center gap-16 bg-secondary px-6 py-16 lg:rounded-t-[200px] lg:px-32 lg:py-16'>
+      <div className='mx-auto flex flex-col items-center gap-16 rounded-t-[60px] bg-secondary px-6 py-16 lg:rounded-t-[200px] lg:px-32 lg:py-16'>
         <h2 className='self-center text-2xl font-bold text-white'>
           Conoce más acerca de nuestros servicios
         </h2>
