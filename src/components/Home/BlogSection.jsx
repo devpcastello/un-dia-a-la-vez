@@ -47,7 +47,7 @@ export const BlogSection = () => {
         <h2 className='self-end text-2xl font-semibold '>
           Descubre los recursos disponibles para ayudarte
         </h2>
-        <div className='flex flex-col justify-between sm:flex-row'>
+        <div className='flex flex-col justify-between gap-6 sm:flex-row'>
           {homeResourcesCards.map((card) => {
             console.log(card);
             return (

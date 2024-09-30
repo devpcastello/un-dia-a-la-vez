@@ -2,10 +2,7 @@ import { Button } from '@/components/ui/button';
 
 export const BlogCard = ({ imageDescription, title, description, image }) => {
   return (
-    <div
-      className='flex flex-col gap-4 border-none text-white md:max-w-2xl'
-      id='card1'
-    >
+    <div className='flex flex-col items-end gap-4 text-white md:max-w-2xl'>
       <div className='rounded-xl bg-tertiary'>
         <div className='relative max-w-[1400px] md:w-[600px]'>
           <img
