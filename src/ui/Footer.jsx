@@ -18,10 +18,8 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-4'>
-          <p className='text-h6 mb-5 font-bold'>
-            Subscríbete a nuestro News Letter
-          </p>
+        <div className='flex flex-col items-center justify-center gap-9'>
+          <p className='font-bold'>Subscríbete a nuestro News Letter</p>
           <div className='flex w-full  flex-col  gap-4  px-4'>
             <Input placeholder={'Ingrese su nombre'} />
             <Input placeholder={'Ingrese su email'} />
@@ -29,9 +27,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-4'>
-          <p className='text-h6 mb-5 font-bold'>Ubícanos</p>
-          <div className='flex w-full flex-col justify-around gap-6 px-4'>
+        <div className='flex flex-col items-center justify-center gap-9'>
+          <p className='font-bold'>Ubícanos</p>
+          <div className='flex w-full flex-col justify-around gap-6 px-6'>
             {contactInfo.map(({ description, icon, link }) => (
               <section
                 key={description}
@@ -52,9 +50,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-4'>
-          <p className='text-h6 mb-5 font-bold'>Redes sociales</p>
-          <div className='flex w-full flex-col justify-around gap-6 px-4'>
+        <div className='flex flex-col items-center justify-center gap-9'>
+          <p className='font-bold'>Redes sociales</p>
+          <div className='flex w-full flex-col justify-around gap-6 px-6'>
             {socialMedia.map(({ title, icon, link }) => (
               <section key={title} className='flex flex-row items-center gap-4'>
                 {/* <img className='w-6' src={image} alt={title} /> */}
