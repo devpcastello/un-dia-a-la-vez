@@ -33,17 +33,15 @@ export const HeroSection = ({
         style={{ filter: 'blur(0px)' }}
       ></div>
       <div>
-        <div className='mx-auto flex flex-col items-center justify-center gap-10 text-center md:w-1/2 lg:w-2/3'>
+        <div className='mx-auto flex flex-col items-center justify-center gap-32 text-center sm:gap-40 md:w-4/5'>
           <div className='mx-auto flex flex-col gap-4'>
-            <h1 className='font-semibold text-white lg:text-2xl'>
-              {heroTitle}
-            </h1>
-            <p className='text-xl font-bold text-white md:text-3xl lg:text-3xl lg:leading-[60px]'>
+            <h1 className='font-semibold text-white md:text-xl'>{heroTitle}</h1>
+            <p className='text-2xl font-bold text-white md:text-4xl'>
               {heroSubtitle}
             </p>
           </div>
           <div className='flex flex-col items-center justify-center gap-4'>
-            <p className='text-base text-white lg:text-sm'>{heroMessage}</p>
+            <p className='text-white sm:text-lg '>{heroMessage}</p>
             <Button
               variant={'secondary'}
               onClick={() => {
