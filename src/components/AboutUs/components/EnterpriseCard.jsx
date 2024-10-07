@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import { Button } from '@/components/ui/button';
+
 export const EnterpriseCards = ({ cards }) => {
   const handleOpenWtpp = (name) => {
     window.open(
@@ -13,26 +15,23 @@ export const EnterpriseCards = ({ cards }) => {
       {cards.map(({ id, name, image, shortDescription }) => (
         <div
           key={name}
-          className='relative flex h-[250px] max-w-[500px] flex-col items-center justify-center  rounded-full bg-primary'
+          className='relative flex h-64 max-w-lg flex-col items-center justify-center rounded-full bg-primary'
         >
-          <div className='grid  grid-cols-2 items-center justify-center pr-10 lg:max-w-full'>
+          <div className='flex items-center justify-center gap-3 lg:max-w-full'>
             <img
-              className='size-[250px] rounded-full object-cover '
+              className='aspect-square size-64 rounded-full object-cover'
               src={image}
               alt={name}
             />
-            <div className='relative flex h-full flex-col items-center justify-between gap-4 p-5 text-white'>
-              <div className='flex h-full flex-col'>
-                <h2 className='text-h6 font-medium'>{name}</h2>
-                <p className='text-sm'>{shortDescription}</p>
+            <div className='relative flex h-64 flex-col items-start justify-between gap-4 py-4 text-white'>
+              <div className='flex flex-col gap-3'>
+                <h2 className='text-lg font-medium'>{name}</h2>
+                <p className='w-10/12 text-sm'>{shortDescription}</p>
               </div>
 
-              <button
-                className='bg-light-blue rounded-full p-1 px-2 text-sm font-medium'
-                onClick={() => handleOpenWtpp(name)}
-              >
-                Contacto
-              </button>
+              <Button variant='secondary' onClick={() => handleOpenWtpp(name)}>
+                Contactar
+              </Button>
             </div>
           </div>
         </div>

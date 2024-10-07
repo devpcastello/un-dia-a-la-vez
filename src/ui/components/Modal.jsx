@@ -32,7 +32,7 @@ export const Modal = ({ image, fullDescription, onClose }) => {
               </span>
             </button>
           </div>
-          <div className='flex flex-col gap-5 p-6'>
+          <div className='flex flex-col gap-4 p-6'>
             <input
               type='text'
               placeholder='Nombre'

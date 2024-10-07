@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo';
 
 import { Modal } from './components/Modal';
-import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 

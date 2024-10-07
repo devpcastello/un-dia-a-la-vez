@@ -42,7 +42,7 @@ export const ServicesPage = () => {
                   descriptionTitle={descriptionTitle}
                   description={description}
                 />
-                <section className='bg-whispering-white px-5 py-20'>
+                <section className='bg-whispering-white px-4 py-20'>
                   <h2 className='mb-20 text-center text-xl font-semibold leading-5 md:mb-10'>
                     {troublesTitle}
                   </h2>
@@ -74,7 +74,7 @@ export const ServicesPage = () => {
                       {benefitsCards.map(({ description, image }, index) => (
                         <div
                           key={`${image}-${index}`}
-                          className='flex items-center gap-5 text-center'
+                          className='flex items-center gap-4 text-center'
                         >
                           <img
                             src={image}

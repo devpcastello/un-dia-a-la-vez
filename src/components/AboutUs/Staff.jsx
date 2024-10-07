@@ -35,7 +35,7 @@ export const Staff = () => {
                   heroMessage={heroMessage}
                   heroImage={heroImage}
                 />
-                <section className='flex flex-col gap-16 bg-whispering-white p-6'>
+                <section className='flex flex-col gap-16 bg-whispering-white p-4 sm:px-6 sm:py-20'>
                   <div className='text-center'>
                     <h2 className='text-2xl font-medium'>
                       {psychologistTitle}
@@ -48,14 +48,12 @@ export const Staff = () => {
                     <StaffPanel cards={psychologistCards} />
                   </div>
                 </section>
-                <section className='px-5 py-20'>
-                  <div className='m-8 text-center'>
-                    <h2 className=' m-8 text-4xl font-medium'>
-                      {enterpriseTitle}
-                    </h2>
-                    <p className='xl:mx-16 xl:text-xl'>
+                <section className='flex flex-col gap-16 bg-whispering-white px-4 py-20 sm:px-6'>
+                  <div className='text-center'>
+                    <h2 className='text-2xl font-medium'>{enterpriseTitle}</h2>
+                    {/* <p className='xl:mx-16 xl:text-xl'>
                       {enterpriseDescription}
-                    </p>
+                    </p> */}
                   </div>
                   <div className='flex w-full items-center justify-center'>
                     <EnterpriseCards cards={enterpriseCards} />
@@ -64,7 +62,6 @@ export const Staff = () => {
               </main>
             );
           }
-          console.log('error');
           return null;
         },
       )}
