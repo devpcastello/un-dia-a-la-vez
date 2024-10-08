@@ -43,7 +43,7 @@ export const ServicesPage = () => {
                   description={description}
                 />
                 <section className='bg-whispering-white px-4 py-20'>
-                  <h2 className='mb-20 text-center text-xl font-semibold leading-5 md:mb-10'>
+                  <h2 className='mb-20 text-center text-2xl font-semibold leading-5 md:mb-10'>
                     {troublesTitle}
                   </h2>
                   <div className='m-auto grid grid-cols-1 gap-16 md:w-full md:grid-cols-2  lg:w-2/3 xl:w-1/2'>
@@ -67,7 +67,7 @@ export const ServicesPage = () => {
                 </section>
                 <section className='bg-whispering-white'>
                   <div className='flex flex-col gap-10 rounded-t-[60px] bg-secondary px-5 py-20 text-white sm:rounded-t-[200px]'>
-                    <h2 className='mb-20 text-center text-xl font-semibold leading-5 md:mb-10'>
+                    <h2 className='text-center text-2xl font-semibold leading-5 md:mb-10'>
                       {benefitsTitle}
                     </h2>
                     <div className='m-auto grid grid-cols-1 gap-16 lg:w-2/3'>

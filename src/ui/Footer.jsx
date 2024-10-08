@@ -37,7 +37,7 @@ export const Footer = () => {
               >
                 {/* <img className='w-6' src={image} alt={name} /> */}
                 <a
-                  href='#'
+                  href={link}
                   className='flex flex-row items-center gap-3 text-sm font-thin'
                 >
                   <div className='text-primary hover:text-secondary'>

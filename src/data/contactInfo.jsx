@@ -1,6 +1,3 @@
-import envelope from '../assets/contactInfo/envelope.svg';
-import phone from '../assets/contactInfo/phone.svg';
-import location from '../assets/contactInfo/location.svg';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
 export const contactInfo = [
@@ -8,18 +5,18 @@ export const contactInfo = [
     title: 'Ubicación',
     description: 'Calle Arrayanes',
     icon: <MapPin />,
-    link: '#',
+    link: 'https://maps.app.goo.gl/qJeRxaVTkrLi39eN7',
   },
   {
     title: 'Teléfono',
-    description: '987654321',
+    description: '923 022 460',
     icon: <Phone />,
-    link: '#',
+    link: 'tel:+51923022460',
   },
   {
     title: 'Email',
     description: 'contacto@undialavez.com',
     icon: <Mail />,
-    link: '#',
+    link: 'mailto:contacto@undialavez.com',
   },
 ];
