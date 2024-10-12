@@ -49,15 +49,14 @@ export const services = [
     id: 'terapia-online',
     heroBackground: bgOnline,
     heroTitle: 'Terapia Online',
-    heroSubtitle:
-      'Accede a la ayuda que necesitas desde la comodidad de tu hogar',
-
+    heroSubtitle: 'Conexión y bienestar desde cualquier lugar',
     heroMessage:
       '¡Transforma tu vida con la ayuda de un terapeuta profesional, donde sea que estés!',
     heroButton: 'Solicitar terapia online',
     descriptionTitle: '¡Quiero comenzar terapia online ahora mismo!',
     description: `
-    Este tratamiento se centra en ofrecer apoyo a individuos y parejas que experimentan desafíos emocionales, proporcionando herramientas y estrategias para mejorar su bienestar y alcanzar una vida plena, todo desde la comodidad de su hogar.
+  Ofrece mayor flexibilidad de horarios y elimina barreras geográficas, permitiendo el acceso a las sesiones desde la comodidad de tu hogar. Para asegurar que la interacción sea lo más cercana y humana posible, es imprescindible mantener la cámara activada durante toda la sesión. A lo largo del proceso, recibirás ejercicios, lecturas y recursos digitales que te ayudarán a avanzar entre sesiones. Su eficacia está comprobada: numerosos estudios demuestran que la terapia online es tan efectiva como la presencial para tratar una amplia gama de problemas emocionales.
+
     `,
     descriptionImage: CoWorking,
     troublesTitle:
@@ -115,7 +114,10 @@ export const services = [
     heroButton: 'Solicitar terapia de pareja',
     descriptionTitle: '¡Quiero comenzar terapia ahora mismo!',
     description: `
-    Este tratamiento se centra en asistir a parejas que experimentan conflictos o atraviesan una crisis, brindándoles herramientas para aprovechar sus diferencias y restablecer una convivencia plena y feliz.
+      Facilita un mayor entendimiento entre los miembros de la pareja, lo que les ayuda a alinearse en sus objetivos y a trabajar juntos para alcanzarlos.
+
+      Fomenta una conexión más fuerte entre los miembros de la pareja, a través de herramientas prácticas para superar desafíos juntos, fortaleciendo su unión.
+.
     `,
     descriptionImage: PureLove,
     troublesTitle:
@@ -188,7 +190,7 @@ export const services = [
     heroButton: 'Solicitar terapia presencial',
     descriptionTitle: '¡Quiero comenzar terapia presencial ahora mismo!',
     description: `
-    Este tratamiento se centra en ofrecer apoyo a individuos y parejas que experimentan desafíos emocionales y psicológicos, proporcionando herramientas y estrategias para mejorar su bienestar y alcanzar una vida plena a través de sesiones cara a cara.
+      Te ofrece un espacio seguro y confidencial para trabajar en tus emociones y desafíos personales. Este formato permite una interacción directa, donde el terapeuta puede guiarte de manera más cercana en el uso de estrategias prácticas como la aceptación de experiencias difíciles, la flexibilidad psicológica y la regulación emocional. A lo largo del proceso, se te brindarán ejercicios y recursos diseñados para ayudarte a actuar de acuerdo con tus valores y enfrentar situaciones desafiantes de manera más efectiva. La psicoterapia presencial facilita un entorno donde, más allá de resolver síntomas, puedes aprender a vivir una vida más plena y con sentido, enfrentando las dificultades con mayor resiliencia.
     `,
     descriptionImage: Meeting,
     troublesTitle:
@@ -258,7 +260,7 @@ export const services = [
   {
     id: 'terapia-familiar',
     heroBackground: bgFamily,
-    heroTitle: 'Terapia Familiar',
+    heroTitle: 'Psicoterapia Familiar',
     heroSubtitle: 'Fortalece los lazos familiares y mejora la comunicación',
 
     heroMessage:
@@ -266,7 +268,7 @@ export const services = [
     heroButton: 'Solicitar terapia familiar',
     descriptionTitle: '¡Quiero comenzar terapia familiar ahora mismo!',
     description: `
-    La terapia familiar se enfoca en ayudar a los miembros de la familia a mejorar la comunicación, resolver conflictos y crear un ambiente familiar saludable y de apoyo. Este tratamiento es ideal para familias que enfrentan desafíos y desean fortalecer sus relaciones.
+      Se enfoca en mejorar la comunicación y relaciones familiares, mientras se enseñan habilidades para manejar emociones intensas, establecer límites saludables y resolver el conflicto. Esta terapia ayuda a las familias a fortalecer su unidad, promoviendo la comprensión y el respeto mutuo entre los miembros de la familia.
     `,
     descriptionImage: Family,
     troublesTitle:
@@ -382,7 +384,7 @@ export const services = [
     descriptionTitle:
       'Entiende el costo social de los problemas de salud mental',
     description: `
-    No tratar los problemas de salud mental puede llevar a consecuencias graves no solo para el individuo, sino también para la sociedad. Los costos pueden ser económicos, sociales y personales, afectando la productividad, las relaciones y el bienestar general de la comunidad.
+      En Un día a la vez no queremos que el factor económico sea un impedimento para recibir psicoterapia de calidad, por lo que si presentas alguna dificultad, podemos hacer una pequeña evaluación para acceder a un costo social. Estamos para apoyarte.
     `,
     descriptionImage: '',
     troublesTitle:

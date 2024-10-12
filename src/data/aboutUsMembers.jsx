@@ -29,17 +29,17 @@ export const members = [
         Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso. \n
         `,
       },
-      {
-        id: 2,
-        name: 'Ana Lucía',
-        image: `${ana}`,
-        shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
-        fullDescription: `
-        ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
+      // {
+      //   id: 2,
+      //   name: 'Ana Lucía',
+      //   image: `${ana}`,
+      //   shortDescription: `¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.`,
+      //   fullDescription: `
+      //   ¡Hola! Mi nombre es [Nombre del terapeuta] y soy un terapeuta profesional con [X años/meses] de experiencia en la práctica clínica. Estoy dedicado a ayudar a mis clientes a alcanzar una vida plena y satisfactoria, a través de un enfoque personalizado y centrado en el cliente.
 
-        Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
-        `,
-      },
+      //   Como terapeuta, estoy capacitado para trabajar con una variedad de problemas de salud mental, emocionales y de comportamiento, incluyendo ansiedad, depresión, trastornos de la alimentación, problemas de relación y mucho más. Utilizo una variedad de técnicas de terapia basadas en evidencia, incluyendo la terapia cognitivo-conductual, la terapia interpersonal y la terapia de aceptación y compromiso.
+      //   `,
+      // },
       {
         id: 3,
         name: 'Eduardo Pérez',
