@@ -11,7 +11,7 @@ export const DescriptionSection = ({
         <img
           src={descriptionImage}
           alt={descriptionImage}
-          className='order-last m-auto w-56 sm:order-first'
+          className='order-last m-auto w-56 rounded-2xl sm:order-first'
         />
         <div className='flex flex-col gap-8 md:gap-4'>
           <h2 className='text-center text-xl font-semibold leading-5 md:text-left md:text-xl lg:text-2xl'>

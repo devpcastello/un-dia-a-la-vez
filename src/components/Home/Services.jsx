@@ -22,7 +22,9 @@ export const Services = () => {
                   <p>{description}</p>
                 </div>
               </div>
-              <div className='lg:min-w-20'>{image}</div>
+              <div className='w-40'>
+                {<img src={image} alt={`${name} imagen`} />}
+              </div>
             </Link>
           ))}
         </div>

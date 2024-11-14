@@ -5,9 +5,8 @@ import bgCouples from '../assets/bgSections/bgTherapyCouples-1.jpg';
 import bgSocialCost from '../assets/bgSections/bgWorkshop-2-min.jpg';
 import bgPresencialTherapy from '../assets/bgSections/bgPresencialTherapy.jpg';
 
-import onlineDescriptionImage from '../assets/therapyOnline-descriptionImage.svg';
+import test from '../assets/img_4.jpg';
 import SpreadLove from '../assets/therapies/DrawSpreadLove.svg';
-import RightDirection from '../assets/therapies/DrawRightDirection.svg';
 import BrokenHeart from '../assets/therapies/DrawBrokenHeart.svg';
 import BlueFeeling from '../assets/therapies/DrawBlueFeeling.svg';
 import LateAtNight from '../assets/therapies/DrawLateAtNight.svg';
@@ -16,7 +15,6 @@ import RelaxingAtHome from '../assets/therapies/DrawRelaxingAtHome.svg';
 import JobMeeting from '../assets/therapies/DrawJobMeeting.svg';
 import Relaxation from '../assets/therapies/DrawRelaxation.svg';
 import InLove from '../assets/therapies/DrawInLove.svg';
-import LoveIt from '../assets/therapies/DrawLoveIt.svg';
 import Trip from '../assets/therapies/DrawTrip.svg';
 import HappyFeeling from '../assets/therapies/DrawHappyFeeling.svg';
 import FunMoments from '../assets/therapies/DrawFunMoments.svg';
@@ -37,7 +35,18 @@ import Conversation from '../assets/therapies/DrawConversation.svg';
 import Family from '../assets/therapies/DrawFamily.svg';
 import Revenue from '../assets/therapies/DrawRevenue.svg';
 import Working from '../assets/therapies/DrawWorking.svg';
-import CoWorking from '../assets/therapies/DrawCo-Working.svg';
+
+import Dulcinea from '../assets/img_1.jpg';
+import HelpOther from '../assets/img_2.jpg';
+import Teaching from '../assets/img_3.jpg';
+import OnlineCall from '../assets/img_4.jpg';
+import TherapyRoom from '../assets/img_5.jpg';
+import PetLove from '../assets/img_6.jpg';
+import WomenToWomenConsulting from '../assets/img_7.jpg';
+import FamilyConsulting from '../assets/img_8.jpg';
+import MenToMenConsulting from '../assets/img_9.jpg';
+import Workshop from '../assets/img_10.jpeg';
+
 import PureLove from '../assets/therapies/DrawPureLove.svg';
 import Meeting from '../assets/therapies/DrawMeeting.svg';
 import HappyNews from '../assets/therapies/DrawHappyNews.svg';
@@ -58,7 +67,7 @@ export const services = [
   Ofrece mayor flexibilidad de horarios y elimina barreras geográficas, permitiendo el acceso a las sesiones desde la comodidad de tu hogar. Para asegurar que la interacción sea lo más cercana y humana posible, es imprescindible mantener la cámara activada durante toda la sesión. A lo largo del proceso, recibirás ejercicios, lecturas y recursos digitales que te ayudarán a avanzar entre sesiones. Su eficacia está comprobada: numerosos estudios demuestran que la terapia online es tan efectiva como la presencial para tratar una amplia gama de problemas emocionales.
 
     `,
-    descriptionImage: CoWorking,
+    descriptionImage: OnlineCall,
     troublesTitle:
       'Los problemas a solucionar en terapia online más comunes son:',
     troublesCards: [
@@ -91,7 +100,7 @@ export const services = [
       {
         description:
           'Privacidad y comodidad al realizar las sesiones desde un entorno seguro y familiar.',
-        image: RelaxingAtHome,
+        image: MenToMenConsulting,
       },
       {
         description:
@@ -127,7 +136,7 @@ export const services = [
         title: 'Problemas de comunicación',
         description:
           'Las dificultades para comunicarse efectivamente pueden generar malentendidos y conflictos. La terapia ayuda a mejorar las habilidades de comunicación entre los miembros de la pareja.',
-        image: onlineDescriptionImage,
+        image: test,
       },
       {
         title: 'Infidelidad',
@@ -192,7 +201,7 @@ export const services = [
     description: `
       Te ofrece un espacio seguro y confidencial para trabajar en tus emociones y desafíos personales. Este formato permite una interacción directa, donde el terapeuta puede guiarte de manera más cercana en el uso de estrategias prácticas como la aceptación de experiencias difíciles, la flexibilidad psicológica y la regulación emocional. A lo largo del proceso, se te brindarán ejercicios y recursos diseñados para ayudarte a actuar de acuerdo con tus valores y enfrentar situaciones desafiantes de manera más efectiva. La psicoterapia presencial facilita un entorno donde, más allá de resolver síntomas, puedes aprender a vivir una vida más plena y con sentido, enfrentando las dificultades con mayor resiliencia.
     `,
-    descriptionImage: Meeting,
+    descriptionImage: WomenToWomenConsulting,
     troublesTitle:
       'Los problemas a solucionar en terapia presencial más comunes son:',
     troublesCards: [
@@ -270,7 +279,7 @@ export const services = [
     description: `
       Se enfoca en mejorar la comunicación y relaciones familiares, mientras se enseñan habilidades para manejar emociones intensas, establecer límites saludables y resolver el conflicto. Esta terapia ayuda a las familias a fortalecer su unidad, promoviendo la comprensión y el respeto mutuo entre los miembros de la familia.
     `,
-    descriptionImage: Family,
+    descriptionImage: FamilyConsulting,
     troublesTitle:
       'Los problemas a solucionar en terapia familiar más comunes son:',
     troublesCards: [
@@ -386,7 +395,7 @@ export const services = [
     description: `
       En Un día a la vez no queremos que el factor económico sea un impedimento para recibir psicoterapia de calidad, por lo que si presentas alguna dificultad, podemos hacer una pequeña evaluación para acceder a un costo social. Estamos para apoyarte.
     `,
-    descriptionImage: '',
+    descriptionImage: HelpOther,
     troublesTitle:
       'Principales problemas derivados de no tratar la salud mental:',
     troublesCards: [
@@ -464,7 +473,7 @@ export const services = [
     description: `
     Nuestras charlas y talleres están diseñados para proporcionar información valiosa y herramientas prácticas sobre una variedad de temas relacionados con el bienestar mental, emocional y profesional. Únete a nosotros para aprender de expertos y conectar con otros participantes.
     `,
-    descriptionImage: OffRoad,
+    descriptionImage: Workshop,
     troublesTitle: 'Principales temas abordados en nuestras charlas:',
     troublesCards: [
       {

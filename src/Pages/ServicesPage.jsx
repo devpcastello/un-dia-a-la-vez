@@ -56,7 +56,7 @@ export const ServicesPage = () => {
                           <img
                             src={image}
                             alt='trouble-card'
-                            className='size-40'
+                            className='size-40 rounded-lg'
                           />
                           <h3 className=' font-bold'>{title}</h3>
                           <p>{description}</p>
@@ -79,7 +79,7 @@ export const ServicesPage = () => {
                           <img
                             src={image}
                             alt='benefit-card'
-                            className='w-24'
+                            className='w-24 rounded-lg'
                           />
                           <p className='text-left'>{description}</p>
                         </div>
